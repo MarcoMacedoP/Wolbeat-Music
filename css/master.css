@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Tw-Cen-Mt;
+  src: url(../fonts/Tw-Cen-MT.ttf); }
+.main-page-welcome {
+  position: relative;
+  display: block;
+  width: 100vw -10px;
+  height: 100vh; }
+
+.main-page-welcome-tittle {
+  display: none; }
+
+.main-page-welcome-background-img {
+  display: block;
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: white; }
+
+.main-page-welcome-background-img::after {
+  height: 100vh;
+  width: 50vw;
+  content: "";
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/main-background.jpeg);
+  background-size: cover; }
+
+.main-page-welcome-header-nav-list {
+  position: fixed;
+  right: 0;
+  display: flex;
+  list-style: none; }
+
+.main-page-welcome-header-nav-list-item {
+  margin: 0rem 1rem 0rem 1rem; }
+
+/*# sourceMappingURL=master.css.map */
