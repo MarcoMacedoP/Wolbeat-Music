@@ -1,6 +1,17 @@
 @font-face {
   font-family: Tw-Cen-Mt;
   src: url(../fonts/Tw-Cen-MT.ttf); }
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none; }
+
+html {
+  font-size: 16px; }
+
 /*
 $color_amarillo: #FFCD00;
 $color_gris_fuerte: #1C1C1B;
@@ -42,11 +53,14 @@ $color_blanco: #FBFBFB;*/
   bottom: 0; }
 
 .main-page-welcome-header {
-  height: 6.71%; }
+  height: 6.71%;
+  width: 100%; }
 
 .main-page-welcome-header-mobile-nav {
-  height: 100%;
-  background-color: #1C1C1B; }
+  height: inherit;
+  width: 100%;
+  background-color: #1C1C1B;
+  position: fixed; }
   .main-page-welcome-header-mobile-nav .main-page-welcome-header-mobile-nav-list {
     box-sizing: border-box;
     height: 100%;
@@ -68,11 +82,11 @@ $color_blanco: #FBFBFB;*/
     .main-page-welcome-header-mobile-nav .main-page-welcome-header-mobile-nav-list .main-page-welcome-header-mobile-nav-list-item-menu {
       display: block;
       width: 100%;
-      height: 6.71%;
+      height: 30%;
       opacity: .54;
       background-image: url(../img/menu.png);
       background-repeat: no-repeat;
-      background-size: content;
+      background-size: contain;
       background-position: center; }
     .main-page-welcome-header-mobile-nav .main-page-welcome-header-mobile-nav-list .main-page-welcome-header-mobile-nav-list-item-logo {
       align-self: center;
@@ -90,7 +104,10 @@ $color_blanco: #FBFBFB;*/
   overflow: hidden;
   width: 84%;
   height: 100vh;
-  background-color: #FBFBFB; }
+  background-color: #FBFBFB;
+  position: fixed;
+  top: 6.71%;
+  z-index: 2; }
 
 .main-page-welcome-header-nav-list {
   font-weight: bold;
@@ -156,25 +173,5 @@ $color_blanco: #FBFBFB;*/
     height: 1049px;
     background-color: white;
     border-radius: 50%; } }
-.main-page-welcome-header-nav-list {
-  color: white;
-  position: fixed;
-  right: 0;
-  display: flex;
-  list-style: none; }
-
-.main-page-welcome-header-nav-list-item {
-  margin: 0rem 1rem 0rem 1rem; }
-
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  border: none;
-  outline: none; }
-
-html {
-  font-size: 16px; }
 
 /*# sourceMappingURL=master.css.map */
