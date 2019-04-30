@@ -2,11 +2,12 @@
     font-family: Tw-Cen-Mt;
     src: url(../fonts/Tw-Cen-MT.ttf);
 }
-$font-tittle: Tw-Cen-Mt;
+$font-tittle: Tw-Cen-Mt, sans-serif;
 $font-body: Verdana, Helvetica;
 
-@mixin font($color,$tipo, $tamaño:16px)
+@mixin font($color,$tipo, $tamaño:16px, $peso:normal)
 {
+    font-weight: $peso;
     font-size: $tamaño;
     font-family: $tipo;
     color: $color;
