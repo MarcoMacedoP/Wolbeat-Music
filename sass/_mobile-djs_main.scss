@@ -52,18 +52,4 @@
 .main-page-our-djs-dj-social-media{
     display: none;
 }
-.cta_black{
-    margin-top: 0.5rem;
-    width: 320px;
-    height: 48px;
-    background-color: $color_amarillo;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3rem;
-    @include font($color_blanco, $font_body, 14px, bold);
-}
-.cta_black:hover{
-    background-color: $color_amarillo_claro;
-}
+
