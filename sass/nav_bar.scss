@@ -1,4 +1,6 @@
- 
+@import "colors";
+@import "fonts";
+
         .main-page-welcome-header-mobile-nav{
             //Esto desaparecerá en la versión de escritorio
             //Barra de navegacion móvil
@@ -56,6 +58,7 @@
             display: none;
         }
         .main-page-welcome-header-nav{
+        
             box-sizing: border-box;
             display: none;
             width: 84%;
@@ -63,6 +66,7 @@
             background-color: $color_blanco;
             position: fixed;
             top: 6.71%;
+            left: 0;
             z-index: 2;
         }
         .main-page-welcome-header-nav-list{
@@ -102,11 +106,13 @@
          color: $color_amarillo;   
         }
         }
-@media screen and (min-width: 700px){
+@media screen and (min-width: 900px){
+
 
     .main-page-welcome-logo{
         width: 18%;
         position: absolute;
+        display: block;
         left: 3%;
         top: 3%;
     }
@@ -150,13 +156,28 @@
         }
 }
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 900px){
     .main-page-welcome-header-nav-list{
-        width:   38%;
+        width:   55%;
     }
 }
 @media only screen and (min-width: 1000px){
     .main-page-welcome-header-nav-list{
-        width:   40%;
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1100px){
+    .main-page-welcome-header-nav-list{
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .main-page-welcome-header-nav-list{
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1300px){
+    .main-page-welcome-header-nav-list{
+        width: 30;
     }
 }
