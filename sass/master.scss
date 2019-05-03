@@ -12,7 +12,13 @@
 html{
     font-size: 16px;
 }
+@media only screen and(min-width: 900px){
+	html{
+		font-size: 24px;
+	}
+}
 
+@import "nav_bar";
 @import "mobile";
 @import "main-page";
 @import "header-sections";

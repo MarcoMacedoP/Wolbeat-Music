@@ -58,49 +58,17 @@
 html {
   font-size: 16px; }
 
-.main-page-welcome {
-  position: relative;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden; }
-  .main-page-welcome .main-page-welcome-tittle {
-    display: none; }
-  .main-page-welcome .main-page-welcome-background-img {
-    background-position: 11% 100%;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    opacity: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../img/main-background.jpeg);
-    background-size: cover; }
-
-.main-page-welcome-background-img::after {
-  content: "";
-  display: block;
-  width: 165vw;
-  height: 93.28vh;
-  background-color: white;
-  border-radius: 50%;
-  position: absolute;
-  left: -100%;
-  bottom: 0; }
-
-.main-page-welcome-header {
-  height: 6.71%;
-  width: 100%; }
-
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 24px; } }
 .main-page-welcome-header-mobile-nav {
-  height: inherit;
-  width: 100%;
+  height: 6.71vh;
+  width: 100vw;
   background-color: #1C1C1B;
-  position: fixed; }
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: block; }
   .main-page-welcome-header-mobile-nav .main-page-welcome-header-mobile-nav-list {
     box-sizing: border-box;
     height: 100%;
@@ -138,10 +106,12 @@ html {
       background-size: auto 100%;
       background-repeat: no-repeat; }
 
+.main-page-welcome-logo {
+  display: none; }
+
 .main-page-welcome-header-nav {
   box-sizing: border-box;
   display: none;
-  overflow: hidden;
   width: 84%;
   height: 100vh;
   background-color: #FBFBFB;
@@ -150,6 +120,7 @@ html {
   z-index: 2; }
 
 .main-page-welcome-header-nav-list {
+  padding: 0 0 0 0;
   font-weight: bold;
   font-family: Verdana, Helvetica;
   font-size: .75rem;
@@ -180,15 +151,64 @@ html {
   .main-page-welcome-header-nav-list-item :hover {
     color: #FFCD00; }
 
-.main-page-welcome-wolf {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%; }
+@media screen and (min-width: 700px) {
+  .main-page-welcome-logo {
+    width: 18%;
+    position: absolute;
+    left: 3%;
+    top: 3%; }
 
-@media only screen and (min-width: 700px) {
-  .main-page-welcome-background-img {
+  .main-page-welcome-header-mobile-nav {
+    display: none; }
+
+  .main-page-welcome-header-nav {
+    padding-top: 1%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 7.125vh;
+    background-color: rgba(28, 28, 27, 0);
+    position: fixed;
+    top: 0;
+    z-index: 2; }
+
+  .main-page-welcome-header-nav-list {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 5% 0 0;
+    font-size: .75rem;
+    margin-top: 0;
+    width: 40vw;
+    color: #FBFBFB;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    background-color: inherit; }
+
+  .main-page-welcome-header-nav-mobile-picture {
+    display: none; }
+
+  .main-page-welcome-header-nav-list-item {
+    margin: 0; } }
+@media only screen and (min-width: 800px) {
+  .main-page-welcome-header-nav-list {
+    width: 38%; } }
+@media only screen and (min-width: 1000px) {
+  .main-page-welcome-header-nav-list {
+    width: 40%; } }
+.main-page-welcome {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+  .main-page-welcome .main-page-welcome-tittle {
+    display: none; }
+  .main-page-welcome .main-page-welcome-background-img {
+    overflow: hidden;
     background-position: 11% 100%;
     height: 100vh;
     width: 100vw;
@@ -203,16 +223,60 @@ html {
     background-image: url(../img/main-background.jpeg);
     background-size: cover; }
 
+.main-page-welcome-background-img::after {
+  content: "";
+  display: block;
+  width: 165vw;
+  height: 93.28vh;
+  background-color: #FBFBFB;
+  border-radius: 50%;
+  position: absolute;
+  left: -100%;
+  bottom: 0; }
+
+.main-page-welcome-wolf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+
+@media only screen and (min-width: 400px) {
   .main-page-welcome-background-img::after {
     content: "";
-    top: -16%;
     display: block;
-    position: absolute;
-    left: -31%;
-    width: 1049px;
-    height: 1049px;
-    background-color: white;
-    border-radius: 50%; } }
+    width: 100vh;
+    height: 100vh;
+    left: -50vh; } }
+@media only screen and (min-width: 600px) {
+  .main-page-welcome-background-img::after {
+    width: 120vh;
+    height: 120vh;
+    left: -60vh;
+    bottom: -10vh; } }
+@media only screen and (min-width: 700px) {
+  .main-page-welcome-background-img::after {
+    width: 130vh;
+    height: 130vh;
+    left: -65vh;
+    bottom: -15vh; } }
+@media only screen and (min-width: 800px) {
+  .main-page-welcome-background-img::after {
+    width: 200vh;
+    height: 200vh;
+    left: -130vh;
+    bottom: -50vh; } }
+@media only screen and (min-width: 500px) {
+  .main-page-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-page-welcome .main-page-welcome-wolf {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80vh;
+      height: auto; } }
 .main-page-our-djs {
   width: 100%;
   height: 121.71vh;
@@ -346,14 +410,22 @@ html {
   font-family: Verdana, Helvetica;
   color: #FBFBFB; }
 
+.footer {
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box; }
+
 .footer-contact {
-  width: 100vw;
+  overflow: hidden;
+  padding: 0 1rem 0 1rem;
+  width: 100%;
   height: 81.87vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   background-color: #1C1C1B;
+  box-sizing: border-box;
   color: #FBFBFB;
   font-weight: "normal";
   font-size: 0.75rem;
@@ -362,12 +434,10 @@ html {
   text-align: center; }
 
 .footer-contact-logo {
-  width: 46.66vw;
-  height: 8.76hw; }
+  width: 46.66vw; }
 
 .footer-contact-iso {
-  width: 55vw;
-  height: 32.65vh; }
+  width: 55vw; }
 
 .footer-nav {
   background-color: #1C1C1B;

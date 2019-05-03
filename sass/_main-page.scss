@@ -1,7 +1,16 @@
-@media only screen and (min-width: 700px){
-//Vista de escritorio
-
+.main-page-welcome{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+        
+    .main-page-welcome-tittle{
+        display: none;
+    }
+        
     .main-page-welcome-background-img{
+        overflow: hidden;
         background-position: 11% 100%;
         height: 100vh;
         width: 100vw;
@@ -15,16 +24,83 @@
         background-repeat: no-repeat;
         background-image: url(../img/main-background.jpeg);
         background-size: cover;
-    }.main-page-welcome-background-img::after{
-        content: "";
-        top:-16%;
-        display: block;
-        position: absolute;
-        left: -31%;
-        width: 1049px;
-        height: 1049px;
-        background-color: white;
-        border-radius: 50%;
     }
+}
+    .main-page-welcome-background-img::after{
+        //Circulo blanco
+        content: "";
+        display: block;
+        width: 165vw;
+        height: 93.28vh;
+        background-color: $color_blanco;
+        border-radius: 50%;
+        position: absolute;
+        left: -100%;
+        bottom: 0;
+    }
+    .main-page-welcome-wolf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+//Arreglando el circulo blanco
+    @media only screen and (min-width:400px){
+        .main-page-welcome-background-img::after{
+            content: "";
+            display: block;
+            width: 100vh;
+            height: 100vh;
+            left:-50vh;
+        }
+    }
+    @media only screen and (min-width:600px){
+        .main-page-welcome-background-img::after{
+            width: 120vh;
+            height: 120vh;
+            left:-60vh;
+            bottom: -10vh;
+        }
+    }
+    @media only screen and (min-width:700px){
+        .main-page-welcome-background-img::after{
+            width: 130vh;
+            height: 130vh;
+            left:-65vh;
+            bottom: -15vh;
+        }
+    }
+    @media only screen and (min-width: 800px){
+        .main-page-welcome-background-img::after{
+            width: 200vh;
+            height: 200vh;
+            left:-130vh;
+            bottom: -50vh;
+        }
+    }
+
+//Vista de tablet
+@media only screen and (min-width: 500px){
+    .main-page-welcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .main-page-welcome-wolf{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80vh;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px){
+//Vista de escritorio
+
+
 
 }

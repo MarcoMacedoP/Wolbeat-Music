@@ -1,23 +1,30 @@
-
+.footer{
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
 .footer-contact{
-    width: 100vw;
+    overflow: hidden;
+    padding: 0 1rem 0 1rem;
+    width: 100%;
     height: 81.87vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background-color: $color_gris_fuerte;
+    box-sizing: border-box;
     color: $color_blanco; 
     @include font ($color_blanco,$font_body, 0.75rem, "normal" );
     text-align: center;
 }
 .footer-contact-logo{
     width: 46.66vw;
-    height: 8.76hw;
+    
 }
 .footer-contact-iso{
     width: 55vw;
-    height: 32.65vh;
+
 }
 
 //Section footer nav
@@ -64,7 +71,6 @@ height: 20vh;
     
 }
 .footer-nav-social-fb{
-   
     background-image: url(../img/facebook.png);
 }
 .footer-nav-social-spotify{
