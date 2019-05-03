@@ -9,145 +9,171 @@
 </head>
 <body>
     <section class="main-page-welcome">
-    <header class="main-page-welcome-header"> 
+     <!--Mobile bar start-->   
+        <nav class="main-page-welcome-header-mobile-nav">
+            <ol class = "main-page-welcome-header-mobile-nav-list">
+                <li class= "main-page-welcome-header-mobile-nav-list-item-1">
+                    <a href="#" class= "main-page-welcome-header-mobile-nav-list-item-menu"></a>
+                </li>
+                <li class="main-page-welcome-header-mobile-nav-list-item-2">
+                    <a href="#" class ="main-page-welcome-header-mobile-nav-list-item-logo"></a>
+                </li>
+            </ol>
+        </nav>
+        <!--Mobile bar end-->
+
+
+        <!--Adaptable navigation bar start-->
         <nav class="main-page-welcome-header-nav">
+        <picture class="main-page-welcome-header-nav-mobile-picture">
+        <img src="img/Lobo.png" class= "main-page-welcome-header-nav-mobile-picture-img" alt="Lobo de Wolbeat Music">
+        </picture>
+        <img class="main-page-welcome-logo" src="img/logo_white.png" alt = "Logo de Wolbeat Music">  
         <ol class="main-page-welcome-header-nav-list"> 
             <li class="main-page-welcome-header-nav-list-item">
-                DJ's</li>
-            <li class="main-page-welcome-header-nav-list-item">Canciones</li>
-            <li class="main-page-welcome-header-nav-list-item">Nosotros</li>
-            <li class="main-page-welcome-header-nav-list-item">Tienda</li>
-            <li class="main-page-welcome-header-nav-list-item">Contacto</li>
+                <a href= "#">DJ's</a></li>
+            <li class="main-page-welcome-header-nav-list-item">
+                    <a href= "#">Canciones</a></li>
+            <li class="main-page-welcome-header-nav-list-item">
+                    <a href= "#">Nosotros</a></li>
+            <li class="main-page-welcome-header-nav-list-item">
+                    <a href= "#">Tienda</a></li>
+            <li class="main-page-welcome-header-nav-list-item">
+                    <a href= "#">Contacto</a></li>
         </ol>
         </nav>
-    <hero class="main-page-welcome-background-img"></hero>
-    </header>
+    <!--Adaptable navigation bar end--> 
+     
      <h1 class="main-page-welcome-tittle">Wolbeat Music</h1>
+     <hero class="main-page-welcome-background-img"></hero>
+     <picture class="main-page-welcome-wolf">
+         <img class = "main-page-welcome-wolf-img" src="img/Lobo.png" alt="Logo de Wolbeat Lobo">
+     </picture>
     </section>
     <section class="main-page-last-updates">
-        <h2>Últimos lanzamientos</h2>
+        <h2 class="main-page-last-updates-h2">Últimos lanzamientos</h2>
+        <!--Carrousel-->
         <section class="main-page-last-updates-carousel"> 
-            <article class="main-page-last-updates-carousel-article">
-                <picture>
-                    <img src="" alt="artist-image">
-                    <h3>Nombre de la canción</h3>
-                    <p>Descripción de la canción. Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam </p>
+            <picture class="main-page-last-updates-carousel-article">
+                    <picture class="main-page-last-updates-carousel-article-img"></picture>
+                    <h3 class="main-page-last-updates-carousel-article-tittle">
+                       <a href="#">Nombre de la canción</a> 
+                    </h3>
+                    <p class="main-page-last-updates-carousel-article-content">
+                        Descripción de la canción. Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr, sed diam nonumy eirmod
+                        tempor invidunt ut labore et dolore magna aliquyam </p>
+                        
                     <nav class="main-page-last-updates-carousel-nav">
-                        <div class="main-page-last-updates-carousel-point-one"></div>
-                        <div class="main-page-last-updates-carousel-point-two"></div>
-                        <div class="main-page-last-updates-carousel-point-three"></div>
+                        <a class="main-page-last-updates-carousel-point-one" href="#"></a>
+                        <a class="main-page-last-updates-carousel-point-two" href="#"></a>
+                        <a class="main-page-last-updates-carousel-point-three" href="#"></a>
                     </nav>
-                </picture>
-            </article>
+            </picture>
         </section>
+        <!--carrousel-->
+    </section>
         <section class="main-page-our-djs">
-            <h2>Nuestros dj's</h2>
+            <h2>Nuestros DJ's</h2>
            
             <article class="main-page-our-djs-dj">
-                <img src="" alt="dj-photo">
-                <h3>Nombre del artista</h3>
-                <span>Generos del artista</span>
-                <p>Descripción de la canción. Lorem ipsum dolor sit amet, consetetur
-                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
-                </p>
-                <div class="main-page-our-djs-dj-social-media">
-                    <a href="#" class="main-page-our-djs-dj-social-media-spotify"></a>
-                    <a href="#" class="main-page-our-djs-dj-social-media-youtube"></a>
-                </div>
-            </article>
-            <article class="main-page-our-djs-dj">
-                    <img src="" alt="dj-photo">
-                    <h3>Nombre del artista</h3>
-                    <span>Generos del artista</span>
-                    <p>Descripción de la canción. Lorem ipsum dolor sit amet, consetetur
-                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
-                    </p>
-                    <div class="main-page-our-dj-social-media">
-                        <a href="#" class="main-page-our-djs-dj-social-media-spotify"></a>
-                        <a href="#" class="main-page-our-djs-dj-social-media-youtube"></a>
-                    </div>
-            </article>
-            <article class="main-page-our-djs-dj">
-                        <img src="" alt="dj-photo">
-                        <h3>Nombre del artista</h3>
-                        <span>Generos del artista</span>
-                        <p>Descripción de la canción. Lorem ipsum dolor sit amet, consetetur
-                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
-                        </p>
-                        <div class="main-page-our-dj-social-media">
-                            <a href="#" class="main-page-our-djs-dj-social-media-spotify"></a>
-                            <a href="#" class="main-page-our-djs-dj-social-media-youtube"></a>
+               <a href="#"><img src="img/dj_dos.jpeg" alt="dj-photo"></a>
+                <div class="main-page-our-djs-dj-info">
+                    <a href="#"><h3>Nombre del artista</h3></a>
+                    <a href="#"><span>Generos del artista</span></a>
+                    <a href="#"><p>DJ Shadow empezó su carrera musical como DJ para la cadena KDVS. Ese período fue uno de los más importantes en (...)</p></a>
+                        <div class="main-page-our-djs-dj-social-media">
+                         <a href="#" class="main-page-our-djs-dj-social-media-spotify"></a>
+                         <a href="#" class="main-page-our-djs-dj-social-media-youtube"></a>
                         </div>
-            </article>
+                </div>
+                </article>
             <article class="main-page-our-djs-dj">
-                            <img src="" alt="dj-photo">
-                            <h3>Nombre del artista</h3>
-                            <span>Generos del artista</span>
-                            <p>Descripción de la canción. Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
-                            </p>
-                            <div class="main-page-our-dj-social-media">
-                                <a href="#" class="main-page-our-djs-dj-social-media-spotify"></a>
-                                <a href="#" class="main-page-our-djs-dj-social-media-youtube"></a>
-                            </div>
-            </article>
+                    <a href="#"><img src="img/dj_dos.jpeg" alt="dj-photo"></a>
+                     <div class="main-page-our-djs-dj-info">
+                         <a href="#"><h3>Nombre del artista</h3></a>
+                         <a href="#"><span>Generos del artista</span></a>
+                         <a href="#"><p>DJ Shadow empezó su carrera musical como DJ para la cadena KDVS. Ese período fue uno de los más importantes en (...)</p></a>
+                             <div class="main-page-our-djs-dj-social-media">
+                              <a href="#" class="main-page-our-djs-dj-social-media-spotify"></a>
+                              <a href="#" class="main-page-our-djs-dj-social-media-youtube"></a>
+                             </div>
+                     </div>
+                </article>
             <article class="main-page-our-djs-dj">
-                                <img src="" alt="dj-photo">
-                                <h3>Nombre del artista</h3>
-                                <span>Generos del artista</span>
-                                <p>Descripción de la canción. Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
-                                </p>
-                                <div class="main-page-our-dj-social-media">
-                                    <a href="#" class="main-page-our-djs-dj-social-media-spotify"></a>
-                                    <a href="#" class="main-page-our-djs-dj-social-media-youtube"></a>
-                                </div>
-            </article>                                           
-            <a href="#">Conoce a nuestros DJ's</a>
+                    <a href="#"><img src="img/dj_dos.jpeg" alt="dj-photo"></a>
+                     <div class="main-page-our-djs-dj-info">
+                         <a href="#"><h3>Nombre del artista</h3></a>
+                         <a href="#"><span>Generos del artista</span></a>
+                         <a href="#"><p>DJ Shadow empezó su carrera musical como DJ para la cadena KDVS. Ese período fue uno de los más importantes en (...)</p></a>
+                             <div class="main-page-our-djs-dj-social-media">
+                              <a href="#" class="main-page-our-djs-dj-social-media-spotify"></a>
+                              <a href="#" class="main-page-our-djs-dj-social-media-youtube"></a>
+                             </div>
+                     </div>
+                </article>
+            <article class="main-page-our-djs-dj">
+                         <a href="#"><img src="img/dj_dos.jpeg" alt="dj-photo"></a>
+                          <div class="main-page-our-djs-dj-info">
+                              <a href="#"><h3>Nombre del artista</h3></a>
+                              <a href="#"><span>Generos del artista</span></a>
+                              <a href="#"><p>DJ Shadow empezó su carrera musical como DJ para la cadena KDVS. Ese período fue uno de los más importantes en (...)</p></a>
+                                  <div class="main-page-our-djs-dj-social-media">
+                                   <a href="#" class="main-page-our-djs-dj-social-media-spotify"></a>
+                                   <a href="#" class="main-page-our-djs-dj-social-media-youtube"></a>
+                                  </div>
+                          </div>
+                </article>
+            <a class="cta_black" href="#">Conoce más</a>
         </section>
-    </section>
-    <footer>
+
+
+   <!-- Footer starts-->     
+    <footer class="footer">
+        <!--Footer contact section start-->
+        <section class="footer-contact"> 
         <picture>
-            <img src="" alt="Wolbeat-Logo">
+            <img class = "footer-contact-logo" src="img/logo_black.png" alt="Wolbeat-Logo">
         </picture>
         <picture>
-            <img src="" alt="Wolbeat-Wolf-Iso">
+            <img class = "footer-contact-iso" src="img/Lobo.png" alt="Wolbeat-Wolf-Iso">
         </picture>
         <p>
                 Wölbeat Music es una firma discografica exclusiva y apasionada especializada en DJ's.
                 La cual está en busqueda de innovación en el ámbito músical generando emociones en cada beat y logrando los
                 sueños y las metas de los que forman parte de nuestra empresa.
         </p>
-        <a href="#">Contactanos</a>
-        <nav>
+        <a class= "cta_white" href="#">Contactanos</a>
+    </section>
+    <!--Footer contact section end-->
+        
+    <nav class="footer-nav">
             <picture>
-                <img src="" alt="Wolbeat-Logo">
+                <img class ="footer-nav-icon" src="img/logo_black.png" alt="Wolbeat-Logo">
             </picture>
-            <ol>
-                <li>DJ's</li>
-                <li>Canciones</li>
-                <li>Nosotros</li>
-                <li>Tienda</li>
-                <li>Contacto</li>
+            <ol class="footer-nav-sections">
+                <li><a href="#">DJ's</a></li>
+                <li><a href="#">Canciones</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Contacto</a></li>
             </ol>
-            <ul>
+            <ul class="footer-nav-social">
                 <li>
-                    <a href="#">Spotify</a>
+                    <a class="footer-nav-social-fb" 
+                    href="#"></a>
                     
                 </li>
-                <li><a href="#">Facebook</a>
+                <li><a class="footer-nav-social-spotify"
+                     href="#"></a>
                 </li>
-                <li><a href="#">Youtube</a>
+                <li><a class="footer-nav-social-youtube"
+                     href="#"></a>
                 </li>
             </ul>
-        </nav>
+    </nav>
     </footer>
+    <!-- Footer ends-->
+    <script type="text/javascript" src = "scripts/index.js"></script>
 </body>
 </html>

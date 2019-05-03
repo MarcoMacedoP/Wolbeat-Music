@@ -1,0 +1,36 @@
+ .cta_black {
+    box-sizing: border-box; 
+    margin-top: .5rem;
+    width: 320px;
+    height: 48px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    background-color: $color_amarillo;
+    @include font($color_blanco, $font_body, 14px, bold);
+}
+.cta_black:hover{
+    border: 1px solid $color_amarillo;
+    background-color: $color_blanco;
+    @include font($color_amarillo, $font_body, 14px, bold);
+}
+
+.cta_white{
+    margin-top: 0.5rem;
+    width: 320px;
+    height: 48px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    background-color: $color_blanco;
+    @include font($color_amarillo, $font_body, 14px, bold);
+}
+.cta_white:hover{
+    background-color: $color_amarillo;
+    @include font($color_blanco, $font_body, 14px, bold);
+
+}

@@ -1,0 +1,55 @@
+.main-page-our-djs{
+    width: 100%;
+    height: 121.71vh;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        @include font($color_gris_fuerte, $font-tittle, .93rem);
+        width: 80.88%;
+        box-sizing: border-box;
+        border-bottom: 1px solid $color_gris_claro;
+    }
+}
+.main-page-our-djs-dj{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 22.06%;
+    margin: .5rem 0 .5rem 0;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}
+
+.main-page-our-djs-dj-info{
+    width: 100%;
+    height: 45.45%;
+    position: absolute;
+    bottom: 0;
+    background: $color_gris_fuerte;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem .5rem .5rem .5rem;
+    box-sizing: border-box;
+
+    h3{
+        @include font($color_amarillo, $font_tittle, .93rem, bold);
+    }
+    h3:hover{
+        color: $color_amarillo_claro;
+    }
+    span{
+        display: none;
+    }
+    p{
+        @include font($color_blanco, $font_body, 0.62rem);
+    }
+}
+.main-page-our-djs-dj-social-media{
+    display: none;
+}
+

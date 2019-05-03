@@ -1,0 +1,183 @@
+@import "colors";
+@import "fonts";
+
+        .main-page-welcome-header-mobile-nav{
+            //Esto desaparecerá en la versión de escritorio
+            //Barra de navegacion móvil
+            height: 6.71vh;
+            width: 100vw;
+            background-color: $color_gris_fuerte;
+            position: fixed;
+            top:0;
+            z-index: 2;
+            display: block;
+            .main-page-welcome-header-mobile-nav-list{
+                box-sizing: border-box;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .main-page-welcome-header-mobile-nav-list-item-1{
+                    position: absolute;
+                    left: 1rem;
+                    display: flex;
+                    align-items: center;
+                    width: 5%;
+                    height: 86%;
+                }
+                .main-page-welcome-header-mobile-nav-list-item-2{
+                    display: flex;
+                    align-items: center;
+                    width: 43%;
+                    height: 62%;
+                }
+                .main-page-welcome-header-mobile-nav-list-item-menu{
+                    display: block;
+                    width: 100%;
+                    height: 30%;
+                    opacity: .54;
+                    background-image: url(../img/menu.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+                .main-page-welcome-header-mobile-nav-list-item-logo{
+                    align-self: center;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    background-image: url(../img/logo_black.png);
+                    background-position: center;
+                    background-size: auto 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        //menu movil, desplegable
+        .main-page-welcome-logo{
+            display: none;
+        }
+        .main-page-welcome-header-nav{
+        
+            box-sizing: border-box;
+            display: none;
+            width: 84%;
+            height: 100vh;
+            background-color: $color_blanco;
+            position: fixed;
+            top: 6.71%;
+            left: 0;
+            z-index: 2;
+        }
+        .main-page-welcome-header-nav-list{
+            padding: 0 0 0 0;
+            font-weight: bold;
+            font-family: $font-body;
+            font-size: .75rem;
+            margin-top: 0;
+            width: inherit;
+            color: $color_gris_fuerte;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            background-color: inherit;
+
+        }
+        .main-page-welcome-header-nav-mobile-picture{
+            background-color: $color_gris_fuerte;
+           display: flex;
+           width: 100%;
+           height: 30%;
+           justify-content: center;
+           vertical-align: center;
+            
+        }
+        .main-page-welcome-header-nav-mobile-picture-img{
+            //width: 48.35%;
+            height: 90.11%;
+        }
+        .main-page-welcome-header-nav-list-item{
+            margin: 1.5rem 0 0 1.5rem; 
+            a{
+                color:inherit;
+            }
+        :hover{
+         color: $color_amarillo;   
+        }
+        }
+@media screen and (min-width: 900px){
+
+
+    .main-page-welcome-logo{
+        width: 18%;
+        position: absolute;
+        display: block;
+        left: 3%;
+        top: 3%;
+    }
+
+    .main-page-welcome-header-mobile-nav{
+        display: none;
+    }
+    .main-page-welcome-header-nav{
+            padding-top: 1%;
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            width: 100vw;
+            height: 7.125vh;
+            background-color: rgba($color: $color_gris_fuerte, $alpha: 0);
+            position: fixed;
+            top: 0;
+            z-index: 2;
+        
+        }
+        .main-page-welcome-header-nav-list{
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 0 5% 0 0;
+            font-size: .75rem;
+            margin-top: 0;
+            width:   40vw;
+            color: $color_blanco;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: static;
+            background-color:inherit;  
+        }
+        .main-page-welcome-header-nav-mobile-picture{
+           display: none;
+        }
+        .main-page-welcome-header-nav-list-item{
+            margin: 0; 
+        }
+}
+
+@media only screen and (min-width: 900px){
+    .main-page-welcome-header-nav-list{
+        width:   55%;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .main-page-welcome-header-nav-list{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1100px){
+    .main-page-welcome-header-nav-list{
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .main-page-welcome-header-nav-list{
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1300px){
+    .main-page-welcome-header-nav-list{
+        width: 30;
+    }
+}
