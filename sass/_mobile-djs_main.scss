@@ -1,4 +1,5 @@
-.main-page-our-djs{
+.section-dj{
+    min-height: 50rem;
     width: 100%;
     height: 121.71vh;
     margin-bottom: 1rem;
@@ -12,19 +13,19 @@
         border-bottom: 1px solid $color_gris_claro;
     }
 }
-.main-page-our-djs-dj{
+.section-dj-article{
     display: block;
     position: relative;
     width: 100%;
     height: 22.06%;
     margin: .5rem 0 .5rem 0;
     overflow: hidden;
-    img{
-        width: 100%;
-    }
+}
+.section-dj-img{
+    width: 100%;
 }
 
-.main-page-our-djs-dj-info{
+.section-dj-info{
     width: 100%;
     height: 45.45%;
     position: absolute;
@@ -49,7 +50,105 @@
         @include font($color_blanco, $font_body, 0.62rem);
     }
 }
-.main-page-our-djs-dj-social-media{
+.section-dj-info-social-media{
     display: none;
 }
 
+@media screen and (max-width: 700px) and (max-height:1000px) and (orientation: landscape){
+    .main-page-welcome-wolf{
+        width: 44vw;
+    }
+}
+
+//*************************TABLETS*****************************
+@media screen and (min-width: 700px) and(orientation:landscape) 
+{
+    //Tablet Horizontal
+    .section-dj-info{
+        height: 30%;
+
+    }
+    
+}
+
+
+//******************PC*****************************************
+@media screen and (min-width: 1000px) and (orientation: landscape){
+.section-dj{
+    overflow: hidden;
+    box-sizing: border-box;
+    height: min-content;
+    padding: 0 1.87% 1.87%;
+    h2{
+            align-self: flex-start;
+    }
+    
+}
+.section-dj-article{
+    width:77.81%;
+    align-self: flex-start;
+    height: min-content;
+    min-block-size: min-content;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.section-dj-info-social-media{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+   
+    a{ 
+        display: block;
+        width: 2.25rem;
+        height: 2.25rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .section-dj-info-social-media-spotify{
+        background-image: url(/img/spotify.png);
+    }
+    .section-dj-info-social-media-youtube{
+        margin-right: 0.5rem;
+        background-image: url(/img/youtube.png);
+    }
+}
+.section-dj-info{
+    background: none;
+    position: static;
+    align-items: flex-start;
+
+    p{
+        color:$color_gris_fuerte;
+    }
+    span{
+        @include font($color_gris_claro, $font_body, 0.66rem, bold);
+        display: block;
+    }
+
+}
+.section-dj-img{
+    width: min-content;
+    div{
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+    width: 264px;
+    height: 264px;
+    }
+    img{
+    display: block;
+    position: static;
+    margin-left: -100px;
+    left: 0;
+    width: auto;
+    height: 100%;
+    }
+}
+
+
+}

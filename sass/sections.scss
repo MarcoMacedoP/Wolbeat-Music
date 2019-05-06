@@ -1,0 +1,29 @@
+//Este archivo es para las sub-secciones de la pagina
+@import "fonts";
+@import "colors";
+@import "cta-button";
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+    outline: none;
+}
+html{
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 700px){
+	html{
+		font-size: 20px;
+	}
+}
+@media only screen and(min-width: 900px){
+	html{
+		font-size: 24px;
+	}
+}
+@import "nav-bar-transparent";
+@import "nav_bar";
+@import "header-sections";

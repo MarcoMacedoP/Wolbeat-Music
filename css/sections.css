@@ -1,6 +1,75 @@
 @font-face {
   font-family: Tw-Cen-Mt;
   src: url(../fonts/Tw-Cen-MT.ttf); }
+.cta_black {
+  box-sizing: border-box;
+  margin-top: .5rem;
+  width: 320px;
+  height: 48px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  background-color: #FFCD00;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Verdana, Helvetica;
+  color: #FBFBFB; }
+
+.cta_black:hover {
+  border: 1px solid #FFCD00;
+  background-color: #FBFBFB;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Verdana, Helvetica;
+  color: #FFCD00; }
+
+.cta_white {
+  margin-top: 0.5rem;
+  width: 320px;
+  height: 48px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  background-color: #FBFBFB;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Verdana, Helvetica;
+  color: #FFCD00; }
+
+.cta_white:hover {
+  background-color: #FFCD00;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Verdana, Helvetica;
+  color: #FBFBFB; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none; }
+
+html {
+  font-size: 16px; }
+
+@media only screen and (min-width: 700px) {
+  html {
+    font-size: 20px; } }
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 24px; } }
+body .mobile-nav {
+  background-color: rgba(85, 85, 89, 0.54); }
+
+@font-face {
+  font-family: Tw-Cen-Mt;
+  src: url(../fonts/Tw-Cen-MT.ttf); }
 .mobile-nav {
   height: 6.71vh;
   width: 100vw;
@@ -159,5 +228,36 @@
 @media only screen and (min-width: 1300px) {
   .nav-list {
     width: 30; } }
+.header {
+  position: relative;
+  width: 100vw;
+  height: 56.25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
-/*# sourceMappingURL=nav_bar.css.map */
+.header-picture {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .header-picture img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto; }
+
+.header-picture::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 28, 27, 0.48);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+/*# sourceMappingURL=sections.css.map */
