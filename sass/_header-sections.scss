@@ -50,3 +50,26 @@
     background-position: center;
 
 }
+.header-sections{
+    position: absolute;
+    bottom: 2rem;
+    @include font($color_blanco, $font_body, 1.25rem);
+}
+.header-sections-blur{
+    margin-left: 1rem;
+    @include font($color_gris_claro, $font_body, 1.25rem);
+}
+.header-sections-selection{
+    position: absolute;
+    bottom: -0.7rem;
+    left: 1.5rem;
+    background-color: $color_amarillo;
+    width: 26.25%;
+    height: 0.37rem;
+    transition: left;
+    transition-duration: 500ms;
+
+}
+.header-sections-selection-change{
+    left: 10rem;
+}
