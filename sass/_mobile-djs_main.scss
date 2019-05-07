@@ -22,7 +22,9 @@
     overflow: hidden;
 }
 .section-dj-img{
-    width: 100%;
+    img{
+        width: 100%;
+    }
 }
 
 .section-dj-info{
@@ -61,12 +63,13 @@
 }
 
 //*************************TABLETS*****************************
-@media screen and (min-width: 700px) and(orientation:landscape) 
+@media screen and (min-width: 700px) and (min-height: 1000px)
 {
     //Tablet Horizontal
     .section-dj-info{
         height: 30%;
-
+        padding: 2% 10%;
+        min-height: min-content;
     }
     
 }
@@ -112,7 +115,7 @@
         background-image: url(/img/spotify.png);
     }
     .section-dj-info-social-media-youtube{
-        margin-right: 0.5rem;
+        margin-left: 0.5rem;
         background-image: url(/img/youtube.png);
     }
 }
@@ -120,6 +123,8 @@
     background: none;
     position: static;
     align-items: flex-start;
+    height: min-content;
+    padding-left: 1rem;
 
     p{
         color:$color_gris_fuerte;

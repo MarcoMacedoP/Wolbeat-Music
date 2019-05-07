@@ -1,4 +1,5 @@
 .footer{
+    height: min-content;
     overflow: hidden;
     width: 100%;
     box-sizing: border-box;
@@ -7,7 +8,7 @@
     overflow: hidden;
     padding: 0 1rem 0 1rem;
     width: 100%;
-    height: 81.87vh;
+    height: min-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +32,7 @@
 .footer-nav{
 background-color: $color_gris_fuerte;
 width: 100vw;
-height: 20vh;
+height: 20%;
  box-sizing: border-box;
  display:flex;
  flex-direction: column;
@@ -53,12 +54,13 @@ height: 20vh;
 }
 //iconos de redes sociales
 .footer-nav-social{
+    padding-bottom: 5%;
     margin-top: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 38.05vw;
-    height: 4.375vh;
+    height: min-content;
     li{
        display: block;
        height: 100%;
@@ -81,4 +83,43 @@ height: 20vh;
 }
 .footer-nav-social-youtube{
     background-image: url(../img/youtube.png);
+}
+/****************** TABLET VERSION **********************************************/
+@media only screen and (min-width: 700px) and (min-height: 1000px){
+    .footer-contact{
+        padding: 1rem 1rem 0 1rem;
+        p{
+            margin: 5% 0;
+        }
+    }
+    .footer-contact-iso {
+        width: 45vw;
+    }
+    .footer-contact-logo{
+        width: 30%;
+    }
+    .footer-nav{
+        padding: 5% 0 0 0;
+    }
+    .footer-nav-sections{
+        width: 60%;
+    }
+    .footer-nav-social{
+        width: 20%;
+    }
+}
+/***********************PC VERSION******************************/
+@media only screen and (min-width: 1000px) and (min-height: 600px){
+    .footer-contact{
+        padding-left: 8.7%;
+        padding-right: 8.7%;
+    }
+.footer-contact-iso {
+        width: 27.5vw;
+        padding: 0.5rem 1rem;
+    }
+    .footer-contact-logo{
+        width: 20%;
+    }
+
 }

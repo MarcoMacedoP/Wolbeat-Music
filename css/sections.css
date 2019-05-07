@@ -1,16 +1,18 @@
 @font-face {
   font-family: Tw-Cen-Mt;
   src: url(../fonts/Tw-Cen-MT.ttf); }
-.cta_black {
+.cta_black, .cta_white {
   box-sizing: border-box;
-  margin-top: .5rem;
+  margin: .5rem 0 .5rem 0;
   width: 320px;
   height: 48px;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 3rem;
+  border-radius: 3rem; }
+
+.cta_black {
   background-color: #FFCD00;
   font-weight: bold;
   font-size: 14px;
@@ -26,14 +28,6 @@
   color: #FFCD00; }
 
 .cta_white {
-  margin-top: 0.5rem;
-  width: 320px;
-  height: 48px;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3rem;
   background-color: #FBFBFB;
   font-weight: bold;
   font-size: 14px;
