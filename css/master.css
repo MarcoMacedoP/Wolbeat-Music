@@ -300,6 +300,27 @@ html {
   right: 0;
   bottom: 0; }
 
+.header-name {
+  position: relative;
+  font-weight: bold;
+  font-size: 2.68rem;
+  font-family: Tw-Cen-Mt, sans-serif;
+  color: #FFCD00; }
+
+.header::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  height: 66.94%;
+  width: 63.61%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.33;
+  background-image: url(/img/Lobo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
 .section-dj {
   min-height: 50rem;
   width: 100%;

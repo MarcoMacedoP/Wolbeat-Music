@@ -30,3 +30,24 @@
     right: 0;
     bottom: 0;
 }
+.header-name{
+    position: relative;
+    @include font($color_amarillo, $font_tittle, 2.68rem, bold);
+}
+.header::after{
+    content: "";
+    display: flex;
+    justify-content: center;
+
+    //background:rgba($color: $color_gris_fuerte, $alpha: .48);
+    height: 66.94%;
+    width: 63.61%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.33;
+    background-image: url(/img/Lobo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
