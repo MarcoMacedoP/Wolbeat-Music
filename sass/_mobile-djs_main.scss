@@ -77,8 +77,7 @@
     }
 }
 .dj-information{
-    //display: flex;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -124,6 +123,16 @@
 }
 
 //información de los discos
+.dj-discography{
+    position: relative;
+    transition: all;
+    transition-duration: 2000ms;
+}
+.dj-discography:hover{
+    opacity: 0.3;
+    left: 100vw;
+
+}
 .dj-disc{
     box-sizing: border-box;
     padding: 1rem;

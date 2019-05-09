@@ -286,7 +286,7 @@ body .mobile-nav {
   color: #FBFBFB; }
 
 .header-sections-blur {
-  margin-left: 1rem;
+  margin: 0 1rem;
   font-weight: normal;
   font-size: 1.25rem;
   font-family: Verdana, Helvetica;
@@ -301,9 +301,6 @@ body .mobile-nav {
   height: 0.37rem;
   transition: left;
   transition-duration: 500ms; }
-
-.header-sections-selection-change {
-  left: 10rem; }
 
 .section-dj {
   min-height: 50rem;
@@ -381,7 +378,7 @@ body .mobile-nav {
     background-color: #555559; }
 
 .dj-information {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -432,6 +429,15 @@ body .mobile-nav {
 
 .dj-information-links-youtube {
   background-image: url(/img/youtube_black.png); }
+
+.dj-discography {
+  position: relative;
+  transition: all;
+  transition-duration: 2000ms; }
+
+.dj-discography:hover {
+  opacity: 0.3;
+  left: 100vw; }
 
 .dj-disc {
   box-sizing: border-box;

@@ -57,10 +57,12 @@
     @include font($color_blanco, $font_body, 1.25rem);
 }
 .header-sections-blur{
-    margin-left: 1rem;
+    margin: 0 1rem;
     @include font($color_gris_claro, $font_body, 1.25rem);
 }
+
 .header-sections-selection{
+    
     position: absolute;
     bottom: -0.7rem;
     left: 1.5rem;
@@ -70,7 +72,4 @@
     transition: left;
     transition-duration: 500ms;
 
-}
-.header-sections-selection-change{
-    left: 10rem;
 }
