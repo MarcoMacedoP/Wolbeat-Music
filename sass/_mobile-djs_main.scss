@@ -125,14 +125,10 @@
 //información de los discos
 .dj-discography{
     position: relative;
-    transition: all;
-    transition-duration: 2000ms;
+  
 }
-.dj-discography:hover{
-    opacity: 0.3;
-    left: 100vw;
 
-}
+
 .dj-disc{
     box-sizing: border-box;
     padding: 1rem;
@@ -155,6 +151,7 @@
         height: auto;
     }
     .dj-disc-p{
+        padding-right: 0.5rem;
         grid-column: 1/3;
         grid-row: 2/3;
         @include font($color_gris, $font_body, 0.75rem, normal);
@@ -197,10 +194,11 @@
     .main-page-welcome-wolf{
         width: 44vw;
     }
+
 }
 
 //*************************TABLETS*****************************
-@media screen and (min-width: 700px) and (min-height: 1000px)
+@media screen and (min-width: 700px) and (min-height: 1000px) 
 {
     //Tablet Horizontal
     .section-dj-info{
@@ -208,12 +206,26 @@
         padding: 2% 10%;
         min-height: min-content;
     }
-    
+    .dj-disc{
+        .dj-disc-info {
+            justify-content: flex-start;
+        }
+        .dj-disc-p{
+            grid-column: 2/3;
+            position: absolute;
+            bottom: 20vw;
+            padding-right: 0.5rem;
+        }
+        .dj-disc-info-social{
+        position: absolute;
+        bottom: 11vw;
+        }
+    }   
 }
 
 
 //******************PC*****************************************
-@media screen and (min-width: 1000px) and (orientation: landscape){
+@media screen and (min-width: 1000px){
 .section-dj{
     overflow: hidden;
     box-sizing: border-box;
@@ -291,6 +303,26 @@
     height: 100%;
     }
 }
+.dj-disc{
+    grid-template-columns: 13.82vw 1fr;
+    .dj-disc-img-container{
+        width: 13.82vw;
+        height: 13.82vw;
+    }
+    .dj-disc-info {
+        justify-content: flex-start;
+    }
+    .dj-disc-p{
+        grid-column: 2/3;
+        position: absolute;
+        bottom: 20vw;
+        padding-right: 0.5rem;
+    }
+    .dj-disc-info-social{
+    position: absolute;
+    bottom: 11vw;
+    }
+} 
 
 
 }
