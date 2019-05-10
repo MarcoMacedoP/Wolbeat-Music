@@ -254,4 +254,597 @@ body .mobile-nav {
   right: 0;
   bottom: 0; }
 
+<<<<<<< HEAD
+=======
+.header-name {
+  position: relative;
+  font-weight: bold;
+  font-size: 2.68rem;
+  font-family: Tw-Cen-Mt, sans-serif;
+  color: #FFCD00; }
+
+.header::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  height: 66.94%;
+  width: 63.61%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.33;
+  background-image: url(/img/Lobo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.header-sections {
+  position: absolute;
+  bottom: 2rem;
+  font-weight: normal;
+  font-size: 1.25rem;
+  font-family: Verdana, Helvetica;
+  color: #FBFBFB; }
+
+.header-sections-blur {
+  margin: 0 1rem;
+  font-weight: normal;
+  font-size: 1.25rem;
+  font-family: Verdana, Helvetica;
+  color: #929298; }
+
+.header-sections-selection {
+  position: absolute;
+  bottom: -0.7rem;
+  left: 1.5rem;
+  background-color: #FFCD00;
+  width: 26.25%;
+  height: 0.37rem;
+  transition: left;
+  transition-duration: 500ms; }
+
+.section-dj {
+  min-height: 50rem;
+  width: 100%;
+  height: 121.71vh;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.section-dj-article {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 22.06%;
+  margin: .5rem 0 .5rem 0;
+  overflow: hidden; }
+
+.section-dj-img img {
+  width: 100%; }
+
+.section-dj-info {
+  width: 100%;
+  height: 45.45%;
+  position: absolute;
+  bottom: 0;
+  background: #1C1C1B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem .5rem .5rem .5rem;
+  box-sizing: border-box; }
+  .section-dj-info h3 {
+    font-weight: bold;
+    font-size: 0.93rem;
+    font-family: Tw-Cen-Mt, sans-serif;
+    color: #FFCD00; }
+  .section-dj-info h3:hover {
+    color: #FFDB47; }
+  .section-dj-info span {
+    display: none; }
+  .section-dj-info p {
+    font-weight: normal;
+    font-size: 0.62rem;
+    font-family: Verdana, Helvetica;
+    color: #FBFBFB; }
+
+.section-dj-info-social-media {
+  display: none; }
+
+.dj-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4.2% 4.2% 4.2%; }
+
+.dj-information-genres, .dj-disc-info-genres {
+  font-weight: bold;
+  font-size: 0.75rem;
+  font-family: Verdana, Helvetica;
+  color: #555559;
+  margin-top: 1rem; }
+
+.dj-information-p {
+  margin-top: 1rem;
+  font-weight: normal;
+  font-size: 0.93rem;
+  font-family: Verdana, Helvetica;
+  color: #1C1C1B; }
+
+.dj-information-tittle, .dj-disc-info-tittle {
+  font-weight: bold;
+  font-size: 0.93rem;
+  font-family: Verdana, Helvetica;
+  color: #1C1C1B; }
+
+.dj-information-links {
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  align-items: center; }
+
+.dj-information-links-social {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  width: 20vh;
+  height: min-content; }
+  .dj-information-links-social a {
+    display: block;
+    width: 15vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+.dj-information-links-spotify {
+  background-image: url(/img/spotify_black.png); }
+
+.dj-information-links-youtube {
+  background-image: url(/img/youtube_black.png); }
+
+.dj-discography {
+  position: relative; }
+
+.dj-disc {
+  box-sizing: border-box;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  height: min-content;
+  display: grid;
+  grid-template-columns: 34.44vw 1fr;
+  grid-gap: 1rem; }
+  .dj-disc .dj-disc-img-container {
+    overflow: hidden;
+    grid-column: 1/2;
+    width: 34.44vw;
+    height: 34.44vw;
+    border-radius: 50%;
+    background: #929298; }
+  .dj-disc .dj-disc-img-container-img {
+    width: 100%;
+    height: auto; }
+  .dj-disc .dj-disc-p {
+    padding-right: 0.5rem;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-weight: normal;
+    font-size: 0.75rem;
+    font-family: Verdana, Helvetica;
+    color: #555559; }
+
+.dj-disc-info {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; }
+  .dj-disc-info .dj-disc-info-social {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; }
+    .dj-disc-info .dj-disc-info-social a {
+      display: block;
+      width: 2.25rem;
+      height: 2.25rem;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .dj-disc-info .dj-disc-info-social .dj-disc-info-social-spotify {
+      background-image: url(/img/spotify.png); }
+    .dj-disc-info .dj-disc-info-social .dj-disc-info-social-youtube {
+      margin-left: 0.5rem;
+      background-image: url(/img/youtube.png); }
+
+@media screen and (max-width: 700px) and (max-height: 1000px) and (orientation: landscape) {
+  .main-page-welcome-wolf {
+    width: 44vw; } }
+@media screen and (min-width: 700px) and (min-height: 1000px) {
+  .section-dj-info {
+    height: 30%;
+    padding: 2% 10%;
+    min-height: min-content; }
+
+  .dj-disc .dj-disc-info {
+    justify-content: flex-start; }
+  .dj-disc .dj-disc-p {
+    grid-column: 2/3;
+    position: absolute;
+    bottom: 20vw;
+    padding-right: 0.5rem; }
+  .dj-disc .dj-disc-info-social {
+    position: absolute;
+    bottom: 11vw; } }
+@media screen and (min-width: 1000px) {
+  .section-dj {
+    overflow: hidden;
+    box-sizing: border-box;
+    height: min-content;
+    padding: 0 1.87% 1.87%; }
+    .section-dj h2 {
+      align-self: flex-start; }
+
+  .section-dj-article {
+    width: 77.81%;
+    align-self: flex-start;
+    height: min-content;
+    min-block-size: min-content;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center; }
+
+  .section-dj-info-social-media {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; }
+    .section-dj-info-social-media a {
+      display: block;
+      width: 2.25rem;
+      height: 2.25rem;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .section-dj-info-social-media .section-dj-info-social-media-spotify {
+      background-image: url(/img/spotify.png); }
+    .section-dj-info-social-media .section-dj-info-social-media-youtube {
+      margin-left: 0.5rem;
+      background-image: url(/img/youtube.png); }
+
+  .section-dj-info {
+    background: none;
+    position: static;
+    align-items: flex-start;
+    height: min-content;
+    padding-left: 1rem; }
+    .section-dj-info p {
+      color: #1C1C1B; }
+    .section-dj-info span {
+      font-weight: bold;
+      font-size: 0.66rem;
+      font-family: Verdana, Helvetica;
+      color: #929298;
+      display: block; }
+
+  .section-dj-img {
+    width: min-content; }
+    .section-dj-img div {
+      border-radius: 50%;
+      overflow: hidden;
+      display: block;
+      box-sizing: border-box;
+      width: 264px;
+      height: 264px; }
+    .section-dj-img img {
+      display: block;
+      position: static;
+      margin-left: -100px;
+      left: 0;
+      width: auto;
+      height: 100%; }
+
+  .dj-disc {
+    grid-template-columns: 13.82vw 1fr; }
+    .dj-disc .dj-disc-img-container {
+      width: 13.82vw;
+      height: 13.82vw; }
+    .dj-disc .dj-disc-info {
+      justify-content: flex-start; }
+    .dj-disc .dj-disc-p {
+      grid-column: 2/3;
+      position: absolute;
+      bottom: 20vw;
+      padding-right: 0.5rem; }
+    .dj-disc .dj-disc-info-social {
+      position: absolute;
+      bottom: 11vw; } }
+.main-page-last-updates {
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60.78vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: .5rem 0 .5rem 0; }
+
+.main-page-last-updates-h2 {
+  font-size: 1.06rem;
+  font-family: Tw-Cen-Mt, sans-serif;
+  color: #555559;
+  margin-bottom: 1rem; }
+
+/**CARROUSEL**/
+.carousel {
+  width: 100%;
+  height: 91vh;
+  position: relative;
+  background-image: url(../img/artboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top; }
+
+.carousel-article {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 1rem 1rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(28, 27, 28, 0.4); }
+
+.carousel-article-tittle {
+  position: absolute;
+  left: 4rem; }
+
+.carousel-nav {
+  position: absolute;
+  align-self: center;
+  bottom: 5%;
+  width: 22.23%;
+  display: flex;
+  justify-content: space-around; }
+  .carousel-nav a {
+    background-color: #929298;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px; }
+  .carousel-nav a:hover {
+    background-color: #555559; }
+  .carousel-nav .carousel-point-one {
+    background-color: #FFCD00; }
+
+.carousel-article-tittle a {
+  font-weight: bold;
+  font-size: 0.93rem;
+  font-family: Verdana, Helvetica;
+  color: #FFCD00; }
+
+.carousel-article-content {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-weight: normal;
+  font-size: 0.75rem;
+  font-family: Verdana, Helvetica;
+  color: #FBFBFB; }
+
+@media screen and (min-width: 700px) and (min-height: 1000px) {
+  .carousel-article-content {
+    width: 50%; } }
+@media screen and (min-width: 1000px) and (min-height: 600px) {
+  .main-page-last-updates {
+    height: 70vh; }
+
+  .carousel-article-content {
+    width: 50%; }
+
+  .carousel {
+    height: 100%;
+    background-position: top; }
+
+  .carousel-nav {
+    position: absolute;
+    align-self: center;
+    bottom: 5%;
+    width: 10%;
+    display: flex;
+    justify-content: space-around; } }
+.discos {
+  height: min-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0 0;
+  padding: 0 1rem 1rem 1rem;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+.discos-disco {
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+  height: min-content; }
+
+.disco-avatar-tittle-container {
+  box-sizing: border-box;
+  margin: 0 0 0.5rem 0;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  align-items: center; }
+
+.disco-tittle {
+  font-weight: bold;
+  font-size: 0.93rem;
+  font-family: Verdana, Helvetica;
+  color: #1C1C1B; }
+
+.disco-picture {
+  min-height: 16.25vh;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/artboard.jpg);
+  background-size: cover;
+  background-position: center 10%; }
+
+.disco-picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(28, 28, 27, 0.4); }
+
+.disco-picture-container {
+  width: 28.61vh;
+  height: 28.61vh;
+  overflow: hidden; }
+
+.disco-img-picture-img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto; }
+
+.disco-p {
+  margin: 1rem 0 0 0;
+  width: 90%;
+  height: min-content;
+  font-weight: normal;
+  font-size: 0.75rem;
+  font-family: Verdana, Helvetica;
+  color: #1C1C1B;
+  padding: 0 0 0 0.5rem; }
+
+.footer {
+  height: min-content;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box; }
+
+.footer-contact {
+  overflow: hidden;
+  padding: 0 1rem 0 1rem;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1C1C1B;
+  box-sizing: border-box;
+  color: #FBFBFB;
+  font-weight: "normal";
+  font-size: 0.75rem;
+  font-family: Verdana, Helvetica;
+  color: #FBFBFB;
+  text-align: center; }
+
+.footer-contact-logo {
+  width: 46.66vw; }
+
+.footer-contact-iso {
+  width: 55vw; }
+
+.footer-nav {
+  background-color: #1C1C1B;
+  width: 100%;
+  padding-top: 3%;
+  height: 20%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footer-nav-icon {
+  width: 29.44vw; }
+
+.footer-nav-sections {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0 1rem 0 1rem; }
+  .footer-nav-sections a {
+    font-weight: "normal";
+    font-size: 0.75rem;
+    font-family: Verdana, Helvetica;
+    color: #FBFBFB; }
+
+.footer-nav-social {
+  padding-bottom: 5%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 38.05vw;
+  height: min-content; }
+  .footer-nav-social li {
+    display: block;
+    height: 100%; }
+  .footer-nav-social a {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover; }
+
+.footer-nav-social-fb {
+  background-image: url(../img/facebook.png); }
+
+.footer-nav-social-spotify {
+  background-image: url(../img/spotify.png); }
+
+.footer-nav-social-youtube {
+  background-image: url(../img/youtube.png); }
+
+/****************** TABLET VERSION **********************************************/
+@media only screen and (min-width: 700px) and (min-height: 1000px) {
+  .footer-contact {
+    padding: 1rem 1rem 0 1rem; }
+    .footer-contact p {
+      margin: 5% 0; }
+
+  .footer-contact-iso {
+    width: 45vw; }
+
+  .footer-contact-logo {
+    width: 30%; }
+
+  .footer-nav {
+    padding: 5% 0 0 0; }
+
+  .footer-nav-sections {
+    width: 60%; }
+
+  .footer-nav-social {
+    width: 20%; } }
+/***********************PC VERSION******************************/
+@media only screen and (min-width: 1000px) and (min-height: 600px) {
+  .footer-contact {
+    padding-left: 8.7%;
+    padding-right: 8.7%; }
+
+  .footer-contact-iso {
+    width: 27.5vw;
+    padding: 0.5rem 1rem; }
+
+  .footer-contact-logo {
+    width: 20%; } }
+
+>>>>>>> 68af2b0... Funcion cambiar de carrousel funcionando :)
 /*# sourceMappingURL=sections.css.map */
