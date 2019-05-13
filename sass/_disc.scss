@@ -1,0 +1,74 @@
+.discos{
+    height: min-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 0;
+    padding: 0 1rem 1rem 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.discos-disco{
+    position: relative;
+    margin-top: 1rem;
+    width: 100%;
+    height: min-content;
+}
+.disco-avatar-tittle-container{
+    box-sizing: border-box;
+   
+    margin: 0 0 0.5rem 0;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+}
+.disco-tittle{
+    @include font($color_gris_fuerte, $font_body, 0.93rem, bold);
+}
+.disco-picture{
+    
+    min-height: 16.25vh;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/artboard.jpg);
+    background-size: cover;
+    background-position: center 10%;
+}
+.disco-picture::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: $color_gris_fuerte, $alpha: .40);
+}
+.disco-picture-container{
+    width: 28.61vh;
+    height: 28.61vh;
+    overflow: hidden;   
+ 
+}
+.disco-img-picture-img{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+}
+.disco-p{
+    margin: 1rem 0 0 0;
+    width: 90%;
+    height: min-content;
+    @include font($color_gris_fuerte, $font_body, 0.75rem, normal);
+    padding: 0 0 0 0.5rem;
+}
