@@ -1,30 +1,27 @@
-.main-page-our-djs{
+.section-dj{
+    min-height: 50rem;
     width: 100%;
     height: 121.71vh;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    h2{
-        @include font($color_gris_fuerte, $font-tittle, .93rem);
-        width: 80.88%;
-        box-sizing: border-box;
-        border-bottom: 1px solid $color_gris_claro;
-    }
 }
-.main-page-our-djs-dj{
+.section-dj-article{
     display: block;
     position: relative;
     width: 100%;
     height: 22.06%;
     margin: .5rem 0 .5rem 0;
     overflow: hidden;
+}
+.section-dj-img{
     img{
         width: 100%;
     }
 }
 
-.main-page-our-djs-dj-info{
+.section-dj-info{
     width: 100%;
     height: 45.45%;
     position: absolute;
@@ -49,7 +46,309 @@
         @include font($color_blanco, $font_body, 0.62rem);
     }
 }
-.main-page-our-djs-dj-social-media{
+.section-dj-info-social-media{
     display: none;
 }
 
+.dj-information,.disc-information, .disc-songs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4.2% 4.2% 4.2%;
+}
+.dj-information-genres, .dj-disc-info-genres, .disc-information-genres, .disc-songs-genres{
+    @include font($color_gris, $font_body, 0.75rem, bold);
+    margin-top: 1rem;
+}
+.dj-information-p, .disc-information-p, .disc-songs-desc{
+    margin-top: 1rem;
+    @include font ($color_gris_fuerte, $font_body, 0.93rem, normal);
+}
+.dj-information-tittle, .dj-disc-info-tittle, .disc-information-tittle, .disc-songs-tittle{
+    @include font($color_gris_fuerte, $font_body, 0.93rem, bold); 
+}
+.dj-information-links, .disc-information-links{
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: center;
+}
+.dj-information-links-social, .disc-information-links-social{
+    margin: 1rem 0;
+    display: flex; 
+    justify-content: space-between;
+    width: 20vh;
+    height: min-content;
+    a{
+        display: block;
+        width: 15vw;
+        height: 15vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.dj-information-links-spotify, .disc-information-links-spotify{
+    background-image: url(/img/spotify_black.png);
+}
+.dj-information-links-youtube, .disc-information-links-youtube{
+    background-image: url(/img/youtube_black.png);
+}
+
+//información de los discos
+.dj-discography{
+    position: relative;
+  
+}
+
+
+.dj-disc{
+    box-sizing: border-box;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    height: min-content;
+    display: grid;
+    grid-template-columns: 34.44vw 1fr;
+    grid-gap: 1rem;
+    .dj-disc-img-container{
+        overflow: hidden;
+        grid-column: 1/2;
+        width: 34.44vw;
+        height: 34.44vw;
+        border-radius: 50%;
+        background: $color_gris_claro;
+    }
+    .dj-disc-img-container-img{
+        width: 100%;
+        height: auto;
+    }
+    .dj-disc-p{
+        padding-right: 0.5rem;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        @include font($color_gris, $font_body, 0.75rem, normal);
+        }
+    
+
+    
+}
+.dj-disc-info{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    .dj-disc-info-social{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+       
+        a{ 
+            display: block;
+            width: 2.25rem;
+            height: 2.25rem;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .dj-disc-info-social-spotify{
+            background-image: url(/img/spotify.png);
+        }
+        .dj-disc-info-social-youtube{
+            margin-left: 0.5rem;
+            background-image: url(/img/youtube.png);
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) and (max-height:1000px) and (orientation: landscape){
+    .main-page-welcome-wolf{
+        width: 44vw;
+    }
+
+}
+
+//*************************TABLETS*****************************
+@media screen and (min-width: 700px) and (min-height: 1000px) 
+{
+    //Tablet Horizontal
+    .section-dj-info{
+        height: 30%;
+        padding: 2% 10%;
+        min-height: min-content;
+    }
+    .dj-disc{
+        .dj-disc-info {
+            justify-content: flex-start;
+        }
+        .dj-disc-p{
+            grid-column: 2/3;
+            position: absolute;
+            bottom: 20vw;
+            padding-right: 0.5rem;
+        }
+        .dj-disc-info-social{
+        position: absolute;
+        bottom: 11vw;
+        }
+    }   
+}
+//Canciones que contiene un disco
+.disc-songs-desc{
+    font-size: 0.75rem;
+}
+.disc-songs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: min-content;
+    margin:0 0 1rem 0;
+}
+.disc-songs-container-item{
+    background-color: rgba($color: $color_gris_claro, $alpha: 0.31);
+    min-height: 2.68rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-column-gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    grid-template-rows: repeat(2, 1fr);
+    box-sizing: border-box;
+    margin-top:1rem;
+    span, i{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+}
+.disc-songs-container-item-icon{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url(http://127.0.0.1:5500/img/song_icon.svg);
+    background-position: center;
+    background-size: initial;
+    background-repeat: no-repeat;
+}
+.disc-songs-container-item-name{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    @include font($color_gris, $font_body, 0.75rem, bold);
+}
+.disc-songs-container-item-artist{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    @include font($color_gris, $font_body, 0.75rem, normal);
+
+}
+.disc-songs-container-item-duration{
+    grid-row: 1/3;
+    grid-column: 3/4;
+    @include font($color_gris, $font_body, 0.75rem, normal);
+}
+
+//******************PC*****************************************
+@media screen and (min-width: 1000px){
+.section-dj{
+    overflow: hidden;
+    box-sizing: border-box;
+    height: min-content;
+    padding: 0 1.87% 1.87%;
+    h2{
+            align-self: flex-start;
+    }
+    
+}
+.section-dj-article{
+    width:77.81%;
+    align-self: flex-start;
+    height: min-content;
+    min-block-size: min-content;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.section-dj-info-social-media{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+   
+    a{ 
+        display: block;
+        width: 2.25rem;
+        height: 2.25rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .section-dj-info-social-media-spotify{
+        background-image: url(/img/spotify.png);
+    }
+    .section-dj-info-social-media-youtube{
+        margin-left: 0.5rem;
+        background-image: url(/img/youtube.png);
+    }
+}
+.section-dj-info{
+    background: none;
+    position: static;
+    align-items: flex-start;
+    height: min-content;
+    padding-left: 1rem;
+
+    p{
+        color:$color_gris_fuerte;
+    }
+    span{
+        @include font($color_gris_claro, $font_body, 0.66rem, bold);
+        display: block;
+    }
+
+}
+.section-dj-img{
+    width: min-content;
+    div{
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+    width: 264px;
+    height: 264px;
+    }
+    img{
+    display: block;
+    position: static;
+    margin-left: -100px;
+    left: 0;
+    width: auto;
+    height: 100%;
+    }
+}
+.dj-disc{
+    grid-template-columns: 13.82vw 1fr;
+    .dj-disc-img-container{
+        width: 13.82vw;
+        height: 13.82vw;
+    }
+    .dj-disc-info {
+        justify-content: flex-start;
+    }
+    .dj-disc-p{
+        grid-column: 2/3;
+        position: absolute;
+        bottom: 20vw;
+        padding-right: 0.5rem;
+    }
+    .dj-disc-info-social{
+    position: absolute;
+    bottom: 11vw;
+    }
+} 
+
+
+}

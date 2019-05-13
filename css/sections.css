@@ -120,6 +120,9 @@ html {
 @media only screen and (min-width: 900px) {
   html {
     font-size: 24px; } }
+body .mobile-nav {
+  background-color: rgba(85, 85, 89, 0.54); }
+
 @font-face {
   font-family: Tw-Cen-Mt;
   src: url(../fonts/Tw-Cen-MT.ttf); }
@@ -281,55 +284,6 @@ html {
 @media only screen and (min-width: 1300px) {
   .nav-list {
     width: 30; } }
-.main-page-welcome {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden; }
-  .main-page-welcome .main-page-welcome-tittle {
-    display: none; }
-  .main-page-welcome .main-page-welcome-background-img {
-    overflow: hidden;
-    background-position: 11% 100%;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    opacity: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../img/main-background.jpeg);
-    background-size: cover; }
-
-.main-page-welcome-background-img::after {
-  content: "";
-  display: block;
-  width: 50vw;
-  height: 100vh;
-  background-color: #FBFBFB;
-  position: absolute;
-  left: 0; }
-
-.main-page-welcome-wolf {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80vw;
-  height: 80vh;
-  max-width: 576px;
-  max-height: 606.683px; }
-
-@media only screen and (min-width: 500px) {
-  .main-page-welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center; } }
 .header {
   box-sizing: border-box;
   position: relative;
@@ -820,6 +774,82 @@ html {
     width: 10%;
     display: flex;
     justify-content: space-around; } }
+.discos {
+  height: min-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0 0;
+  padding: 0 1rem 1rem 1rem;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+.discos-disco {
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+  height: min-content; }
+
+.disco-avatar-tittle-container {
+  box-sizing: border-box;
+  margin: 0 0 0.5rem 0;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  align-items: center; }
+
+.disco-tittle {
+  font-weight: bold;
+  font-size: 0.93rem;
+  font-family: Verdana, Helvetica;
+  color: #1C1C1B; }
+
+.disco-picture {
+  min-height: 16.25vh;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/artboard.jpg);
+  background-size: cover;
+  background-position: center 10%; }
+
+.disco-picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(28, 28, 27, 0.4); }
+
+.disco-picture-container {
+  width: 28.61vh;
+  height: 28.61vh;
+  overflow: hidden; }
+
+.disco-img-picture-img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto; }
+
+.disco-p {
+  margin: 1rem 0 0 0;
+  width: 90%;
+  height: min-content;
+  font-weight: normal;
+  font-size: 0.75rem;
+  font-family: Verdana, Helvetica;
+  color: #1C1C1B;
+  padding: 0 0 0 0.5rem; }
+
 .footer {
   height: min-content;
   overflow: hidden;
@@ -937,4 +967,4 @@ html {
   .footer-contact-logo {
     width: 20%; } }
 
-/*# sourceMappingURL=master.css.map */
+/*# sourceMappingURL=sections.css.map */
