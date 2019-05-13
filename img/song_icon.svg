@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c1c1b;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_25" data-name="Ellipse 25" class="cls-1" cx="13.5" cy="13.5" r="13.5"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" class="cls-2">
+    <g id="musical_note" data-name="musical note">
+      <path id="Path_12" data-name="Path 12" class="cls-3" d="M0,0H27V27H0Z"/>
+      <path id="Path_13" data-name="Path 13" d="M16.5,4.875V16.744a4.49,4.49,0,1,0,2.25,3.881V9.375h4.5v-4.5Z" transform="translate(-3 -1.5)"/>
+    </g>
+  </g>
+</svg>

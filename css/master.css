@@ -101,7 +101,7 @@
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  margin-right: 1rem; }
+  margin-right: .5rem; }
 
 * {
   margin: 0;
@@ -459,46 +459,46 @@ html {
 .section-dj-info-social-media {
   display: none; }
 
-.dj-information {
+.dj-information, .disc-information, .disc-songs {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 0 4.2% 4.2% 4.2%; }
 
-.dj-information-genres, .dj-disc-info-genres {
+.dj-information-genres, .dj-disc-info-genres, .disc-information-genres, .disc-songs-genres {
   font-weight: bold;
   font-size: 0.75rem;
   font-family: Verdana, Helvetica;
   color: #555559;
   margin-top: 1rem; }
 
-.dj-information-p {
+.dj-information-p, .disc-information-p, .disc-songs-desc {
   margin-top: 1rem;
   font-weight: normal;
   font-size: 0.93rem;
   font-family: Verdana, Helvetica;
   color: #1C1C1B; }
 
-.dj-information-tittle, .dj-disc-info-tittle {
+.dj-information-tittle, .dj-disc-info-tittle, .disc-information-tittle, .disc-songs-tittle {
   font-weight: bold;
   font-size: 0.93rem;
   font-family: Verdana, Helvetica;
   color: #1C1C1B; }
 
-.dj-information-links {
+.dj-information-links, .disc-information-links {
   display: inherit;
   flex-direction: inherit;
   justify-content: inherit;
   align-items: center; }
 
-.dj-information-links-social {
+.dj-information-links-social, .disc-information-links-social {
   margin: 1rem 0;
   display: flex;
   justify-content: space-between;
   width: 20vh;
   height: min-content; }
-  .dj-information-links-social a {
+  .dj-information-links-social a, .disc-information-links-social a {
     display: block;
     width: 15vw;
     height: 15vw;
@@ -506,10 +506,10 @@ html {
     background-size: cover;
     background-position: center; }
 
-.dj-information-links-spotify {
+.dj-information-links-spotify, .disc-information-links-spotify {
   background-image: url(/img/spotify_black.png); }
 
-.dj-information-links-youtube {
+.dj-information-links-youtube, .disc-information-links-youtube {
   background-image: url(/img/youtube_black.png); }
 
 .dj-discography {
@@ -585,6 +585,65 @@ html {
   .dj-disc .dj-disc-info-social {
     position: absolute;
     bottom: 11vw; } }
+.disc-songs-desc {
+  font-size: 0.75rem; }
+
+.disc-songs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: min-content;
+  margin: 0 0 1rem 0; }
+
+.disc-songs-container-item {
+  background-color: rgba(146, 146, 152, 0.31);
+  min-height: 2.68rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-column-gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  grid-template-rows: repeat(2, 1fr);
+  box-sizing: border-box;
+  margin-top: 1rem; }
+  .disc-songs-container-item span, .disc-songs-container-item i {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+
+.disc-songs-container-item-icon {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-image: url(http://127.0.0.1:5500/img/song_icon.svg);
+  background-position: center;
+  background-size: initial;
+  background-repeat: no-repeat; }
+
+.disc-songs-container-item-name {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  font-weight: bold;
+  font-size: 0.75rem;
+  font-family: Verdana, Helvetica;
+  color: #555559; }
+
+.disc-songs-container-item-artist {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-weight: normal;
+  font-size: 0.75rem;
+  font-family: Verdana, Helvetica;
+  color: #555559; }
+
+.disc-songs-container-item-duration {
+  grid-row: 1/3;
+  grid-column: 3/4;
+  font-weight: normal;
+  font-size: 0.75rem;
+  font-family: Verdana, Helvetica;
+  color: #555559; }
+
 @media screen and (min-width: 1000px) {
   .section-dj {
     overflow: hidden;
