@@ -633,10 +633,11 @@ body .mobile-nav {
 
 @media screen and (min-width: 1000px) {
   .section-dj {
+    margin: 0 0 2% 0;
     overflow: hidden;
     box-sizing: border-box;
     height: min-content;
-    padding: 0 1.87% 1.87%; }
+    padding: 2% 5% 0 5%; }
     .section-dj h2 {
       align-self: flex-start; }
 
@@ -791,12 +792,14 @@ body .mobile-nav {
     width: 50%; } }
 @media screen and (min-width: 1000px) and (min-height: 600px) {
   .main-page-last-updates {
-    height: 70vh; }
+    height: 90vh;
+    min-height: 20rem; }
 
   .carousel-article-content {
     width: 50%; }
 
   .carousel {
+    margin: 1rem 0;
     height: 100%;
     background-position: top; }
 
@@ -1065,6 +1068,7 @@ body .mobile-nav {
     color: #FBFBFB; }
 
 .footer-nav-social {
+  max-width: 6.37rem;
   padding-bottom: 5%;
   margin-top: 1rem;
   display: flex;
@@ -1078,10 +1082,11 @@ body .mobile-nav {
   .footer-nav-social a {
     display: block;
     width: 1.75rem;
+    max-width: 36px;
     height: 1.75rem;
     background-repeat: no-repeat;
-    background-position: cover;
-    background-size: cover; }
+    background-position: center;
+    background-size: contain; }
 
 .footer-nav-social-fb {
   background-image: url(../img/facebook.png); }
@@ -1119,12 +1124,34 @@ body .mobile-nav {
   .footer-contact {
     padding-left: 8.7%;
     padding-right: 8.7%; }
+    .footer-contact p {
+      margin-bottom: 5%; }
+
+  .footer-nav-sections {
+    min-width: 25.25%;
+    width: min-content; }
+    .footer-nav-sections li {
+      margin: 0 0.66rem; }
 
   .footer-contact-iso {
     width: 27.5vw;
     padding: 0.5rem 1rem; }
 
   .footer-contact-logo {
-    width: 20%; } }
+    width: 20%; }
+
+  .footer-nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 1% 1.2rem;
+    justify-content: space-between;
+    height: 14vh; }
+
+  .footer-nav-social {
+    margin: 0;
+    padding: 0; }
+
+  .footer-nav-icon {
+    width: 12.4vw; } }
 
 /*# sourceMappingURL=sections.css.map */

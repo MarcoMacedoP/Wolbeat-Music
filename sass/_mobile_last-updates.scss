@@ -85,14 +85,15 @@
 
     //LAPTOP
     .main-page-last-updates{
-
-        height: 70vh;
+        height: 90vh;
+        min-height: 20rem;
     }
     .carousel-article-content{
         width: 50%;
         }
 
     .carousel{
+        margin: 1rem 0;
         height: 100%;
         background-position: top;
     }    

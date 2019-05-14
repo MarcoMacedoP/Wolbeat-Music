@@ -272,10 +272,11 @@
 //******************PC*****************************************
 @media screen and (min-width: 1000px){
 .section-dj{
+    margin: 0 0 2% 0;
     overflow: hidden;
     box-sizing: border-box;
     height: min-content;
-    padding: 0 1.87% 1.87%;
+    padding: 2% 5% 0 5%;
     h2{
             align-self: flex-start;
     }
