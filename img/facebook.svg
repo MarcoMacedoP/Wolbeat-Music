@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c1c1b;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="facebook" transform="translate(-2.32 -1.318)">
+    <g id="Group_103" data-name="Group 103" transform="translate(2.32 1.318)">
+      <path id="Path_19" data-name="Path 19" class="cls-1" d="M42.321,81.318a40,40,0,1,1,40-40A40.046,40.046,0,0,1,42.321,81.318Z" transform="translate(-2.32 -1.318)"/>
+    </g>
+    <g id="Group_104" data-name="Group 104" transform="translate(31.137 17.34)">
+      <path id="Path_20" data-name="Path 20" class="cls-2" d="M26.893,36.416V59.6a.6.6,0,0,0,.6.6h8.609a.6.6,0,0,0,.6-.6V36.038h6.242a.6.6,0,0,0,.6-.553l.6-7.1a.6.6,0,0,0-.6-.655H36.71V22.694a2.136,2.136,0,0,1,2.137-2.137h4.81a.6.6,0,0,0,.6-.6v-7.1a.6.6,0,0,0-.6-.6H35.529a8.637,8.637,0,0,0-8.637,8.638v6.843H22.586a.6.6,0,0,0-.6.6v7.1a.6.6,0,0,0,.6.6h4.306v.378Z" transform="translate(-21.982 -12.25)"/>
+    </g>
+  </g>
+</svg>

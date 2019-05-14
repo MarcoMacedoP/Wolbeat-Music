@@ -4,6 +4,7 @@
         .mobile-nav{
             //Esto desaparecerá en la versión de escritorio
             //Barra de navegacion móvil
+            max-height: 3rem;
             height: 6.71vh;
             width: 100%;
             background-color: $color_gris_fuerte;
@@ -117,7 +118,7 @@
         }
 @media screen and (min-width: 900px){
 
-
+//Tablet horizontal
     .nav-welcome-logo{
         width: 18%;
         position: absolute;

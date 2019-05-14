@@ -28,7 +28,12 @@
     @include font($color_blanco, $font_body, 14px, bold);
 
 }
-
+.cta-container{
+    grid-column: 1/3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .tittle-v1{
     align-self: flex-start;
     @include font($color_gris_fuerte, $font-tittle, .93rem);
