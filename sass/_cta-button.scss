@@ -45,6 +45,7 @@
 }
 .tittle-v2-h2{
     margin-top: 1rem;
+    padding-bottom: 0.5rem;
     width: 100%;
     text-align: center;
     @include font($color_gris_fuerte, $font_tittle, .93rem, bold);
@@ -54,6 +55,9 @@
     width: 100%;
     text-align: center;
     @include font($color_gris, $font_body, .62rem, normal);
+}
+.tittle-v2-h2-nosotros{
+    font-size: 0.84rem;
 }
 .section-nav{//Botones amarillos de navegación
     box-sizing: border-box;

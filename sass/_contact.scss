@@ -1,0 +1,25 @@
+.contact-form{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6.66%;
+    box-sizing:border-box;
+}
+.contact-form-input{
+    background: $color_gris_fuerte;
+    @include font($color_blanco, $font_body, 0.62rem, bold);
+    color: $color_blanco;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2.5rem;
+    height: 6.25vh;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.contact-direct, .contact-direct h2{
+    margin-top: 0;
+    
+}

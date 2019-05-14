@@ -59,6 +59,7 @@
 
 .tittle-v2-h2 {
   margin-top: 1rem;
+  padding-bottom: 0.5rem;
   width: 100%;
   text-align: center;
   font-weight: bold;
@@ -74,6 +75,9 @@
   font-size: 0.62rem;
   font-family: Verdana, Helvetica;
   color: #555559; }
+
+.tittle-v2-h2-nosotros {
+  font-size: 0.84rem; }
 
 .section-nav {
   box-sizing: border-box;
@@ -363,6 +367,11 @@ body .mobile-nav {
   height: 0.37rem;
   transition: left;
   transition-duration: 500ms; }
+
+.header-nosotros img {
+  width: auto;
+  height: 100%;
+  margin-left: -16%; }
 
 .section-dj {
   min-height: 50rem;
@@ -849,6 +858,91 @@ body .mobile-nav {
   font-family: Verdana, Helvetica;
   color: #1C1C1B;
   padding: 0 0 0 0.5rem; }
+
+.about-us-section {
+  padding: 1rem;
+  text-align: center; }
+
+.about-us-tittle {
+  font-weight: bold;
+  font-size: 0.75rem;
+  font-family: Verdana, Helvetica;
+  color: #555559;
+  margin-bottom: 1rem; }
+
+.about-us-p {
+  font-weight: normal;
+  font-size: 0.93rem;
+  font-family: Verdana, Helvetica;
+  color: #1C1C1B; }
+
+.about-pictures {
+  width: 100%;
+  height: min-content;
+  overflow: hidden;
+  position: relative; }
+
+.about-pictures-item {
+  box-sizing: border-box;
+  display: block;
+  height: 40vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  transition-property: opacity;
+  transition-duration: 1000ms; }
+
+.about-pictures-item:hover {
+  opacity: 0.80; }
+
+.about-pictures-item-img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  z-index: -1; }
+
+.about-pictures-item-desc {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 36.50%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem 1rem 1rem;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(28, 28, 27, 0.76);
+  font-weight: normal;
+  font-size: 0.93rem;
+  font-family: Verdana, Helvetica;
+  color: #FBFBFB; }
+
+.contact-form {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6.66%;
+  box-sizing: border-box; }
+
+.contact-form-input {
+  background: #1C1C1B;
+  font-weight: bold;
+  font-size: 0.62rem;
+  font-family: Verdana, Helvetica;
+  color: #FBFBFB;
+  color: #FBFBFB;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 2.5rem;
+  height: 6.25vh;
+  padding: 1rem;
+  margin-bottom: 1.5rem; }
+
+.contact-direct, .contact-direct h2 {
+  margin-top: 0; }
 
 .footer {
   height: min-content;

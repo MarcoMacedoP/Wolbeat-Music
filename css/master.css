@@ -59,6 +59,7 @@
 
 .tittle-v2-h2 {
   margin-top: 1rem;
+  padding-bottom: 0.5rem;
   width: 100%;
   text-align: center;
   font-weight: bold;
@@ -74,6 +75,9 @@
   font-size: 0.62rem;
   font-family: Verdana, Helvetica;
   color: #555559; }
+
+.tittle-v2-h2-nosotros {
+  font-size: 0.84rem; }
 
 .section-nav {
   box-sizing: border-box;
@@ -409,6 +413,11 @@ html {
   height: 0.37rem;
   transition: left;
   transition-duration: 500ms; }
+
+.header-nosotros img {
+  width: auto;
+  height: 100%;
+  margin-left: -16%; }
 
 .section-dj {
   min-height: 50rem;
