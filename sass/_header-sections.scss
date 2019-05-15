@@ -75,22 +75,32 @@
 }
 .header-nosotros{
     img{
-        width: auto;
         height: 100%;
+        width: auto;
         margin-left: -16%;
     }
 }
 .header-canciones{
     .header-picture{
         img{
+            
             width: auto;
             height: 100%;
         }
     }
 }
+.header-selection-us{
+    left: 1rem;
+}
 //*************************TABLETS*****************************
-@media screen and (min-width: 500px) and (min-height: 1000px){
-  
+@media screen and (min-width: 500px) and (min-height: 900px){
+    .header-nosotros{
+        img{
+            height: auto;
+            width: 150%;
+            margin-left: 0;
+        }
+    }
 }
 
 
@@ -107,6 +117,13 @@
     .header-djs{
         img{
             margin-top: -41%;
+        }
+    }
+    .header-nosotros{
+        img{
+            height: auto;
+            width: 150%;
+            margin-left: 0;
         }
     }
 }

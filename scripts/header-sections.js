@@ -21,7 +21,12 @@ window.addEventListener('load', ()=>{
         //console.log("Haz hecho click en la sección 2")
         sectionOne.style.display= "none";
         sectionTwo.style.display= "";
-        yellow_bar.style.left= "11rem";
+        if(yellow_bar.classList[1]){
+        //Si una segunda clase, movemos menos la barra amarilla
+            yellow_bar.style.left= "7rem";
+        }else{
+            yellow_bar.style.left= "11rem";
+        }
         btnSectionOne.className = "header-sections-blur";
         btnSectionTwo.className = "header-sections-focus";
     });

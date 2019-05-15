@@ -50,3 +50,55 @@
     background-color: rgba($color: $color_gris_fuerte, $alpha: 0.76);
     @include font($color_blanco, $font_body, 0.93rem, normal);
 }
+
+//*************************TABLETS*****************************
+@media screen and (min-width: 500px) and (min-height: 900px){
+    .about-us-p{
+        font-size: 0.75rem;
+
+    }
+    .about-pictures {
+        padding: 0 10%;
+        box-sizing: border-box;
+        margin: 1% 0 3% 0;
+    }
+    .about-pictures-item {
+        margin-top: 1rem;
+        height: 29vh;
+
+    }
+    .about-pictures-item-img {
+        width: 100%;
+        height: auto;
+    }
+    .about-us-section{
+        padding: 0 10%;
+    }
+ 
+}
+
+
+/***********************PC VERSION******************************/
+@media only screen and (min-width: 1000px) and (min-height: 600px){
+    .about-us-tittle{
+        margin: 2rem 0 0.5rem 0;
+    }
+    .about-us-p{
+        font-size: 0.75rem;   
+    }
+    .about-pictures {
+        display:flex;
+        margin: 2% 0;
+    }
+    .about-us-section{
+        padding: 0 12.5%;
+        
+    }
+    .about-us-tittle{
+        padding: 0 12.5%;
+    }
+
+    .about-pictures-item-desc{
+        font-size: 0.75rem;
+    }
+}
