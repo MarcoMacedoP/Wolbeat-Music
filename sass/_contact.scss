@@ -27,6 +27,7 @@
     align-items: center;
 }
 .contact-direct-icons{
+    max-width: 11.33rem;
     overflow: hidden;
     width: 50%;
     height: min-content;
@@ -71,11 +72,25 @@
     .contact-direct-icons{
         margin: 5% 0;
     }
+    .contact-form-input{
+        font-size: 0.75rem;
+    }
  
 }
 
 
 /***********************PC VERSION******************************/
 @media only screen and (min-width: 1000px) and (min-height: 600px){
-    
+    .contact-direct-icons{
+        margin: 5% 0;
+    }
+    .contact-form, .contact-direct,.tittle-contact{
+        padding: 0 12.25%;
+    }
+    .contact-form{
+        padding-top: 1rem;
+    }
+    .contact-direct{
+        margin-top:2rem;
+    }
 }
