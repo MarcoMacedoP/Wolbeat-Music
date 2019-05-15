@@ -331,11 +331,13 @@ html {
 .main-page-welcome-background-img::after {
   content: "";
   display: block;
-  width: 50vw;
-  height: 100vh;
   background-color: #FBFBFB;
   position: absolute;
-  left: 0; }
+  margin-left: -48vh;
+  width: 94vh;
+  height: 94vh;
+  border-radius: 50%;
+  bottom: 0; }
 
 .main-page-welcome-wolf {
   display: flex;
@@ -353,7 +355,21 @@ html {
   .main-page-welcome {
     display: flex;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+
+  .main-page-welcome-background-img::after {
+    margin-left: -48vh;
+    width: 94vh;
+    height: 94vh;
+    border-radius: 50%;
+    bottom: 0; } }
+@media screen and (min-width: 1000px) and (min-height: 500px) {
+  .main-page-welcome-background-img::after {
+    margin-left: -50vw;
+    margin-top: -25vw;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%; } }
 .header {
   box-sizing: border-box;
   position: relative;
