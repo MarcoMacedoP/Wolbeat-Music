@@ -146,11 +146,17 @@
   .nav-list-item {
     margin: 0; } }
 @media only screen and (min-width: 1000px) {
+  .nav {
+    margin-top: 0.1rem; }
+
   .nav-list {
     min-width: 18.62rem;
     width: min-content; }
 
   .nav-list-item {
-    margin: 0 0.5rem; } }
+    margin: 0 0.5rem; }
+
+  .nav-welcome-logo {
+    width: 11.41%; } }
 
 /*# sourceMappingURL=nav_bar.css.map */

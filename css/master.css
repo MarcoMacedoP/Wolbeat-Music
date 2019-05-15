@@ -115,12 +115,15 @@
 
 /******************TABLET VERSION**************************/
 @media only screen and (min-width: 700px) {
-  .dj-nav {
+  .center-nav {
     grid-column: 1/3;
     width: 100%;
     justify-content: center; }
-    .dj-nav a {
-      margin: 0 0.5rem; } }
+    .center-nav a {
+      margin: 0 0.5rem; }
+
+  .nav-songs {
+    margin-top: 2rem; } }
 /***********************PC VERSION******************************/
 * {
   margin: 0;
@@ -287,12 +290,18 @@ html {
   .nav-list-item {
     margin: 0; } }
 @media only screen and (min-width: 1000px) {
+  .nav {
+    margin-top: 0.1rem; }
+
   .nav-list {
     min-width: 18.62rem;
     width: min-content; }
 
   .nav-list-item {
-    margin: 0 0.5rem; } }
+    margin: 0 0.5rem; }
+
+  .nav-welcome-logo {
+    width: 11.41%; } }
 .main-page-welcome {
   position: relative;
   display: flex;
@@ -430,8 +439,16 @@ html {
   height: 100%;
   margin-left: -16%; }
 
+.header-canciones .header-picture img {
+  width: auto;
+  height: 100%; }
+
 /***********************PC VERSION******************************/
 @media only screen and (min-width: 1000px) and (min-height: 600px) {
+  .header-canciones .header-picture img {
+    width: 100%;
+    height: auto; }
+
   .header-djs img {
     margin-top: -41%; } }
 .section-dj {
@@ -844,9 +861,10 @@ html {
 @media screen and (min-width: 700px) and (min-height: 1000px) {
   .carousel-article-content {
     width: 50%; } }
+/******************PC*****************************************/
 @media screen and (min-width: 1000px) and (min-height: 600px) {
   .main-page-last-updates {
-    height: 90vh;
+    height: min-content;
     min-height: 20rem; }
 
   .carousel-article-content {
@@ -854,7 +872,8 @@ html {
 
   .carousel {
     margin: 1rem 0;
-    height: 100%;
+    height: 90vh;
+    min-height: min-content;
     background-position: top; }
 
   .carousel-nav {

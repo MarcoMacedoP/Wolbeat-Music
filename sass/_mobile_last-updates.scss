@@ -80,12 +80,12 @@
 }
 
 
-//******************PC*****************************************
+/******************PC*****************************************/
 @media screen and (min-width: 1000px) and (min-height: 600px){
 
     //LAPTOP
     .main-page-last-updates{
-        height: 90vh;
+        height: min-content;
         min-height: 20rem;
     }
     .carousel-article-content{
@@ -94,7 +94,8 @@
 
     .carousel{
         margin: 1rem 0;
-        height: 100%;
+        height: 90vh;
+        min-height: min-content;
         background-position: top;
     }    
     .carousel-nav{

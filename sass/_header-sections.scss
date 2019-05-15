@@ -80,12 +80,30 @@
         margin-left: -16%;
     }
 }
-
+.header-canciones{
+    .header-picture{
+        img{
+            width: auto;
+            height: 100%;
+        }
+    }
+}
+//*************************TABLETS*****************************
+@media screen and (min-width: 500px) and (min-height: 1000px){
+  
+}
 
 
 /***********************PC VERSION******************************/
 @media only screen and (min-width: 1000px) and (min-height: 600px){
-   
+    .header-canciones{
+        .header-picture{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
     .header-djs{
         img{
             margin-top: -41%;

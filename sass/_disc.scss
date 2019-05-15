@@ -9,6 +9,12 @@
     overflow: hidden;
 }
 
+.discos-titulo{
+    position: relative;
+    right: 10%;
+    width: 110.2%;
+}
+
 .discos-disco{
     position: relative;
     margin-top: 1rem;
@@ -26,6 +32,9 @@
 }
 .disco-tittle{
     @include font($color_gris_fuerte, $font_body, 0.93rem, bold);
+    a{
+        color: inherit;
+    }
 }
 .disco-picture{
     
@@ -71,4 +80,68 @@
     height: min-content;
     @include font($color_gris_fuerte, $font_body, 0.75rem, normal);
     padding: 0 0 0 0.5rem;
+}
+.discos-titulo{
+    position: static;
+    width: 80.88%;
+}
+//*************************TABLETS*****************************
+@media screen and (min-width: 700px) and (min-height: 1000px){
+    .discos-titulo{
+        position: relative;
+        right: 10%;
+        width: 110.2%;
+    }
+    .discos{
+        padding: 2% 12% 3%;
+    }
+    
+    .disco-picture{
+        height: 56%;
+    }
+
+}
+
+
+/******************PC*****************************************/
+@media screen and (min-width: 1000px) and (min-height: 500px){
+    .discos{
+        padding: 1rem 0 1rem 1.2rem;
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    .discos-disco{
+        padding-left: 1rem;
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 1rem;
+        min-height: 14rem;
+    }
+    .discos-titulo{
+        grid-column: 1/4;
+        position: static;
+        right: 10%;
+        width: 80.88%;
+    }
+    
+    .disco-p{
+        width: 70%;
+    }
+    .disco-picture{
+        height: 56%;
+        width: 90%;
+    }
+    .disco-img-picture-img{
+        position: relative;
+        z-index: 2;
+        height: 100%;
+    }
+    .disco-picture-container {
+        width: 28.61vh;
+        height: 100%;
+        overflow: hidden;
+        max-height: 33.61vh;
+    }
 }

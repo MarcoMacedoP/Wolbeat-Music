@@ -115,12 +115,15 @@
 
 /******************TABLET VERSION**************************/
 @media only screen and (min-width: 700px) {
-  .dj-nav {
+  .center-nav {
     grid-column: 1/3;
     width: 100%;
     justify-content: center; }
-    .dj-nav a {
-      margin: 0 0.5rem; } }
+    .center-nav a {
+      margin: 0 0.5rem; }
+
+  .nav-songs {
+    margin-top: 2rem; } }
 /***********************PC VERSION******************************/
 * {
   margin: 0;
@@ -290,12 +293,18 @@ body .mobile-nav {
   .nav-list-item {
     margin: 0; } }
 @media only screen and (min-width: 1000px) {
+  .nav {
+    margin-top: 0.1rem; }
+
   .nav-list {
     min-width: 18.62rem;
     width: min-content; }
 
   .nav-list-item {
-    margin: 0 0.5rem; } }
+    margin: 0 0.5rem; }
+
+  .nav-welcome-logo {
+    width: 11.41%; } }
 .header {
   box-sizing: border-box;
   position: relative;
@@ -381,8 +390,16 @@ body .mobile-nav {
   height: 100%;
   margin-left: -16%; }
 
+.header-canciones .header-picture img {
+  width: auto;
+  height: 100%; }
+
 /***********************PC VERSION******************************/
 @media only screen and (min-width: 1000px) and (min-height: 600px) {
+  .header-canciones .header-picture img {
+    width: 100%;
+    height: auto; }
+
   .header-djs img {
     margin-top: -41%; } }
 .section-dj {
@@ -795,9 +812,10 @@ body .mobile-nav {
 @media screen and (min-width: 700px) and (min-height: 1000px) {
   .carousel-article-content {
     width: 50%; } }
+/******************PC*****************************************/
 @media screen and (min-width: 1000px) and (min-height: 600px) {
   .main-page-last-updates {
-    height: 90vh;
+    height: min-content;
     min-height: 20rem; }
 
   .carousel-article-content {
@@ -805,7 +823,8 @@ body .mobile-nav {
 
   .carousel {
     margin: 1rem 0;
-    height: 100%;
+    height: 90vh;
+    min-height: min-content;
     background-position: top; }
 
   .carousel-nav {
@@ -824,6 +843,11 @@ body .mobile-nav {
   padding: 0 1rem 1rem 1rem;
   box-sizing: border-box;
   overflow: hidden; }
+
+.discos-titulo {
+  position: relative;
+  right: 10%;
+  width: 110.2%; }
 
 .discos-disco {
   position: relative;
@@ -844,6 +868,8 @@ body .mobile-nav {
   font-size: 0.93rem;
   font-family: Verdana, Helvetica;
   color: #1C1C1B; }
+  .disco-tittle a {
+    color: inherit; }
 
 .disco-picture {
   min-height: 16.25vh;
@@ -891,6 +917,59 @@ body .mobile-nav {
   color: #1C1C1B;
   padding: 0 0 0 0.5rem; }
 
+.discos-titulo {
+  position: static;
+  width: 80.88%; }
+
+@media screen and (min-width: 700px) and (min-height: 1000px) {
+  .discos-titulo {
+    position: relative;
+    right: 10%;
+    width: 110.2%; }
+
+  .discos {
+    padding: 2% 12% 3%; }
+
+  .disco-picture {
+    height: 56%; } }
+/******************PC*****************************************/
+@media screen and (min-width: 1000px) and (min-height: 500px) {
+  .discos {
+    padding: 1rem 0 1rem 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem; }
+
+  .discos-disco {
+    padding-left: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 1rem;
+    min-height: 14rem; }
+
+  .discos-titulo {
+    grid-column: 1/4;
+    position: static;
+    right: 10%;
+    width: 80.88%; }
+
+  .disco-p {
+    width: 70%; }
+
+  .disco-picture {
+    height: 56%;
+    width: 90%; }
+
+  .disco-img-picture-img {
+    position: relative;
+    z-index: 2;
+    height: 100%; }
+
+  .disco-picture-container {
+    width: 28.61vh;
+    height: 100%;
+    overflow: hidden;
+    max-height: 33.61vh; } }
 .about-us-section {
   padding: 1rem;
   text-align: center; }
