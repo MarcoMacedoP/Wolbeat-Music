@@ -247,7 +247,13 @@ html {
   .nav-list-item :hover {
     color: #FFCD00; }
 
-@media screen and (min-width: 900px) {
+@media only screen and (orientation: landscape) and (max-width: 900px) {
+  .mobile-nav {
+    height: 11.71vh; }
+
+  .nav-list-item {
+    margin-top: 1rem; } }
+@media screen and (min-width: 900px) and (orientation: portrait) {
   .nav-welcome-logo {
     width: 18%;
     position: absolute;
@@ -393,9 +399,9 @@ html {
   justify-content: center;
   margin-bottom: 1rem; }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width: 800px) {
   .header {
-    height: 74.25vh; } }
+    height: 100vh; } }
 @media screen and (orientation: portrait) {
   .header-picture {
     position: absolute;
@@ -1044,7 +1050,10 @@ html {
 .footer-nav-social-youtube {
   background-image: url(../img/youtube.png); }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width: 999px) {
+  .footer-nav-icon {
+    width: 21.44vw; }
+
   .footer-contact p {
     padding: 0 10%;
     margin: 0 0 1rem 0; }

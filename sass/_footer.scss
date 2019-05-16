@@ -89,7 +89,12 @@ height: 20%;
 }
 
 
-@media only screen and (orientation: landscape){
+@media only screen and (orientation: landscape) and (max-width: 999px){
+    .footer-nav-icon {
+
+        width: 21.44vw;
+        
+    }
     .footer-contact{
         p{
             padding: 0 10%;

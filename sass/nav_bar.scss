@@ -116,7 +116,18 @@
          color: $color_amarillo;   
         }
         }
-@media screen and (min-width: 900px){
+
+
+
+@media only screen and (orientation: landscape) and (max-width: 900px){
+    .mobile-nav {
+        height: 11.71vh
+    }
+    .nav-list-item{
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width: 900px) and (orientation: portrait) {
 
 //Tablet horizontal
     .nav-welcome-logo{
