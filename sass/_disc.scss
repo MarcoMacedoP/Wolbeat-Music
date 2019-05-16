@@ -85,8 +85,16 @@
     position: static;
     width: 80.88%;
 }
+
+@media only screen and (orientation: landscape){
+.disco-picture-container{
+    width: 74.61vh;
+    height: 65.61vh;
+    overflow: hidden;
+    }
+}
 //*************************TABLETS*****************************
-@media screen and (min-width: 700px) and (min-height: 1000px){
+@media only screen and (min-width: 700px) and (min-height: 1000px){
     .discos-titulo{
         position: relative;
         right: 10%;

@@ -967,7 +967,12 @@ body .mobile-nav {
   position: static;
   width: 80.88%; }
 
-@media screen and (min-width: 700px) and (min-height: 1000px) {
+@media only screen and (orientation: landscape) {
+  .disco-picture-container {
+    width: 74.61vh;
+    height: 65.61vh;
+    overflow: hidden; } }
+@media only screen and (min-width: 700px) and (min-height: 1000px) {
   .discos-titulo {
     position: relative;
     right: 10%;
@@ -1074,6 +1079,22 @@ body .mobile-nav {
   font-family: Verdana, Helvetica;
   color: #FBFBFB; }
 
+@media only screen and (orientation: landscape) {
+  .about-us-p {
+    padding: 0 10%; }
+
+  .about-pictures {
+    padding: 0 10%;
+    box-sizing: border-box;
+    margin: 1% 0 3% 0; }
+
+  .about-pictures-item {
+    margin-top: 1rem;
+    height: 50vh; }
+
+  .about-pictures-item-img {
+    width: 100%;
+    height: auto; } }
 @media screen and (min-width: 500px) and (min-height: 900px) {
   .about-us-p {
     font-size: 0.75rem; }

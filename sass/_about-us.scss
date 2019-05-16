@@ -50,9 +50,26 @@
     background-color: rgba($color: $color_gris_fuerte, $alpha: 0.76);
     @include font($color_blanco, $font_body, 0.93rem, normal);
 }
-
+@media only screen and (orientation: landscape){
+    .about-us-p{
+        padding: 0 10%;
+    }
+    .about-pictures {
+        padding: 0 10%;
+        box-sizing: border-box;
+        margin: 1% 0 3% 0;
+    }
+    .about-pictures-item {
+        margin-top: 1rem;
+        height: 50vh;
+    }
+    .about-pictures-item-img {
+        width: 100%;
+        height: auto;
+    }
+}
 //*************************TABLETS*****************************
-@media screen and (min-width: 500px) and (min-height: 900px){
+@media screen and (min-width: 500px) and (min-height: 900px) {
     .about-us-p{
         font-size: 0.75rem;
 
