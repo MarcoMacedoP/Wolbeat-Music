@@ -1,3 +1,7 @@
+ //Celulares muy pequeños
+ @media screen and (min-width: 330px) and (min-height: 400){
+     
+ }
  .cta_black, .cta_white{
     box-sizing: border-box; 
     margin: .5rem 0 .5rem 0;
@@ -38,7 +42,7 @@
     align-self: flex-start;
     @include font($color_gris_fuerte, $font-tittle, .93rem);
     width: 80.88%;
-    
+    margin-left: 1rem;
     box-sizing: border-box;
     border-bottom: 1px solid $color_gris_claro;
 }

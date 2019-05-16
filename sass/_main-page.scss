@@ -56,9 +56,25 @@
         }
     }
 
+@media only screen and (orientation:landscape){
+    //Celulares, vista de landscape
+    .main-page-welcome-background-img::after{
+        //Circulo blanco
+        margin-left: -48vw;
+        width: 94vw;
+        height: 94vw;
+        border-radius: 50%;
+        bottom: 0;
+        top: -24vw;
+    }
+    .main-page-last-updates {
+        height: 109vh;
+    }
+    
 
+}
 //Vista de tablet
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 500px) and (orientation: portrait) {
     .main-page-welcome{
         display: flex;
         justify-content: center;
@@ -79,7 +95,7 @@
 .main-page-welcome-background-img::after{
     //Circulo blanco
     margin-left: -50vw;
-    margin-top: -25vw;
+    top: -25vw;
     width: 100vw;
     height: 100vw;
     border-radius: 50%

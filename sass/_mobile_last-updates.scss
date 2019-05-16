@@ -10,6 +10,7 @@
     align-items: center;
     margin: .5rem 0 .5rem 0;
 }
+
 .main-page-last-updates-h2{
     font-size: 1.06rem;
     font-family: $font_tittle;
@@ -71,6 +72,11 @@
     margin-top: 0.5rem;
     @include font($color_blanco, $font_body, .75rem);
 }
+@media only screen and (orientation:landscape){
+    .main-page-last-updates {
+        height: min-content;
+    }
+    }
 //*************************TABLETS*****************************
 @media screen and (min-width: 700px) and (min-height: 1000px){
     //Tablet Horizontal

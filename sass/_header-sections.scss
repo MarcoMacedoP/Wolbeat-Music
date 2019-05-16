@@ -1,3 +1,4 @@
+
 .header{
     box-sizing: border-box;
     position: relative;
@@ -9,19 +10,46 @@
     justify-content: center;
     margin-bottom: 1rem;
 }
-.header-picture{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    img{
+@media screen and (orientation:portrait){
+    .header-picture{
+
         position: absolute;
         z-index: -1;
         width: 100%;
-        height: auto;
+        height: 100%;
+        overflow: hidden;
+        img{
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: auto;
+        }
     }
-}.header-picture::after{
+
+}
+@media screen and (orientation: landscape){
+    .header-picture{
+
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img{
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            z-index: -1;
+            width: 150%;
+            height: auto;
+        }
+    }
+
+}
+
+.header-picture::after{
     content: "";
     display: block;
     width: 100%;
@@ -77,7 +105,6 @@
     img{
         height: 100%;
         width: auto;
-        margin-left: -16%;
     }
 }
 .header-canciones{
@@ -91,6 +118,16 @@
 }
 .header-selection-us{
     left: 1rem;
+}
+ //Celulares muy pequeños
+ @media screen and (min-width: 330px) and (min-height: 400){
+    .header-nosotros{
+        img{
+            height: auto;
+            width: 100%;
+            margin: 0;
+        }
+    }
 }
 //*************************TABLETS*****************************
 @media screen and (min-width: 500px) and (min-height: 900px){
@@ -114,11 +151,7 @@
             }
         }
     }
-    .header-djs{
-        img{
-            margin-top: -41%;
-        }
-    }
+
     .header-nosotros{
         img{
             height: auto;
