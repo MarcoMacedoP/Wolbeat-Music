@@ -10,6 +10,11 @@
     justify-content: center;
     margin-bottom: 1rem;
 }
+@media only screen and (orientation:landscape){
+        .header{ 
+               height: 74.25vh;
+        }   
+}
 @media screen and (orientation:portrait){
     .header-picture{
 
@@ -119,6 +124,7 @@
 .header-selection-us{
     left: 1rem;
 }
+
  //Celulares muy pequeños
  @media screen and (min-width: 330px) and (min-height: 400){
     .header-nosotros{

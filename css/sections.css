@@ -317,6 +317,9 @@ body .mobile-nav {
   justify-content: center;
   margin-bottom: 1rem; }
 
+@media only screen and (orientation: landscape) {
+  .header {
+    height: 74.25vh; } }
 @media screen and (orientation: portrait) {
   .header-picture {
     position: absolute;
