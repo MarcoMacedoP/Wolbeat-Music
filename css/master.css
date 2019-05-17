@@ -253,7 +253,10 @@ html {
 
   .nav-list-item {
     margin-top: 1rem; } }
-@media screen and (min-width: 900px) and (orientation: portrait) {
+@media screen and (min-width: 900px) and (orientation: landscape) {
+  .nav-list-item {
+    margin: 1rem; } }
+@media screen and (min-width: 900px) {
   .nav-welcome-logo {
     width: 18%;
     position: absolute;
@@ -296,7 +299,7 @@ html {
 
   .nav-list-item {
     margin: 0; } }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-height: 500px) and (orientation: landscape) {
   .nav {
     margin-top: 0.1rem; }
 
@@ -605,11 +608,14 @@ html {
   display: flex;
   justify-content: space-between;
   width: 20vh;
+  max-width: 5.16rem;
   height: min-content; }
   .dj-information-links-social a, .disc-information-links-social a {
     display: block;
     width: 15vw;
     height: 15vw;
+    max-width: 2.25rem;
+    max-height: 2.25rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -782,6 +788,10 @@ html {
   color: #555559; }
 
 @media screen and (min-width: 1000px) {
+  .dj-disc-info-genres {
+    position: relative;
+    bottom: 0.5rem; }
+
   .section-dj {
     margin: 0 0 2% 0;
     overflow: hidden;
@@ -834,6 +844,13 @@ html {
       color: #929298;
       display: block; }
 
+  .dj-information-tittle {
+    margin-top: 3%; }
+
+  .dj-information-p {
+    padding: 0 12.5%;
+    font-size: 0.75rem; }
+
   .section-dj-img {
     width: min-content; }
     .section-dj-img div {
@@ -851,6 +868,9 @@ html {
       width: auto;
       height: 100%; }
 
+  .dj-discography {
+    margin-bottom: 10%; }
+
   .dj-disc {
     grid-template-columns: 13.82vw 1fr; }
     .dj-disc .dj-disc-img-container {
@@ -858,14 +878,15 @@ html {
       height: 13.82vw; }
     .dj-disc .dj-disc-info {
       justify-content: flex-start; }
-    .dj-disc .dj-disc-p {
+    .dj-disc .section-one .dj-disc-p {
       grid-column: 2/3;
       position: absolute;
-      bottom: 20vw;
-      padding-right: 0.5rem; }
+      bottom: 6vw;
+      padding-right: 0.5rem;
+      font-size: 0.75rem; }
     .dj-disc .dj-disc-info-social {
       position: absolute;
-      bottom: 11vw; } }
+      bottom: 0; } }
 .main-page-last-updates {
   overflow: hidden;
   box-sizing: border-box;

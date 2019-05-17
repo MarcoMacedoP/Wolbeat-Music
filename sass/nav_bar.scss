@@ -127,7 +127,12 @@
         margin-top: 1rem;
     }
 }
-@media screen and (min-width: 900px) and (orientation: portrait) {
+@media screen and (min-width: 900px) and (orientation: landscape) {
+    .nav-list-item{
+        margin: 1rem;
+    }
+}
+@media screen and (min-width: 900px) {
 
 //Tablet horizontal
     .nav-welcome-logo{
@@ -177,7 +182,7 @@
         }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) and (min-height: 500px) and (orientation: landscape) {
     .nav{
         margin-top: 0.1rem;
     }
