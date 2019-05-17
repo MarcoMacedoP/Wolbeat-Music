@@ -911,7 +911,7 @@ html {
   width: 100%;
   height: 91vh;
   position: relative;
-  background-image: url(../img/artboard.jpg);
+  background: #555559;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top; }
@@ -941,7 +941,9 @@ html {
     border-radius: 50%;
     height: 16px;
     width: 16px; }
-  .carousel-nav a:hover {
+  .carousel-nav .carousel-point-one:hover {
+    background-color: #FFDB47; }
+  .carousel-nav .carousel-point-two:hover {
     background-color: #555559; }
   .carousel-nav .carousel-point-one {
     background-color: #FFCD00; }
