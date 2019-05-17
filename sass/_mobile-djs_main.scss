@@ -296,17 +296,19 @@
     }
   
 .section-dj{
-    margin: 0 0 2% 0;
+    padding-left: 1rem;
+    margin-bottom: 0;
     overflow: hidden;
     box-sizing: border-box;
     height: min-content;
-    padding: 0 2%;
     h2{
+            margin-bottom: 1rem;
             align-self: flex-start;
     }
     
 }
 .section-dj-article{
+    margin-left: 1rem;
     width:77.81%;
     align-self: flex-start;
     height: min-content;
@@ -368,8 +370,8 @@ font-size: 0.75rem;
     overflow: hidden;
     display: block;
     box-sizing: border-box;
-    width: 264px;
-    height: 264px;
+    width: 18vw;
+    height: 18vw;
     }
     img{
     display: block;

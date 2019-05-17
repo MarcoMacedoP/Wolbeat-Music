@@ -793,15 +793,17 @@ html {
     bottom: 0.5rem; }
 
   .section-dj {
-    margin: 0 0 2% 0;
+    padding-left: 1rem;
+    margin-bottom: 0;
     overflow: hidden;
     box-sizing: border-box;
-    height: min-content;
-    padding: 0 2%; }
+    height: min-content; }
     .section-dj h2 {
+      margin-bottom: 1rem;
       align-self: flex-start; }
 
   .section-dj-article {
+    margin-left: 1rem;
     width: 77.81%;
     align-self: flex-start;
     height: min-content;
@@ -858,8 +860,8 @@ html {
       overflow: hidden;
       display: block;
       box-sizing: border-box;
-      width: 264px;
-      height: 264px; }
+      width: 18vw;
+      height: 18vw; }
     .section-dj-img img {
       display: block;
       position: static;
@@ -968,7 +970,8 @@ html {
 @media screen and (min-width: 1000px) and (min-height: 600px) {
   .main-page-last-updates {
     height: min-content;
-    min-height: 20rem; }
+    min-height: 20rem;
+    margin: 0; }
 
   .carousel-article-content {
     width: 50%; }
@@ -1109,7 +1112,8 @@ html {
     padding-left: 8.7%;
     padding-right: 8.7%; }
     .footer-contact p {
-      margin-bottom: 5%; }
+      margin-bottom: 5%;
+      padding: 0 5%; }
 
   .footer-nav-sections {
     min-width: 25.25%;
