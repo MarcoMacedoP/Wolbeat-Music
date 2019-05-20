@@ -2,7 +2,6 @@
     min-height: 50rem;
     width: 100%;
     height: 121.71vh;
-    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +15,14 @@
     overflow: hidden;
 }
 .section-dj-img{
+    div{
+        width: 100%;
+        height: 100%;
+        background-color: $color_gris_claro;
+        background-size: cover;
+        background-position: 100% 30%;
+        background-repeat: no-repeat;
+    }
     img{
         width: 100%;
     }
@@ -23,7 +30,7 @@
 
 .section-dj-info{
     width: 100%;
-    height: 45.45%;
+    height: min-content;
     position: absolute;
     bottom: 0;
     background: $color_gris_fuerte;
@@ -98,7 +105,9 @@
 .dj-information-links-youtube, .disc-information-links-youtube{
     background-image: url(/img/youtube_black.png);
 }
-
+.dj-cta{
+    margin-bottom: 1rem;
+}
 //información de los discos
 .dj-discography{
     position: relative;
@@ -165,6 +174,18 @@
         }
     }
 }
+
+
+.dj-nav{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    a{
+        margin: 0 0.5rem;
+    }
+}
 @media only screen and (orientation:landscape){
     .section-dj{
         height: min-content;
@@ -211,7 +232,7 @@
     }
     //Tablet Horizontal
     .section-dj-info{
-        height: 40%;
+        height: min-content;
         padding: 2% 10%;
         min-height: min-content;
     }

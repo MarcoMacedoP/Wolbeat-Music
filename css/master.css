@@ -525,7 +525,6 @@ html {
   min-height: 50rem;
   width: 100%;
   height: 121.71vh;
-  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -538,12 +537,19 @@ html {
   margin: .5rem 0 .5rem 0;
   overflow: hidden; }
 
+.section-dj-img div {
+  width: 100%;
+  height: 100%;
+  background-color: #929298;
+  background-size: cover;
+  background-position: 100% 30%;
+  background-repeat: no-repeat; }
 .section-dj-img img {
   width: 100%; }
 
 .section-dj-info {
   width: 100%;
-  height: 45.45%;
+  height: min-content;
   position: absolute;
   bottom: 0;
   background: #1C1C1B;
@@ -626,6 +632,9 @@ html {
 .dj-information-links-youtube, .disc-information-links-youtube {
   background-image: url(/img/youtube_black.png); }
 
+.dj-cta {
+  margin-bottom: 1rem; }
+
 .dj-discography {
   position: relative; }
 
@@ -680,6 +689,15 @@ html {
       margin-left: 0.5rem;
       background-image: url(/img/youtube.png); }
 
+.dj-nav {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+  .dj-nav a {
+    margin: 0 0.5rem; }
+
 @media only screen and (orientation: landscape) {
   .section-dj {
     height: min-content; }
@@ -714,7 +732,7 @@ html {
     height: 100%; }
 
   .section-dj-info {
-    height: 40%;
+    height: min-content;
     padding: 2% 10%;
     min-height: min-content; }
 
