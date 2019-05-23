@@ -962,15 +962,12 @@ html {
     border-radius: 50%;
     height: 16px;
     width: 16px; }
-
-.carousel-point-one:hover {
-  background-color: #FFDB47; }
-
-.carousel-point-two:hover {
-  background-color: #555559; }
-
-.carousel-point-one {
-  background-color: #FFCD00; }
+  .carousel-nav .carousel-point-one:hover {
+    background-color: #FFDB47; }
+  .carousel-nav .carousel-point-two:hover {
+    background-color: #555559; }
+  .carousel-nav .carousel-point-one {
+    background-color: #FFCD00; }
 
 .carousel-article-tittle a {
   font-weight: bold;

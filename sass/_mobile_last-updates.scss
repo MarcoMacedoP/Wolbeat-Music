@@ -55,15 +55,16 @@
         height: 16px;
         width: 16px;
     }
-}
-.carousel-point-one:hover{
-    background-color: $color_amarillo_claro;
-}
- .carousel-point-two:hover{
-    background-color: $color_gris;
-}
-.carousel-point-one {
-    background-color: $color_amarillo;
+    .carousel-point-one:hover{
+        background-color: $color_amarillo_claro;
+    }
+     .carousel-point-two:hover{
+        background-color: $color_gris;
+    }
+    .carousel-point-one {
+        background-color: $color_amarillo;
+    }
+    
 }
 .carousel-article-tittle{
     a{

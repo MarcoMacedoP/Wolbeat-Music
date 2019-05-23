@@ -68,6 +68,17 @@ class DJ {
             fn(this.url, linkName)
         }
     }
+    setInfoPage(headline, headerPicture, infoContainer ){
+        headline.innerHTML= this.name
+        let subtittle= infoContainer.querySelector('.dj-information-tittle')
+        subtittle.innerHTML= "Sobre " + this.name
+        let genres= infoContainer.querySelector('.dj-information-genres')
+        genres.innerHTML = this.genres
+        let description = infoContainer.querySelector('.dj-information-p')
+        description.innerHTML = this.description
+        let img = headerPicture.querySelector('img')
+        img.setAttribute('src', this.image)
+    }
 
 }
 function setUrl(url, aTag){
@@ -147,7 +158,7 @@ class djPages {
             }
         }
         //Creamos los nuevos DJ's
-        this.djsObject.uno.createIn(this.container)
+        this.djsObject.uno.createIn(this.container,setUrl)
         this.djsObject.dos.createIn(this.container)
         this.djsObject.tres.createIn(this.container)
         this.djsObject.cuatro.createIn(this.container)
@@ -182,7 +193,7 @@ class djPages {
         three: document.querySelector('#nav_nuevos_talentos_3')
     }
     const djsPageOne  = {
-        uno : new nuevosTalentos('http://127.0.0.1:5500/img/dj_uno.jpeg', 'Dj Shadow', 'IDM / HOUSE', genericDescription),
+        uno : new DJ('http://127.0.0.1:5500/img/dj_uno.jpeg', 'Dj Shadow', 'IDM / HOUSE', genericDescription, "http://127.0.0.1:5500/sections/DJ's/one.html"),
         dos : new nuevosTalentos('http://127.0.0.1:5500/img/dj_dos.jpeg', 'Dj Emmet', 'Dance / HOUSE', genericDescription),
         tres : new nuevosTalentos('http://127.0.0.1:5500/img/dj_tres.jpeg', 'Dj Reset', 'Future Bass / IDM', genericDescription),
         cuatro : new nuevosTalentos('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/DJ_Shadow.jpg/250px-DJ_Shadow.jpg', 'Dj Amazon', 'Ambient / dark', genericDescription)
