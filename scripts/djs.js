@@ -115,18 +115,113 @@ fka.createIn(mainSectionDJ, setUrl)
 
 
 }
-
+/***********************SECCION DE DJS********************************** */
+let genericDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius venenatis neque eu tempor. Nullam ac laoreet sapien. Pellentesque vitae ante lectus. Phasellus blandit sed felis non maximus. Ut eleifend id nisi sit amet tempus. Donec eu tincidunt sapien. Cras sollicitudin molestie condimentum. Etiam at neque ut lorem dignissim vulputate. '
 let sectionNuevosTalentos = document.getElementById('section-nuevos-talentos')
-if(sectionNuevosTalentos){
-    let numero_djs = 4 //Siempre mantener en numero par
-        for(let i= 0; i<numero_djs; i++){
-            Marco.createIn(sectionNuevosTalentos)
-        }
+//Declaración de nuevos talentos.
+class nuevosTalentos 
+    extends DJ{
+      constructor(image, name, genres,description, url){
+          super(image, name, genres,description, url)
+      }
+      setName(){
+          //Esta función les setea una clase adicional a los djs que sean nuevos talentos
+          
+      }
+      
 }
+class djPages {
+    constructor(pageNumber, container, navsObject, djsObject){
+        this.pageNumber = pageNumber
+        this.container = container
+        this.navsObject= navsObject
+        this.djsObject = djsObject
+    }
+    setPage(){
+        //Buscamos los aricles existentes en el container
+        let elements= this.container.getElementsByClassName('section-dj-article')
+       //Si existen elementos los borramos
+        if(elements.length){
+            for(let i= 0; i<elements.length;i++){
+                elements[i].style.display= "none"
+            }
+        }
+        //Creamos los nuevos DJ's
+        this.djsObject.uno.createIn(this.container)
+        this.djsObject.dos.createIn(this.container)
+        this.djsObject.tres.createIn(this.container)
+        this.djsObject.cuatro.createIn(this.container)
+        //Seteamos el boton de navegación correspondiente el numero de pagina
+        let puntoUno=this.navsObject.one
+        let puntoDos=this.navsObject.two
+        let puntoTres =this.navsObject.three
+        switch(this.pageNumber){
+            case 1:
+                    puntoUno.className = "carousel-point-one"
+                    puntoDos.className = "carousel-point-two"
+                    puntoTres.className = "carousel-point-two"
+                break;
+            case 2:
+                    puntoDos.className = "carousel-point-one"
+                    puntoUno.className = "carousel-point-two"
+                    puntoTres.className = "carousel-point-two"
+                break;
+            case 3:
+                    puntoTres.className = "carousel-point-one"
+                    puntoDos.className = "carousel-point-two"
+                    puntoUno.className = "carousel-point-two"
+                break;
+        }
+
+
+    }
+}
+    const navsTalento = {
+        one: document.querySelector('#nav_nuevos_talentos_1'),
+        two: document.querySelector('#nav_nuevos_talentos_2'),
+        three: document.querySelector('#nav_nuevos_talentos_3')
+    }
+    const djsPageOne  = {
+        uno : new nuevosTalentos('http://127.0.0.1:5500/img/dj_uno.jpeg', 'Dj Shadow', 'IDM / HOUSE', genericDescription),
+        dos : new nuevosTalentos('http://127.0.0.1:5500/img/dj_dos.jpeg', 'Dj Emmet', 'Dance / HOUSE', genericDescription),
+        tres : new nuevosTalentos('http://127.0.0.1:5500/img/dj_tres.jpeg', 'Dj Reset', 'Future Bass / IDM', genericDescription),
+        cuatro : new nuevosTalentos('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/DJ_Shadow.jpg/250px-DJ_Shadow.jpg', 'Dj Amazon', 'Ambient / dark', genericDescription)
+    }
+    const djsPageTwo = {
+        uno:  new nuevosTalentos('https://mxcity.mx/wp-content/uploads/2014/08/Kris.jpg', 'Vanessa', 'IDM / HOUSE', genericDescription),
+        dos:  new nuevosTalentos('https://mxcity.mx/wp-content/uploads/2014/08/Tatiana.jpg', 'Karla ', 'IDM / HOUSE', genericDescription),
+        tres:  new nuevosTalentos('https://danzeria.com/wp-content/uploads/2015/07/10413436_471251846388926_4328523394725781363_n.jpg', 'Paola', 'IDM / HOUSE', genericDescription),
+        cuatro:  new nuevosTalentos('http://danzeria.com/wp-content/uploads/2016/08/unnamed-78.jpg', 'Dj Girly', 'IDM / HOUSE', genericDescription)
+    }
+    const djsPageThree = {
+        uno:  new nuevosTalentos('https://xombitmusic.com/files/2013/12/DJ.jpg', 'DJ Mint', 'IDM / HOUSE', genericDescription),
+        dos:  new nuevosTalentos('https://i1.wp.com/knobstudio.com.mx/wp-content/uploads/2016/09/Diplomado-Electronic-Music-DJ-Set-2017.png', 'DJ Sasha ', 'IDM / HOUSE', genericDescription),
+        tres:  new nuevosTalentos('http://ottofm.com/wp-content/uploads/2018/09/will-marshmello-save-edm-body-image-1479921716.jpg', 'Dj Marshmello', 'IDM / HOUSE', genericDescription),
+        cuatro:  new nuevosTalentos('https://los40es00.epimg.net/los40/imagenes/2019/03/12/musica/1552414961_036011_1552419779_noticia_normal.jpg', 'Dj Green', 'IDM / HOUSE', genericDescription)
+    }
+let paginaTresNuevosTalentos = djsPageOne;
+
+let paginaUno = new djPages(1, sectionNuevosTalentos, navsTalento, djsPageOne)
+let paginaDos= new djPages(2, sectionNuevosTalentos, navsTalento,djsPageTwo)
+let paginaTres= new djPages(3, sectionNuevosTalentos, navsTalento, djsPageThree)
+
+if(sectionNuevosTalentos){        
+paginaUno.setPage()
+    navsTalento.one.addEventListener('click', ()=>{
+       paginaUno.setPage() 
+    })
+    navsTalento.two.addEventListener('click', ()=>{
+        paginaDos.setPage() 
+     })
+    navsTalento.three.addEventListener('click', ()=>{
+        paginaTres.setPage() 
+     })
+}
+
 let sectionClasicos = document.getElementById('section-clasicos')
 if(sectionClasicos){
     let numero_djs = 4 //Siempre mantener en numero par
     for(let i= 0; i<numero_djs; i++){
-        fka.createIn(sectionClasicos)
+        fka.createIn(sectionClasicos, setUrl)
     }
 }
