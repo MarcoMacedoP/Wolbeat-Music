@@ -72,6 +72,7 @@
     margin-top: 1rem;
     @include font ($color_gris_fuerte, $font_body, 0.93rem, normal);
 }
+
 .dj-information-tittle, .dj-disc-info-tittle, .disc-information-tittle, .disc-songs-tittle{
     @include font($color_gris_fuerte, $font_body, 0.93rem, bold); 
 }

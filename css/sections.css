@@ -955,7 +955,8 @@ body .mobile-nav {
   position: relative;
   margin-top: 1rem;
   width: 100%;
-  height: min-content; }
+  height: min-content;
+  max-height: 15rem; }
 
 .disco-avatar-tittle-container {
   box-sizing: border-box;
@@ -972,6 +973,9 @@ body .mobile-nav {
   color: #1C1C1B; }
   .disco-tittle a {
     color: inherit; }
+
+.disc-information-p {
+  white-space: pre-line; }
 
 .disco-picture {
   min-height: 16.25vh;
@@ -1040,7 +1044,10 @@ body .mobile-nav {
     padding: 2% 12% 3%; }
 
   .disco-picture {
-    height: 56%; } }
+    height: 56%; }
+
+  .discos-disco {
+    max-height: 15rem; } }
 /******************PC*****************************************/
 @media screen and (min-width: 1000px) and (min-height: 500px) {
   .discos {
@@ -1051,6 +1058,7 @@ body .mobile-nav {
     flex-wrap: wrap; }
 
   .discos-disco {
+    max-height: 15rem;
     padding-left: 1rem;
     box-sizing: border-box;
     width: 45%;

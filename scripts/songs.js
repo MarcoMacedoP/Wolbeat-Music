@@ -1,11 +1,12 @@
 
 
 class disc{
-    constructor (avatar,nombre, cover, description, url){
+    constructor (avatar,nombre, cover, description, genres, url){
         this.avatar= avatar
         this.nombre= nombre
         this.cover = cover
         this.description = description
+        this.genres = genres
         if(url){this.url = url}
     }
     createIn(container, fn){
@@ -54,6 +55,24 @@ class disc{
         }
 
     }
+    setInfoPage(headline, headerPicture, infoContainer ){
+        headline.innerHTML= this.nombre
+        let subtittle= infoContainer.querySelector('.disc-information-tittle')
+        subtittle.innerHTML= "Sobre " + this.nombre
+        subtittle= document.querySelector('.disc-songs-tittle')
+        subtittle.innerHTML = "Canciones de " + this.nombre
+        let genres= infoContainer.querySelector('.disc-information-genres')
+        genres.innerHTML = this.genres
+        genres= document.querySelector('.disc-songs-genres')
+        genres.innerHTML = this.genres
+        let description = infoContainer.querySelector('.disc-information-p')
+        description.innerHTML = this.description
+        description= document.querySelector('.disc-songs-desc')
+        let shortDesc= cutTxt(this.description, 120)
+        description.innerHTML = shortDesc
+        let img = headerPicture.querySelector('img')
+        img.setAttribute('src', this.cover)
+    }
 
 }
 
@@ -61,11 +80,13 @@ class disc{
 var Endtroducing = new disc('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/DJ_Shadow_tim_festival.jpg/230px-DJ_Shadow_tim_festival.jpg',
     'Endtroducing.....', 'https://static.spin.com/files/2016/09/endtroducing-640x427.jpg', '', 'http://127.0.0.1:5500/sections/Disc/one.html', 'http://127.0.0.1:5500/sections/Disc/one.html' )
 Endtroducing.description= "Endtroducing..... es el álbum debut del productor musical estadounidense DJ Shadow, lanzado el 19 de noviembre de 1996 bajo el sello Mo' Wax. El álbum es conocido por estar compuesto casi en su totalidad de contenido sampleado, la mayoría del cual se originó a partir de varios discos de vinilo obtenidos por DJ Shadow durante sus viajes a las tiendas de música. Endtroducing..... fue producido por Shadow en el lapso de dos años con un mínimo de equipo, sobre todo el sampler Akai MPC60. Al crear la atmósfera general del disco, se esforzó por captar la naturaleza melancólica de sus lanzamientos anteriores para el sello Mo' Wax. El contenido del álbum incluye tanto temperamentales pistas de ritmo lento como canciones optimistas que recuerdan a las primeras influencias de hip hop de DJ Shadow.\n\nEndtroducing..... recibió la aclamación universal de los críticos, que elogiaron el enfoque de DJ Shadow hacia el sampleado y los ritmos que él creó a partir de los samples. Obtuvo altas posiciones en varias listas de fin de año de los mejores discos del 1996. El álbum es considerado una obra decisiva en el movimiento del hip hop instrumental, con las innovadoras técnicas de muestreo y arreglos de DJ Shadow influenciando a otros productores a crear similares obras basadas en muestras. Endtroducing..... ha aparecido desde entonces en las listas de mejores discos de la década —e incluso de todos los tiempos— de varias publicaciones. "
-
+Endtroducing.genres= "Sampling/IDM"
 let container = document.querySelector('.discos')
-Endtroducing.createIn(container, setUrl)
-Endtroducing.createIn(container, setUrl)
-Endtroducing.createIn(container, setUrl)
-Endtroducing.createIn(container, setUrl)
-Endtroducing.createIn(container, setUrl)
-Endtroducing.createIn(container, setUrl)
+if(container){
+        Endtroducing.createIn(container, setUrl)
+        Endtroducing.createIn(container, setUrl)
+        Endtroducing.createIn(container, setUrl)
+        Endtroducing.createIn(container, setUrl)
+        Endtroducing.createIn(container, setUrl)
+        Endtroducing.createIn(container, setUrl)
+}

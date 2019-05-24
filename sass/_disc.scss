@@ -20,6 +20,7 @@
     margin-top: 1rem;
     width: 100%;
     height: min-content;
+    max-height: 15rem;
 }
 .disco-avatar-tittle-container{
     box-sizing: border-box;
@@ -35,6 +36,9 @@
     a{
         color: inherit;
     }
+}
+.disc-information-p{
+    white-space: pre-line;
 }
 .disco-picture{
     
@@ -104,10 +108,14 @@
     }
     .discos{
         padding: 2% 12% 3%;
+    
     }
     
     .disco-picture{
         height: 56%;
+    }
+    .discos-disco{
+        max-height: 15rem;
     }
 
 }
@@ -124,6 +132,7 @@
     }
 
     .discos-disco{
+            max-height: 15rem;
         padding-left: 1rem;
         box-sizing: border-box;
         width: 45%;
