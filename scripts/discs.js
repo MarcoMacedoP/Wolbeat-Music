@@ -12,10 +12,17 @@ class DISC { //Esta clase muestra los discos generados en la
         let article= document.createElement('article')
         article.className = 'dj-disc'
         //Avatar del disco
-        let img =document.createElement('div')
-        img.className='dj-disc-img-container'
+        let imgContainer =document.createElement('div')
+        imgContainer.className='dj-disc-img-container'
+        let img =document.createElement('img')
+        img.className = 'dj-disc-img-container-img'
+        img.setAttribute('src', this.JSON_OBJECT.cover);
+        img.setAttribute('alt', 'Imagen de ' + this.JSON_OBJECT.Nombre);
+        imgContainer.appendChild(img) 
+
         
-        img.style.backgroundImage = 'url('+this.JSON_OBJECT.cover+')'
+        
+        //img.style.backgroundImage = 'url('+this.JSON_OBJECT.cover+')'
       
         //Descripción del disco
         let sectionInfo= document.createElement('section')
@@ -31,7 +38,7 @@ class DISC { //Esta clase muestra los discos generados en la
             sectionInfo.appendChild(genres)
         //Redes sociales del disco
         let sectionSocial = document.createElement('div')
-        sectionSocial.className= 'dj-disc.info-social'
+        sectionSocial.className= 'dj-disc-info-social'
             let iconSpotify = document.createElement('a')
             iconSpotify.className = 'dj-disc-info-social-spotify'
             iconSpotify.setAttribute('href',this.JSON_OBJECT.socialMedia.spotify)
@@ -49,7 +56,7 @@ class DISC { //Esta clase muestra los discos generados en la
             description.className = 'dj-disc-p'
 
         //Le pasamos los hijos al container
-        article.appendChild(img)
+        article.appendChild(imgContainer)
         article.appendChild(sectionInfo)
         article.appendChild(description)
 

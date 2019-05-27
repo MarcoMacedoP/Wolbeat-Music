@@ -75,36 +75,6 @@
 <!--DJ information end -->
 <!--DJ discography starts-->
 <article class="dj-discography" id="section_two">
-    <article class="dj-disc">
-        <div class="dj-disc-img-container">
-            <img class = "dj-disc-img-container-img" src="../../img/artboard.jpg" alt="Imagen del disco">
-        </div>
-    <section class="dj-disc-info"> 
-       
-            <h2 class="dj-disc-info-tittle">Titulo del disco</h2>
-            <h3 class="dj-disc-info-genres">Generos del disco</h3>
-            <div class="dj-disc-info-social">
-                <a class="dj-disc-info-social-spotify" href="#"></a>
-                <a class="dj-disc-info-social-youtube" href="#"></a>
-            </div>
-        </section>
-            <p class="dj-disc-p">Endtroducing..... es el álbum debut del productor musical estadounidense DJ Shadow, lanzado el 19 de noviembre de 1996 bajo el sello Mo' Wax. (...)</p>
-        </article>
-    <article class="dj-disc">
-        <div class="dj-disc-img-container">
-            <img class = "dj-disc-img-container-img" src="../../img/artboard_2.jpg" alt="Imagen del disco">
-        </div>
-    <section class="dj-disc-info"> 
-       
-            <h2 class="dj-disc-info-tittle">Titulo del disco</h2>
-            <h3 class="dj-disc-info-genres">Generos del disco</h3>
-            <div class="dj-disc-info-social">
-                <a class="dj-disc-info-social-spotify" href="#"></a>
-                <a class="dj-disc-info-social-youtube" href="#"></a>
-            </div>
-        </section>
-            <p class="dj-disc-p">Endtroducing..... es el álbum debut del productor musical estadounidense DJ Shadow, lanzado el 19 de noviembre de 1996 bajo el sello Mo' Wax. (...)</p>
-        </article>
 </article>
 
 <!--DJ discography ends-->
@@ -149,11 +119,13 @@
 <script type = "text/javascript" src="../../scripts/header-sections.js"></script>
 <script type="text/javascript">
 
-var headerPicture = document.querySelector('.header-picture')
-var headline = document.querySelector('h1')
-var infoContainer = document.querySelector('.dj-information')
-djsPageOne.uno.setInfoPage(headline,headerPicture,infoContainer)
-
+        let headerPicture = document.querySelector('.header-picture')
+        let headline = document.querySelector('h1')
+        let infoContainer = document.querySelector('.dj-information')
+        djsPageOne.uno.setInfoPage(headline,headerPicture,infoContainer)
+        //Discos del DJ
+        Entroducing.createIn(container)
+        Entroducing.createIn(container)
 </script>
 <!--Scripts end-->
 </body>
