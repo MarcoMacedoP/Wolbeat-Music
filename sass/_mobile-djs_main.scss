@@ -2,7 +2,6 @@
     min-height: 50rem;
     width: 100%;
     height: 121.71vh;
-    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +15,14 @@
     overflow: hidden;
 }
 .section-dj-img{
+    div{
+        width: 100%;
+        height: 100%;
+        background-color: $color_gris_claro;
+        background-size: cover;
+        background-position: 100% 30%;
+        background-repeat: no-repeat;
+    }
     img{
         width: 100%;
     }
@@ -23,7 +30,7 @@
 
 .section-dj-info{
     width: 100%;
-    height: 45.45%;
+    height: min-content;
     position: absolute;
     bottom: 0;
     background: $color_gris_fuerte;
@@ -62,9 +69,11 @@
     margin-top: 1rem;
 }
 .dj-information-p, .disc-information-p, .disc-songs-desc{
+    white-space: pre-line;
     margin-top: 1rem;
     @include font ($color_gris_fuerte, $font_body, 0.93rem, normal);
 }
+
 .dj-information-tittle, .dj-disc-info-tittle, .disc-information-tittle, .disc-songs-tittle{
     @include font($color_gris_fuerte, $font_body, 0.93rem, bold); 
 }
@@ -98,7 +107,9 @@
 .dj-information-links-youtube, .disc-information-links-youtube{
     background-image: url(/img/youtube_black.png);
 }
-
+.dj-cta{
+    margin-bottom: 1rem;
+}
 //información de los discos
 .dj-discography{
     position: relative;
@@ -122,8 +133,12 @@
         height: 34.44vw;
         border-radius: 50%;
         background: $color_gris_claro;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
     }
     .dj-disc-img-container-img{
+    
         width: 100%;
         height: auto;
     }
@@ -149,7 +164,7 @@
         display: flex;
         justify-content: space-between;
        
-        a{ 
+        a{
             display: block;
             width: 2.25rem;
             height: 2.25rem;
@@ -165,6 +180,18 @@
         }
     }
 }
+
+
+.dj-nav{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    a{
+        margin: 0 0.5rem;
+    }
+}
 @media only screen and (orientation:landscape){
     .section-dj{
         height: min-content;
@@ -172,9 +199,7 @@
 .section-dj-article {
     min-height: 16rem;
 }
-.section-dj-info {
-    height: 20%;
-}
+
 .main-page-last-updates {
     height: min-content;
 }
@@ -211,7 +236,7 @@
     }
     //Tablet Horizontal
     .section-dj-info{
-        height: 40%;
+        height: min-content;
         padding: 2% 10%;
         min-height: min-content;
     }
@@ -360,6 +385,7 @@
     margin-top: 3%;
 }
 .dj-information-p{
+    white-space: pre-line;
     padding: 0 12.5%;
 font-size: 0.75rem;
 }

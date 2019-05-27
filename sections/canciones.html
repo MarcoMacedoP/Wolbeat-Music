@@ -62,7 +62,8 @@
     <!--Tittle v2-->
 
     <!--carrousel starts-->    
-     <section class="carousel" id = "carrousel-dj"> 
+        <!--Carrousel-->
+        <section class="carousel" id = "carrousel-dj"> 
             <picture class="carousel-article">
                     <picture class="article-img" id="carrousel_article_img"></picture>
                     <h3 class="carousel-article-tittle" >
@@ -74,12 +75,13 @@
                         tempor invidunt ut labore et dolore magna aliquyam </p>
                         
                     <nav class="carousel-nav">
-                        <a class="main-page-last-updates-carousel-point-one" href="#"></a>
-                        <a class="main-page-last-updates-carousel-point-two" href="#"></a>
-                        <a class="main-page-last-updates-carousel-point-three" href="#"></a>
+                        <a class="carousel-point-one"></a>
+                        <a class="carousel-point-two"></a>
+                        <a class="carousel-point-three"></a>
                     </nav>
             </picture>
-        </section>  
+        </section>
+        <!--carrousel-->
         <!--carrousel ends-->      
         
         
@@ -100,26 +102,15 @@
                     </picture>
                     <p class="disco-p">Endtroducing es el álbum debut del productor musical estadounidense DJ Shadow, lanza do el 19 de noviembre de 1996 bajo el sello de la (...)</p>
                 </section>
-            <section class="discos-disco">
-                <div class="disco-avatar-tittle-container">
-                    <picture class="article-img" ></picture>
-                    <h2 class="disco-tittle"><a href="Disc/one.html">Titulo del disco</a></h2>
-                </div>
             
-                <picture class="disco-picture">
-                        <div class="disco-picture-container">
-                            <img class="disco-img-picture-img"src="/img/artboard.jpg" alt="Cover art del disco">
-                        </div>
-                </picture>
-                <p class="disco-p">Endtroducing es el álbum debut del productor musical estadounidense DJ Shadow, lanza do el 19 de noviembre de 1996 bajo el sello de la (...)</p>
-                </section>
 
-            <section class ="section-nav center-nav nav-songs">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-            </section>         
-         </article>   
+         </article>
+         
+         <nav class ="section-nav dj-nav">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </nav>           
     
     <!--Footer nav starts-->
     <nav class="footer-nav">
@@ -149,8 +140,11 @@
         </nav>
     <!--Footer nav ends-->    
     <!--Scripts start-->
+    <script type ="text/javascript" src = "../scripts/JSON-DATA.js"></script>
     <script type="text/javascript" src = "http://127.0.0.1:5500/scripts/nav_bar.js"></script>
+    <script type="text/javascript" src= "../scripts/djs.js"></script>
     <script type="text/javascript" src="http://127.0.0.1:5500/scripts/carrousel.js"></script>
+    <script type="text/javascript" src= "../scripts/songs.js"></script>
     <!--Scripts end-->
 </body>
 </html>

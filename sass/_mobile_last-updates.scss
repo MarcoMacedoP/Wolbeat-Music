@@ -22,7 +22,7 @@
     width: 100%;
     height: 91vh;
     position: relative;
-    background-image: url(../img/artboard.jpg);
+    background: $color_gris;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -55,12 +55,16 @@
         height: 16px;
         width: 16px;
     }
-    a:hover{
+    .carousel-point-one:hover{
+        background-color: $color_amarillo_claro;
+    }
+     .carousel-point-two:hover{
         background-color: $color_gris;
     }
-    .carousel-point-one{
+    .carousel-point-one {
         background-color: $color_amarillo;
     }
+    
 }
 .carousel-article-tittle{
     a{

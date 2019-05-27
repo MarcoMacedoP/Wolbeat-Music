@@ -86,6 +86,15 @@
     a:hover{
         background-color: $color_gris;
     }
+    .carousel-point-one:hover{
+        background-color: $color_amarillo_claro;
+    }
+     .carousel-point-two:hover{
+        background-color: $color_gris;
+    }
+    .carousel-point-one{
+        background-color: $color_amarillo;
+    }
 }
 .article-img{//imagen pequeña de avatar
     position: relative;
