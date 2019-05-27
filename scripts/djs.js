@@ -1,4 +1,4 @@
-
+//import 'JSON-DATA' //FIX THIS
 class DJ { 
     
     constructor(image, name, genres,description, url){
@@ -95,11 +95,11 @@ function cutTxt(txt, ancho){
         }
     return newTxt
 }
-let Marco = new DJ()
-Marco.image = 'https://smoda.elpais.com/wp-content/uploads/2019/04/Dj-Nano-635x953.jpg'
+
+/*Marco.image = 'https://smoda.elpais.com/wp-content/uploads/2019/04/Dj-Nano-635x953.jpg'
 Marco.description = 'Esta es la descripción del DJ, hace música para gatitos muy cool.'
 Marco.genres = "Cumbias progresivas"
-Marco.name = "DJ Peligro"
+Marco.name = "DJ Peligro"*/
 let fka = new DJ()
 fka.image= 'https://pixel.nymag.com/imgs/daily/vulture/2019/04/24/24-fka-twigs.w700.h467.jpg'
 fka.name = 'FKA Twings'
@@ -110,22 +110,18 @@ fka.url = 'https://www.vulture.com/2019/04/fka-twigs-cellophane-song-review.html
 
 
 
+let DJ_SHADOW = new DJ( DJS.DJ_SHADOW.avatar, DJS.DJ_SHADOW.nombre, 
+    DJS.DJ_SHADOW.generos, DJS.DJ_SHADOW.biografia, DJS.DJ_SHADOW.url)
 
 let mainSectionDJ= document.getElementById('mainDjs')
 
-if(mainSectionDJ){
+    if(mainSectionDJ){
 
-//DJ's mostrados en la página principal
+        DJ_SHADOW.createIn(mainSectionDJ, setUrl)
+        DJ_SHADOW.createIn(mainSectionDJ, setUrl)
+        fka.createIn(mainSectionDJ, setUrl) 
+    }
 
-let numero_djs = 3 //Siempre mantener en numero par
-for(let i= 0; i<numero_djs; i++){
-    Marco.createIn(mainSectionDJ)
-    
-}
-fka.createIn(mainSectionDJ, setUrl)
-
-
-}
 /***********************SECCION DE DJS********************************** */
 let genericDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius venenatis neque eu tempor. Nullam ac laoreet sapien. Pellentesque vitae ante lectus. Phasellus blandit sed felis non maximus. Ut eleifend id nisi sit amet tempus. Donec eu tincidunt sapien. Cras sollicitudin molestie condimentum. Etiam at neque ut lorem dignissim vulputate. '
 let sectionNuevosTalentos = document.getElementById('section-nuevos-talentos')
@@ -192,8 +188,9 @@ class djPages {
         two: document.querySelector('#nav_nuevos_talentos_2'),
         three: document.querySelector('#nav_nuevos_talentos_3')
     }
+    
     const djsPageOne  = {
-        uno : new DJ('http://127.0.0.1:5500/img/dj_uno.jpeg', 'Dj Shadow', 'IDM / HOUSE', genericDescription, "http://127.0.0.1:5500/sections/DJ's/one.html"),
+        uno : new DJ(DJS.DJ_SHADOW.avatar, DJS.DJ_SHADOW.nombre, DJS.DJ_SHADOW.generos, DJS.DJ_SHADOW.biografia, "http://127.0.0.1:5500/sections/DJ's/one.html"),
         dos : new nuevosTalentos('http://127.0.0.1:5500/img/dj_dos.jpeg', 'Dj Emmet', 'Dance / HOUSE', genericDescription),
         tres : new nuevosTalentos('http://127.0.0.1:5500/img/dj_tres.jpeg', 'Dj Reset', 'Future Bass / IDM', genericDescription),
         cuatro : new nuevosTalentos('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/DJ_Shadow.jpg/250px-DJ_Shadow.jpg', 'Dj Amazon', 'Ambient / dark', genericDescription)
@@ -210,12 +207,13 @@ class djPages {
         tres:  new nuevosTalentos('http://ottofm.com/wp-content/uploads/2018/09/will-marshmello-save-edm-body-image-1479921716.jpg', 'Dj Marshmello', 'IDM / HOUSE', genericDescription),
         cuatro:  new nuevosTalentos('https://los40es00.epimg.net/los40/imagenes/2019/03/12/musica/1552414961_036011_1552419779_noticia_normal.jpg', 'Dj Green', 'IDM / HOUSE', genericDescription)
     }
+
 let paginaTresNuevosTalentos = djsPageOne;
 
 let paginaUno = new djPages(1, sectionNuevosTalentos, navsTalento, djsPageOne)
 let paginaDos= new djPages(2, sectionNuevosTalentos, navsTalento,djsPageTwo)
 let paginaTres= new djPages(3, sectionNuevosTalentos, navsTalento, djsPageThree)
-
+    
 if(sectionNuevosTalentos){        
 paginaUno.setPage()
     navsTalento.one.addEventListener('click', ()=>{

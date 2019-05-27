@@ -2,12 +2,13 @@ let DJS= {
     DJ_SHADOW: {
         nombre: "DJ Shadow",
         generos: "IDM / Ambient",
-        biografia: "Loremañska",
+        biografia: "DJ Shadow empezó su carrera musical como DJ para la cadena KDVS. Ese período fue uno de los más importantes en el desarrollo del estilo hip hop experimental, asociada al sello discográfico Solesides en California. Sus primeros singles para el sello, incluidos In Flux y Lost & Found (SFL), fueron el resultado de la fusión de elementos funk, rock, hip hop, ambient, jazz y soul. Al DJ Shadow se le califica a menudo como uno de los principales creadores en EE. UU. del trip-hop. Aunque su música es difícil de clasificar, sus primeras contribuciones fueron, sin duda alguna, importantes como alternativa al hip hop comercial y el gangsta rap, estilos que él nunca aceptó. Cita grupos como Kurtis Mantronik, Steinski y Prince Paul como influencias para su música basada en el sampleo. Su música rara vez presenta más de un clip de voces o trabajo vocal.\n\nNo fue hasta su distribución-asociación con Mo' Wax que su sonido comenzó a madurar y desarrollarse plenamente. Más adelante, fundó el sello, Quannum Projects en 1999 fuera del sello anterior Solesides.\n\nDJ Shadow ha colaborado también con otros artistas del panorama del hip-hop, como por ejemplo Cut Chemist junto al que ha creado dos mixtapes. En éstos mezcla y fusiona jazz, funk y soul. También ha colaborado con otros artistas, como Blackalicious, Zack de la Rocha, Keak Da Sneak, Mos Def, David Banner y Dr Octagon (también conocido como Kool Keith). ", 
         socialMedia: {
             spotify: "www.spotify.com",
             youtube: "www.youtube.com"
         },
         avatar: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/DJ_Shadow_tim_festival.jpg/230px-DJ_Shadow_tim_festival.jpg",
+        url: "http://127.0.0.1:5500/sections/DJ's/one.html",
         discos: {
             Entroducing: {
                 url: "http://127.0.0.1:5500/sections/Disc/one.html",

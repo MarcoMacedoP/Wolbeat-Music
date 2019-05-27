@@ -69,6 +69,7 @@
     margin-top: 1rem;
 }
 .dj-information-p, .disc-information-p, .disc-songs-desc{
+    white-space: pre-line;
     margin-top: 1rem;
     @include font ($color_gris_fuerte, $font_body, 0.93rem, normal);
 }
@@ -132,8 +133,12 @@
         height: 34.44vw;
         border-radius: 50%;
         background: $color_gris_claro;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
     }
     .dj-disc-img-container-img{
+    
         width: 100%;
         height: auto;
     }
@@ -380,6 +385,7 @@
     margin-top: 3%;
 }
 .dj-information-p{
+    white-space: pre-line;
     padding: 0 12.5%;
 font-size: 0.75rem;
 }

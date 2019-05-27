@@ -1,6 +1,9 @@
-@font-face {
-  font-family: Tw-Cen-Mt;
-  src: url(../fonts/Tw-Cen-MT.ttf); }
+/*@font-face{
+    font-family: Tw-Cen-Mt;
+    src: url(../fonts/Tw-Cen-MT.ttf);
+}*/
+@import url(../fonts/Tw-Cen-MT.ttf);
+@import url(../fonts/Tw-Cen-MT.ttf);
 .cta_black, .cta_white {
   box-sizing: border-box;
   margin: .5rem 0 .5rem 0;
@@ -149,9 +152,10 @@ html {
 @media only screen and (min-width: 900px) {
   html {
     font-size: 24px; } }
-@font-face {
-  font-family: Tw-Cen-Mt;
-  src: url(../fonts/Tw-Cen-MT.ttf); }
+/*@font-face{
+    font-family: Tw-Cen-Mt;
+    src: url(../fonts/Tw-Cen-MT.ttf);
+}*/
 .mobile-nav {
   max-height: 3rem;
   height: 6.71vh;
@@ -597,6 +601,7 @@ html {
   margin-top: 1rem; }
 
 .dj-information-p, .disc-information-p, .disc-songs-desc {
+  white-space: pre-line;
   margin-top: 1rem;
   font-weight: normal;
   font-size: 0.93rem;
@@ -659,7 +664,10 @@ html {
     width: 34.44vw;
     height: 34.44vw;
     border-radius: 50%;
-    background: #929298; }
+    background: #929298;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center; }
   .dj-disc .dj-disc-img-container-img {
     width: 100%;
     height: auto; }
@@ -871,6 +879,7 @@ html {
     margin-top: 3%; }
 
   .dj-information-p {
+    white-space: pre-line;
     padding: 0 12.5%;
     font-size: 0.75rem; }
 
