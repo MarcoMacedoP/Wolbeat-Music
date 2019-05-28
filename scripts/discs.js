@@ -8,7 +8,7 @@ class DISC { //Esta clase muestra los discos generados en la
     {
       this.JSON_OBJECT = JSON_OBJECT
     }
-    createIn(container){
+    createIn(container, fn){
         let article= document.createElement('article')
         article.className = 'dj-disc'
         //Avatar del disco
@@ -28,8 +28,10 @@ class DISC { //Esta clase muestra los discos generados en la
         let sectionInfo= document.createElement('section')
         sectionInfo.className= 'dj-disc-info'
             let tittle= document.createElement('h2')
-            tittle.className = 'dj-disc-info-tittle'
-            tittle.innerHTML= this.JSON_OBJECT.Nombre;
+            let tittleLink = document.createElement('a')
+            tittleLink.className = 'dj-disc-info-tittle'
+            tittleLink.innerHTML= this.JSON_OBJECT.Nombre;
+            tittle.appendChild(tittleLink)
             let genres= document.createElement('h3')
             genres.className = 'dj-disc-info-genres'
             genres.innerHTML = this.JSON_OBJECT.generos
@@ -61,6 +63,13 @@ class DISC { //Esta clase muestra los discos generados en la
         article.appendChild(description)
 
         container.appendChild(article)
+        if(fn){
+            fn(this.JSON_OBJECT.url, tittleLink)
+        }
     }
+
+
+
+    
 }
 let Entroducing = new DISC(JSON_DISC)
