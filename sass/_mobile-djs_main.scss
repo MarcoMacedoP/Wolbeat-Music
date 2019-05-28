@@ -309,16 +309,18 @@
     grid-column: 3/4;
     @include font($color_gris, $font_body, 0.75rem, normal);
 }
-
+ .dj-disc-info-genres{
+     margin: 0;
+ }
 //******************PC*****************************************
 
 @media screen and (min-width: 1000px){
     .dj-disc-info-genres
     {
         position: relative;
-
-        bottom: 0.5rem;
-    }
+        margin: 0;
+}
+    
   
 .section-dj{
     padding-left: 1rem;
