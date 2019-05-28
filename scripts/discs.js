@@ -1,5 +1,5 @@
 console.log ( 'AAAAAAAAAAAAAAAAAAAAAa')
-let container = document.querySelector('.dj-discography')
+let containerDiscografia = document.querySelector('.dj-discography')
 var JSON_DISC = DJS.DJ_SHADOW.discos.Entroducing
 
 
@@ -66,10 +66,50 @@ class DISC { //Esta clase muestra los discos generados en la
         if(fn){
             fn(this.JSON_OBJECT.url, tittleLink)
         }
+        
+    }
+    setInfoPage(headline, headerPicture, infoContainer, fn ){
+        headline.innerHTML= this.JSON_OBJECT.Nombre;
+        let subtittle= infoContainer.querySelector('.disc-information-tittle')
+        subtittle.innerHTML= "Sobre " + this.JSON_OBJECT.Nombre;
+        let genres= infoContainer.querySelector('.disc-information-genres')
+        genres.innerHTML = this.JSON_OBJECT.generos
+        let description = infoContainer.querySelector('.disc-information-p')
+        description.innerHTML = this.JSON_OBJECT.description
+        let img = headerPicture.querySelector('img')
+        img.setAttribute('src', this.JSON_OBJECT.cover)
+        //Seteo de canciones
+        var canciones = Object.values(this.JSON_OBJECT.canciones)
+        let songsContainer = document.querySelector('.disc-songs-container')
+        canciones.forEach(element => {
+            let songItem = document.createElement('div')
+            songItem.className= 'disc-songs-container-item'
+            let songIcon = document.createElement('i')
+            songIcon.className = 'disc-songs-container-item-icon'
+            let songName = document.createElement('a')
+            songName.className= 'disc-songs-container-item-name'
+            songName.innerHTML = element.nombre
+            let artistName = document.createElement('a')
+            artistName.innerHTML = this.JSON_OBJECT.Nombre;
+            artistName.className = 'disc-songs-container-item-artist'
+            let songDuration =  document.createElement('span')
+            songDuration.innerHTML = element.duration
+            songDuration.className= 'disc-songs-container-item-duration'
+            songItem.appendChild(songIcon)
+            songItem.appendChild(songName)
+            songItem.appendChild(artistName)
+            songItem.appendChild(songDuration)
+            
+            songsContainer.appendChild(songItem)
+            if (fn){
+                fn(element.link, artistName)
+                fn(element.link, songName)
+            }
+        });
     }
 
 
 
     
 }
-let Entroducing = new DISC(JSON_DISC)
+

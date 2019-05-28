@@ -78,6 +78,10 @@ class DJ {
         description.innerHTML = this.description
         let img = headerPicture.querySelector('img')
         img.setAttribute('src', this.image)
+
+        //Seteo de las canciones del DJ
+
+      
     }
 
 }
