@@ -101,6 +101,11 @@
 }
 //*************************TABLETS*****************************
 @media only screen and (min-width: 700px) and (min-height: 1000px){
+    .disc-information-p{
+        padding: 0 12.5%;
+        font-size: 0.75rem;
+    
+    }
     .discos-titulo{
         position: relative;
         right: 10%;
@@ -140,7 +145,11 @@
         min-height: min-content;
         height: 50vh;
     }
+    .disc-information-p{
+        padding: 0 12.5%;
+        font-size: 0.75rem;
     
+    }
     .discos-titulo{
         justify-self: flex-start;
         position: static;

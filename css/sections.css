@@ -681,6 +681,10 @@ body .mobile-nav {
   .dj-disc .dj-disc-info-social {
     position: absolute;
     bottom: 11vw; } }
+.disc-songs {
+  padding: 0 12.5%;
+  font-size: 0.75rem; }
+
 .disc-songs-desc {
   font-size: 0.75rem; }
 
@@ -693,6 +697,7 @@ body .mobile-nav {
   margin: 0 0 1rem 0; }
 
 .disc-songs-container-item {
+  max-height: 56px;
   background-color: rgba(146, 146, 152, 0.31);
   min-height: 2.68rem;
   display: grid;
@@ -829,6 +834,10 @@ body .mobile-nav {
 
   .dj-discography {
     margin-bottom: 10%; }
+
+  .disc-songs {
+    padding: 0 12.5%;
+    font-size: 0.75rem; }
 
   .dj-disc {
     grid-template-columns: 13.82vw 1fr; }
@@ -1048,6 +1057,10 @@ body .mobile-nav {
     height: 65.61vh;
     overflow: hidden; } }
 @media only screen and (min-width: 700px) and (min-height: 1000px) {
+  .disc-information-p {
+    padding: 0 12.5%;
+    font-size: 0.75rem; }
+
   .discos-titulo {
     position: relative;
     right: 10%;
@@ -1078,6 +1091,10 @@ body .mobile-nav {
     margin-bottom: 1rem;
     min-height: min-content;
     height: 50vh; }
+
+  .disc-information-p {
+    padding: 0 12.5%;
+    font-size: 0.75rem; }
 
   .discos-titulo {
     justify-self: flex-start;

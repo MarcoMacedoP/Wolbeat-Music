@@ -257,6 +257,10 @@
     }   
 }
 //Canciones que contiene un disco
+.disc-songs{
+    padding: 0 12.5%;
+    font-size: 0.75rem;
+}
 .disc-songs-desc{
     font-size: 0.75rem;
 }
@@ -269,6 +273,8 @@
     margin:0 0 1rem 0;
 }
 .disc-songs-container-item{
+   
+    max-height: 56px;
     background-color: rgba($color: $color_gris_claro, $alpha: 0.31);
     min-height: 2.68rem;
     display: grid;
@@ -412,6 +418,10 @@ font-size: 0.75rem;
 }
 .dj-discography{
     margin-bottom: 10%;
+}
+.disc-songs{
+    padding: 0 12.5%;
+    font-size: 0.75rem;
 }
 .dj-disc{
     grid-template-columns: 13.82vw 1fr;

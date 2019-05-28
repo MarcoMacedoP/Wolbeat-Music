@@ -757,6 +757,10 @@ html {
   .dj-disc .dj-disc-info-social {
     position: absolute;
     bottom: 11vw; } }
+.disc-songs {
+  padding: 0 12.5%;
+  font-size: 0.75rem; }
+
 .disc-songs-desc {
   font-size: 0.75rem; }
 
@@ -769,6 +773,7 @@ html {
   margin: 0 0 1rem 0; }
 
 .disc-songs-container-item {
+  max-height: 56px;
   background-color: rgba(146, 146, 152, 0.31);
   min-height: 2.68rem;
   display: grid;
@@ -905,6 +910,10 @@ html {
 
   .dj-discography {
     margin-bottom: 10%; }
+
+  .disc-songs {
+    padding: 0 12.5%;
+    font-size: 0.75rem; }
 
   .dj-disc {
     grid-template-columns: 13.82vw 1fr; }
