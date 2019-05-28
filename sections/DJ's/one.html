@@ -124,8 +124,10 @@
         let infoContainer = document.querySelector('.dj-information')
         djsPageOne.uno.setInfoPage(headline,headerPicture,infoContainer)
         //Discos del DJ
-        Entroducing.createIn(container)
-        Entroducing.createIn(container)
+        let container = document.querySelector('.dj-discography')
+        var Endtroducing = new DISC(JSON_DISC)
+        Endtroducing.createIn(container, setUrl)
+        Endtroducing.createIn(container, setUrl)
 </script>
 <!--Scripts end-->
 </body>
