@@ -32,13 +32,15 @@
         //Circulo blanco
         content: "";
         display: block;
-        width: 50vw;
-        height: 100vh;
         background-color: $color_blanco;
-        //border-top-right-radius: 50vh;
-        //border-bottom-right-radius: 50vh;
         position: absolute;
-        left: 0;
+         //Circulo blanco
+         margin-left: -48vh;
+         width: 94vh;
+         height: 94vh;
+         border-radius: 50%;
+         bottom: 0;
+       
     }
     .main-page-welcome-wolf{
         display: flex;
@@ -48,23 +50,56 @@
         height: 80vh;
         max-width: 576px;
         max-height: 606.683px;
+        img{
+            width: 100%;
+              height: auto;
+        }
     }
 
+@media only screen and (orientation:landscape){
+    //Celulares, vista de landscape
+    .main-page-welcome-background-img::after{
+        //Circulo blanco
+        margin-left: -48vw;
+        width: 94vw;
+        height: 94vw;
+        border-radius: 50%;
+        bottom: 0;
+        top: -24vw;
+    }
+    .main-page-last-updates {
+        height: 109vh;
+    }
+    
 
+}
 //Vista de tablet
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 500px) and (orientation: portrait) {
     .main-page-welcome{
         display: flex;
         justify-content: center;
         align-items: center;
-
-       
+    }
+    .main-page-welcome-background-img::after{
+        //Circulo blanco
+        margin-left: -48vh;
+        width: 94vh;
+        height: 94vh;
+        border-radius: 50%;
+        bottom: 0;
     }
 }
 
-@media only screen and (min-width: 900px){
+@media screen and (min-width: 1000px) and (min-height: 500px){
 //Vista de escritorio
-
+.main-page-welcome-background-img::after{
+    //Circulo blanco
+    margin-left: -50vw;
+    top: -25vw;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%
+}
 
 
 }

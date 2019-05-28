@@ -9,11 +9,18 @@
     overflow: hidden;
 }
 
+.discos-titulo{
+    position: relative;
+    right: 10%;
+    width: 110.2%;
+}
+
 .discos-disco{
     position: relative;
     margin-top: 1rem;
     width: 100%;
     height: min-content;
+    max-height: 15rem;
 }
 .disco-avatar-tittle-container{
     box-sizing: border-box;
@@ -26,6 +33,12 @@
 }
 .disco-tittle{
     @include font($color_gris_fuerte, $font_body, 0.93rem, bold);
+    a{
+        color: inherit;
+    }
+}
+.disc-information-p{
+    white-space: pre-line;
 }
 .disco-picture{
     
@@ -54,6 +67,8 @@
     background-color: rgba($color: $color_gris_fuerte, $alpha: .40);
 }
 .disco-picture-container{
+    display: flex;
+    align-items: center;
     width: 28.61vh;
     height: 28.61vh;
     overflow: hidden;   
@@ -71,4 +86,93 @@
     height: min-content;
     @include font($color_gris_fuerte, $font_body, 0.75rem, normal);
     padding: 0 0 0 0.5rem;
+}
+.discos-titulo{
+    position: static;
+    width: 80.88%;
+}
+
+@media only screen and (orientation: landscape){
+.disco-picture-container{
+    width: 74.61vh;
+    height: 65.61vh;
+    overflow: hidden;
+    }
+}
+//*************************TABLETS*****************************
+@media only screen and (min-width: 700px) and (min-height: 1000px){
+    .disc-information-p{
+        padding: 0 12.5%;
+        font-size: 0.75rem;
+    
+    }
+    .discos-titulo{
+        position: relative;
+        right: 10%;
+        width: 110.2%;
+    }
+    .discos{
+        padding: 2% 12% 3%;
+    
+    }
+    
+    .disco-picture{
+        height: 56%;
+    }
+    .discos-disco{
+        max-height: 15rem;
+    }
+
+}
+
+
+/******************PC*****************************************/
+@media screen and (min-width: 1000px) and (min-height: 500px){
+    .discos{
+        justify-content: space-between;
+        padding: 1rem 0 1rem 1.2rem;
+        flex-flow: wrap;
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .discos-disco{
+            max-height: 15rem;
+        padding-left: 1rem;
+        box-sizing: border-box;
+        width: 45%;
+        margin-bottom: 1rem;
+        min-height: min-content;
+        height: 50vh;
+    }
+    .disc-information-p{
+        padding: 0 12.5%;
+        font-size: 0.75rem;
+    
+    }
+    .discos-titulo{
+        justify-self: flex-start;
+        position: static;
+        right: 10%;
+        width: 80.88%;
+    }
+    
+    .disco-p{
+        width: 70%;
+    }
+    .disco-picture{
+        height: 56%;
+        width: 90%;
+    }
+    .disco-img-picture-img{
+        position: relative;
+        z-index: 2;
+        height: 100%;
+    }
+    .disco-picture-container {
+        width: 28.61vh;
+        height: 100%;
+        overflow: hidden;
+        max-height: 33.61vh;
+    }
 }

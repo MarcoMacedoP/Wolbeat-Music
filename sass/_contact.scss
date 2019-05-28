@@ -1,0 +1,99 @@
+.contact-form{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6.66%;
+    box-sizing:border-box;
+}
+.contact-form-input{
+    background: $color_gris_fuerte;
+    @include font($color_blanco, $font_body, 0.62rem, bold);
+    color: $color_blanco;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2.5rem;
+    height: 6.25vh;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.contact-direct, .contact-direct h2{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-direct-icons{
+    max-width: 11.33rem;
+    overflow: hidden;
+    width: 50%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.contact-direct-icons-item{
+    max-width: 80px;
+    max-height: 80px;
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon-gmail{
+    background-image: url(/img/gmail.svg);
+}
+.icon-whatsapp{
+    background-image: url(/img/whatsapp.svg);
+    margin: 0 1rem;
+}
+.icon-facebook{
+    background-image: url(/img/facebook.svg);
+}
+.made-contact{
+    min-height: 16rem;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    h3{
+        margin-bottom: 2rem;
+    }
+}
+//*************************TABLETS*****************************
+@media screen and (min-width: 500px) and (min-height: 900px){
+    .contact-direct-icons{
+        margin: 5% 0;
+    }
+    .contact-form-input{
+        font-size: 0.75rem;
+    }
+ 
+}
+
+
+/***********************PC VERSION******************************/
+@media only screen and (min-width: 1000px) and (min-height: 600px){
+    .contact-form-input{
+        margin-bottom: 1rem;
+    }
+    .contact-direct-icons{
+        margin: 5% 0;
+    }
+    .contact-form, .contact-direct,.tittle-contact{
+        padding: 0 12.25%;
+    }
+    .contact-form{
+        padding-top: 1rem;
+    }
+    .contact-direct{
+        margin-top:2rem;
+    }
+}

@@ -26,7 +26,7 @@
     <picture class="nav-mobile-picture">
         <img src="http://127.0.0.1:5500/img/Lobo.png" class= "nav-mobile-picture-img" alt="Lobo de Wolbeat Music">
     </picture>
-    <img class="nav-welcome-logo" src="http://127.0.0.1:5500/img/logo_white.png" alt = "Logo de Wolbeat Music">  
+    <img class="nav-welcome-logo" src="../../img/logo_black.png" alt = "Logo de Wolbeat Music">  
     <ol class="nav-list"> 
         <li class="nav-list-item">
             <a href= "http://127.0.0.1:5500">Inicio</a></li>
@@ -61,11 +61,9 @@
 <article id="section_one">
     <!--Disc information start -->
 <section class="disc-information" >
-        <h2 class="disc-information-tittle" >Sobre el Endtroducing:</h2>
-        <h3 class="disc-information-genres">Electronic / IDM</h3>
-        <p class="disc-information-p">Endtroducing..... es el álbum debut del productor musical estadounidense DJ Shadow, lanzado el 19 de noviembre de 1996 bajo el sello Mo' Wax. El álbum es conocido por estar compuesto casi en su totalidad de contenido sampleado, la mayoría del cual se originó a partir de varios discos de vinilo obtenidos por DJ Shadow durante sus viajes a las tiendas de música. Endtroducing..... fue producido por Shadow en el lapso de dos años con un mínimo de equipo, sobre todo el sampler Akai MPC60. Al crear la atmósfera general del disco, se esforzó por captar la naturaleza melancólica de sus lanzamientos anteriores para el sello Mo' Wax. El contenido del álbum incluye tanto temperamentales pistas de ritmo lento como canciones optimistas que recuerdan a las primeras influencias de hip hop de DJ Shadow.</p>
-        <p class="disc-information-p">
-                Endtroducing..... recibió la aclamación universal de los críticos, que elogiaron el enfoque de DJ Shadow hacia el sampleado y los ritmos que él creó a partir de los samples. Obtuvo altas posiciones en varias listas de fin de año de los mejores discos del 1996. El álbum es considerado una obra decisiva en el movimiento del hip hop instrumental, con las innovadoras técnicas de muestreo y arreglos de DJ Shadow influenciando a otros productores a crear similares obras basadas en muestras. Endtroducing..... ha aparecido desde entonces en las listas de mejores discos de la década —e incluso de todos los tiempos— de varias publicaciones.</p>
+        <h2 class="disc-information-tittle" >Sobre el disco</h2>
+        <h3 class="disc-information-genres">Generos del disco</h3>
+        <p class="disc-information-p">Informacion sobre el disco generada dinamicamente. </p>
         <div class="disc-information-links">
             <div class="disc-information-links-social">
                 <a class="disc-information-links-spotify" href="#"></a>
@@ -78,22 +76,11 @@
 </article>
 <article id="section_two">
     <section class="disc-songs">
-            <h2 class="disc-songs-tittle" >Endtroducing...</h2>
-            <h3 class="disc-songs-genres">Electronic / IDM</h3>
-            <p class="disc-songs-desc"> Endtroducing..... es el álbum debut del productor musical estadounidense DJ Shadow, lanzado el 19 de noviembre de 1996 bajo el sello Mo' Wax. El álbum es conocido por estar compuesto casi en su totalidad de (...)      </p>
+            <h2 class="disc-songs-tittle" >Titulo del disco...</h2>
+            <h3 class="disc-songs-genres">Generos que abarca el disco</h3>
+            <p class="disc-songs-desc">Aquí va la informacion del disco, es generada dinamicamente. </p>
             <section class="disc-songs-container">
-                <div class="disc-songs-container-item">
-                    <i class="disc-songs-container-item-icon"></i>
-                    <span class="disc-songs-container-item-name">Best walk forward</span>
-                    <span class="disc-songs-container-item-artist">DJ Shadow</span>
-                    <span class="disc-songs-container-item-duration">0:49</span>
-                </div>
-                <div class="disc-songs-container-item">
-                        <i class="disc-songs-container-item-icon"></i>
-                        <span class="disc-songs-container-item-name">Best walk forward</span>
-                        <span class="disc-songs-container-item-artist">DJ Shadow</span>
-                        <span class="disc-songs-container-item-duration">0:49</span>
-                </div>
+                <!--Canciones del disco generadas dinamicamente :) -->
             </section>
     </section>
 </article>
@@ -127,8 +114,21 @@
     <!--Footer nav ends-->
     </footer>
     <!--Scripts start-->
+    <script type="text/javascript" src = "http://127.0.0.1:5500/scripts/JSON-DATA.js"></script>
+    <script type ="text/javascript" src= "../../scripts/djs.js"></script>
+    <script type = "text/javascript" src = "../../scripts/discs.js"></script>
     <script type="text/javascript" src = "http://127.0.0.1:5500/scripts/nav_bar.js"></script>
     <script type="text/javascript" src = "http://127.0.0.1:5500/scripts/header-sections.js"></script>
+    <script type='text/javascript' src = '../../scripts/songs.js'></script>
+    <script type='text/javascript'>
+        let headline= document.querySelector('.header-name')
+        let headerPicture = document.querySelector('.header-picture')
+        let infoContainer = document.querySelector('.disc-information')
+        
+        //Aquí seteamos el disco que queramos poner
+        var Endtroducing = new DISC(JSON_DISC)
+        Endtroducing.setInfoPage(headline, headerPicture, infoContainer, setUrl);
+    </script>
     <!--Scripts end-->
 </body>
 </html>

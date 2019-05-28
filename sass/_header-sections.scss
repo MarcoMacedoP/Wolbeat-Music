@@ -1,3 +1,4 @@
+
 .header{
     box-sizing: border-box;
     position: relative;
@@ -9,19 +10,51 @@
     justify-content: center;
     margin-bottom: 1rem;
 }
-.header-picture{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    img{
+@media only screen and (orientation:landscape) and (max-width: 800px){
+        .header{ 
+               height: 100vh;
+        }   
+}
+@media screen and (orientation:portrait){
+    .header-picture{
+
         position: absolute;
         z-index: -1;
         width: 100%;
-        height: auto;
+        height: 100%;
+        overflow: hidden;
+        img{
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: auto;
+        }
     }
-}.header-picture::after{
+
+}
+@media screen and (orientation: landscape){
+    .header-picture{
+
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img{
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            z-index: -1;
+            width: 150%;
+            height: auto;
+        }
+    }
+
+}
+
+.header-picture::after{
     content: "";
     display: block;
     width: 100%;
@@ -72,4 +105,64 @@
     transition: left;
     transition-duration: 500ms;
 
+}
+.header-nosotros{
+    img{
+        height: 100%;
+        width: auto;
+    }
+}
+.header-canciones{
+    .header-picture{
+        img{
+            
+            width: auto;
+            height: 100%;
+        }
+    }
+}
+.header-selection-us{
+    left: 1rem;
+}
+
+ //Celulares muy pequeños
+ @media screen and (min-width: 330px) and (min-height: 400){
+    .header-nosotros{
+        img{
+            height: auto;
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+//*************************TABLETS*****************************
+@media screen and (min-width: 500px) and (min-height: 900px){
+    .header-nosotros{
+        img{
+            height: auto;
+            width: 150%;
+            margin-left: 0;
+        }
+    }
+}
+
+
+/***********************PC VERSION******************************/
+@media only screen and (min-width: 1000px) and (min-height: 600px){
+    .header-canciones{
+        .header-picture{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .header-nosotros{
+        img{
+            height: auto;
+            width: 150%;
+            margin-left: 0;
+        }
+    }
 }

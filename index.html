@@ -35,11 +35,11 @@
             <li class="nav-list-item">
                     <a href= "/sections/canciones.html">Canciones</a></li>
             <li class="nav-list-item">
-                    <a href= "#">Nosotros</a></li>
+                    <a href= "/sections/nosotros.html">Nosotros</a></li>
             <li class="nav-list-item">
-                    <a href= "#">Tienda</a></li>
+                    <a href= "/sections/tienda.html">Tienda</a></li>
             <li class="nav-list-item">
-                    <a href= "#">Contacto</a></li>
+                    <a href= "/sections/contacto.html">Contacto</a></li>
         </ol>
         </nav>
         <!--Adaptable navigation bar end--> 
@@ -70,88 +70,21 @@
                         tempor invidunt ut labore et dolore magna aliquyam </p>
                         
                     <nav class="carousel-nav">
-                        <a class="carousel-point-one" href="#"></a>
-                        <a class="carousel-point-two" href="#"></a>
-                        <a class="carousel-point-three" href="#"></a>
+                        <a class="carousel-point-one"></a>
+                        <a class="carousel-point-two"></a>
+                        <a class="carousel-point-three"></a>
                     </nav>
             </picture>
         </section>
         <!--carrousel-->
     </section>
     <!--DJ's section start -->
-        <section class="section-dj">
+        <section class="section-dj" id ="mainDjs">
             <h2 class="tittle-v1">Nuestros DJ's</h2>
-           
-            <article class="section-dj-article">
-            <a class= "section-dj-img" href="#">
-                <div>
-                <img  src="img/dj_dos.jpeg" alt="dj-photo">
-                </div>
-            </a>
-                <div class="section-dj-info">
-                    <a href="#"><h3>Nombre del artista</h3></a>
-                    <a href="#"><span>Generos del artista</span></a>
-                    <a href="#"><p>DJ Shadow empezó su carrera musical como DJ para la cadena KDVS. Ese período fue uno de los más importantes en (...)</p></a>
-                        <div class="section-dj-info-social-media">
+        <!--Aquí se crean todos los DJ's mediante Javascript-->
+            </section>
+            <div class="cta-container dj-cta" "><a class="cta_black" href="#">Conoce más</a></div>
         
-                         <a href="#" class="section-dj-info-social-media-spotify"></a>
-                         <a href="#" class="section-dj-info-social-media-youtube"></a>
-                        </div>
-                </div>
-                </article>
-            <article class="section-dj-article">
-                        <a class= "section-dj-img" href="#">
-                            <div>
-                            <img  src="img/dj_dos.jpeg" alt="dj-photo">
-                            </div>
-                        </a>
-                            <div class="section-dj-info">
-                                <a href="#"><h3>Nombre del artista</h3></a>
-                                <a href="#"><span>Generos del artista</span></a>
-                                <a href="#"><p>DJ Shadow empezó su carrera musical como DJ para la cadena KDVS. Ese período fue uno de los más importantes en (...)</p></a>
-                                    <div class="section-dj-info-social-media">
-                    
-                                     <a href="#" class="section-dj-info-social-media-spotify"></a>
-                                     <a href="#" class="section-dj-info-social-media-youtube"></a>
-                                    </div>
-                            </div>
-                </article>
-            <article class="section-dj-article">
-                        <a class= "section-dj-img" href="#">
-                            <div>
-                            <img  src="img/dj_dos.jpeg" alt="dj-photo">
-                            </div>
-                        </a>
-                            <div class="section-dj-info">
-                                <a href="#"><h3>Nombre del artista</h3></a>
-                                <a href="#"><span>Generos del artista</span></a>
-                                <a href="#"><p>DJ Shadow empezó su carrera musical como DJ para la cadena KDVS. Ese período fue uno de los más importantes en (...)</p></a>
-                                    <div class="section-dj-info-social-media">
-                    
-                                     <a href="#" class="section-dj-info-social-media-spotify"></a>
-                                     <a href="#" class="section-dj-info-social-media-youtube"></a>
-                                    </div>
-                            </div>
-                </article>
-            <article class="section-dj-article">
-                                    <a class= "section-dj-img" href="#">
-                                        <div>
-                                        <img  src="img/dj_dos.jpeg" alt="dj-photo">
-                                        </div>
-                                    </a>
-                                        <div class="section-dj-info">
-                                            <a href="#"><h3>Nombre del artista</h3></a>
-                                            <a href="#"><span>Generos del artista</span></a>
-                                            <a href="#"><p>DJ Shadow empezó su carrera musical como DJ para la cadena KDVS. Ese período fue uno de los más importantes en (...)</p></a>
-                                                <div class="section-dj-info-social-media">
-                                
-                                                 <a href="#" class="section-dj-info-social-media-spotify"></a>
-                                                 <a href="#" class="section-dj-info-social-media-youtube"></a>
-                                                </div>
-                                        </div>
-                </article>     
-            <a class="cta_black" href="#">Conoce más</a>
-        </section>
    <!--DJ's section end -->
 
    <!-- Footer starts-->     
@@ -201,7 +134,9 @@
     <!--Footer nav ends-->
     </footer>
     <!-- Footer ends-->
+    <script type="text/javascript" src = "/scripts/JSON-DATA.js"></script>
     <script type="text/javascript" src = "scripts/nav_bar.js"></script>
+    <script type="text/javascript" src = "scripts/djs.js"></script>
     <script type="text/javascript" src="scripts/carrousel.js"></script>
 </body>
 </html>

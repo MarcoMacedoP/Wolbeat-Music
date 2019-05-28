@@ -4,6 +4,7 @@
         .mobile-nav{
             //Esto desaparecerá en la versión de escritorio
             //Barra de navegacion móvil
+            max-height: 3rem;
             height: 6.71vh;
             width: 100%;
             background-color: $color_gris_fuerte;
@@ -115,9 +116,25 @@
          color: $color_amarillo;   
         }
         }
-@media screen and (min-width: 900px){
 
 
+
+@media only screen and (orientation: landscape) and (max-width: 900px){
+    .mobile-nav {
+        height: 11.71vh
+    }
+    .nav-list-item{
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width: 900px) and (orientation: landscape) {
+    .nav-list-item{
+        margin: 1rem;
+    }
+}
+@media screen and (min-width: 900px) {
+
+//Tablet horizontal
     .nav-welcome-logo{
         width: 18%;
         position: absolute;
@@ -165,28 +182,19 @@
         }
 }
 
-@media only screen and (min-width: 900px){
-    .nav-list{
-        width:   55%;
+@media only screen and (min-width: 1000px) and (min-height: 500px) and (orientation: landscape) {
+    .nav{
+        margin-top: 0.1rem;
     }
-}
-@media only screen and (min-width: 1000px){
     .nav-list{
-        width: 50%;
+        min-width: 18.62rem;
+        width: min-content;
     }
-}
-@media only screen and (min-width: 1100px){
-    .nav-list{
-        width: 45%;
+    .nav-list-item {
+        margin: 0 0.5rem;
     }
-}
-@media only screen and (min-width: 1200px){
-    .nav-list{
-        width: 40%;
-    }
-}
-@media only screen and (min-width: 1300px){
-    .nav-list{
-        width: 30;
+    .nav-welcome-logo {
+        width: 11.41%;
+       
     }
 }

@@ -26,7 +26,7 @@
     <picture class="nav-mobile-picture">
         <img src="http://127.0.0.1:5500/img/Lobo.png" class= "nav-mobile-picture-img" alt="Lobo de Wolbeat Music">
     </picture>
-    <img class="nav-welcome-logo" src="http://127.0.0.1:5500/img/logo_white.png" alt = "Logo de Wolbeat Music">  
+    <img class="nav-welcome-logo" src="/img/logo_black.png" alt = "Logo de Wolbeat Music">  
     <ol class="nav-list"> 
         <li class="nav-list-item">
             <a href= "http://127.0.0.1:5500">Inicio</a></li>
@@ -63,9 +63,7 @@
 <section class="dj-information" id = "section_one">
     <h2 class="dj-information-tittle" >Sobre el (nombre del DJ):</h2>
     <h3 class="dj-information-genres">Generos que toca el artista</h3>
-    <p class="dj-information-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-    <p class="dj-information-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-    <p class="dj-information-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    <p class="dj-information-p"></p>
     <div class="dj-information-links">
         <div class="dj-information-links-social">
             <a class="dj-information-links-spotify" href="#"></a>
@@ -77,36 +75,6 @@
 <!--DJ information end -->
 <!--DJ discography starts-->
 <article class="dj-discography" id="section_two">
-    <article class="dj-disc">
-        <div class="dj-disc-img-container">
-            <img class = "dj-disc-img-container-img" src="../../img/artboard.jpg" alt="Imagen del disco">
-        </div>
-    <section class="dj-disc-info"> 
-       
-            <h2 class="dj-disc-info-tittle">Titulo del disco</h2>
-            <h3 class="dj-disc-info-genres">Generos del disco</h3>
-            <div class="dj-disc-info-social">
-                <a class="dj-disc-info-social-spotify" href="#"></a>
-                <a class="dj-disc-info-social-youtube" href="#"></a>
-            </div>
-        </section>
-            <p class="dj-disc-p">Endtroducing..... es el álbum debut del productor musical estadounidense DJ Shadow, lanzado el 19 de noviembre de 1996 bajo el sello Mo' Wax. (...)</p>
-        </article>
-    <article class="dj-disc">
-        <div class="dj-disc-img-container">
-            <img class = "dj-disc-img-container-img" src="../../img/artboard_2.jpg" alt="Imagen del disco">
-        </div>
-    <section class="dj-disc-info"> 
-       
-            <h2 class="dj-disc-info-tittle">Titulo del disco</h2>
-            <h3 class="dj-disc-info-genres">Generos del disco</h3>
-            <div class="dj-disc-info-social">
-                <a class="dj-disc-info-social-spotify" href="#"></a>
-                <a class="dj-disc-info-social-youtube" href="#"></a>
-            </div>
-        </section>
-            <p class="dj-disc-p">Endtroducing..... es el álbum debut del productor musical estadounidense DJ Shadow, lanzado el 19 de noviembre de 1996 bajo el sello Mo' Wax. (...)</p>
-        </article>
 </article>
 
 <!--DJ discography ends-->
@@ -143,8 +111,24 @@
 </footer>
 <!-- Footer ends-->
 <!--Scripts start-->
+<script type="text/javascript" src = "../../scripts/JSON-DATA.js"></script>
+<script type="text/javascript" src="../../scripts/djs.js"></script>
+<script type = "text/javascript" src = "../../scripts/discs.js"></script>
 <script type="text/javascript" src="../../scripts/nav_bar.js"></script>
+
 <script type = "text/javascript" src="../../scripts/header-sections.js"></script>
+<script type="text/javascript">
+
+        let headerPicture = document.querySelector('.header-picture')
+        let headline = document.querySelector('h1')
+        let infoContainer = document.querySelector('.dj-information')
+        djsPageOne.uno.setInfoPage(headline,headerPicture,infoContainer)
+        //Discos del DJ
+        let container = document.querySelector('.dj-discography')
+        var Endtroducing = new DISC(JSON_DISC)
+        Endtroducing.createIn(container, setUrl)
+        Endtroducing.createIn(container, setUrl)
+</script>
 <!--Scripts end-->
 </body>
 </html>

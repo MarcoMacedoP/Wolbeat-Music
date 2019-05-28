@@ -55,6 +55,7 @@ height: 20%;
 }
 //iconos de redes sociales
 .footer-nav-social{
+    max-width: 6.37rem;
     padding-bottom: 5%;
     margin-top: 1rem;
     display: flex;
@@ -69,10 +70,11 @@ height: 20%;
     a{  
         display: block;
         width : 1.75rem;
+        max-width: 36px;
         height: 1.75rem;
         background-repeat: no-repeat;
-        background-position: cover;
-        background-size: cover;
+        background-position: center;
+        background-size: contain;
     }
     
 }
@@ -85,12 +87,31 @@ height: 20%;
 .footer-nav-social-youtube{
     background-image: url(../img/youtube.png);
 }
+
+
+@media only screen and (orientation: landscape) and (max-width: 999px){
+    .footer-nav-icon {
+
+        width: 21.44vw;
+        
+    }
+    .footer-contact{
+        p{
+            padding: 0 10%;
+            margin: 0 0 1rem 0;
+        }
+    }
+    .footer-contact-logo {
+        width: 25.66vw;
+    }
+}
 /****************** TABLET VERSION **********************************************/
-@media only screen and (min-width: 700px) and (min-height: 1000px){
+@media only screen and (min-width: 700px) and (min-height: 1000px) and (orientation: portrait) {
     .footer-contact{
         padding: 1rem 1rem 0 1rem;
         p{
             margin: 5% 0;
+            padding: 0 10%;
         }
     }
     .footer-contact-iso {
@@ -111,16 +132,43 @@ height: 20%;
 }
 /***********************PC VERSION******************************/
 @media only screen and (min-width: 1000px) and (min-height: 600px){
+   
     .footer-contact{
         padding-left: 8.7%;
         padding-right: 8.7%;
+        p{
+            margin-bottom: 5%;
+            padding: 0 5%;
+        }
+    }
+    .footer-nav-sections{
+        min-width: 25.25%;
+        width: min-content;
+        li{
+            margin:0 0.66rem;
+        }
     }
 .footer-contact-iso {
         width: 27.5vw;
         padding: 0.5rem 1rem;
+  
     }
     .footer-contact-logo{
         width: 20%;
+        margin: 0.66rem 0 0;
     }
-
+    .footer-nav{
+        flex-direction: row;
+        align-items: center;
+        padding: 1% 1.2rem;
+        justify-content: space-between;
+        height: 14vh;
+    }
+    .footer-nav-social{
+        margin: 0;
+        padding: 0;
+    }
+    .footer-nav-icon{
+        width: 12.4vw;
+    }
 }
