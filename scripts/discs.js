@@ -69,13 +69,20 @@ class DISC { //Esta clase muestra los discos generados en la
         
     }
     setInfoPage(headline, headerPicture, infoContainer, fn ){
-        headline.innerHTML= this.JSON_OBJECT.Nombre;
+        headline.innerHTML= this.JSON_OBJECT.Nombre
+        let smallDesc = cutTxt(this.JSON_OBJECT.description, 228)
         let subtittle= infoContainer.querySelector('.disc-information-tittle')
+        subtittle.innerHTML= "Sobre " + this.JSON_OBJECT.Nombre;
+        subtittle = document.querySelector('.disc-songs-tittle')
         subtittle.innerHTML= "Sobre " + this.JSON_OBJECT.Nombre;
         let genres= infoContainer.querySelector('.disc-information-genres')
         genres.innerHTML = this.JSON_OBJECT.generos
+        genres = document.querySelector('.disc-songs-genres')
+        genres.innerHTML = this.JSON_OBJECT.generos
         let description = infoContainer.querySelector('.disc-information-p')
         description.innerHTML = this.JSON_OBJECT.description
+        description= document.querySelector('.disc-songs-desc')
+        description.innerHTML = smallDesc
         let img = headerPicture.querySelector('img')
         img.setAttribute('src', this.JSON_OBJECT.cover)
         //Seteo de canciones
