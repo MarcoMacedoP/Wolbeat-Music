@@ -75,27 +75,45 @@ class disc{
     }
 
 }
-
-
-/*var Endtroducing = new disc('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/DJ_Shadow_tim_festival.jpg/230px-DJ_Shadow_tim_festival.jpg',
-    'Endtroducing.....', 'https://static.spin.com/files/2016/09/endtroducing-640x427.jpg', '', 'http://127.0.0.1:5500/sections/Disc/one.html', 'http://127.0.0.1:5500/sections/Disc/one.html' )
-Endtroducing.description= "Endtroducing..... es el álbum debut del productor musical estadounidense DJ Shadow, lanzado el 19 de noviembre de 1996 bajo el sello Mo' Wax. El álbum es conocido por estar compuesto casi en su totalidad de contenido sampleado, la mayoría del cual se originó a partir de varios discos de vinilo obtenidos por DJ Shadow durante sus viajes a las tiendas de música. Endtroducing..... fue producido por Shadow en el lapso de dos años con un mínimo de equipo, sobre todo el sampler Akai MPC60. Al crear la atmósfera general del disco, se esforzó por captar la naturaleza melancólica de sus lanzamientos anteriores para el sello Mo' Wax. El contenido del álbum incluye tanto temperamentales pistas de ritmo lento como canciones optimistas que recuerdan a las primeras influencias de hip hop de DJ Shadow.\n\nEndtroducing..... recibió la aclamación universal de los críticos, que elogiaron el enfoque de DJ Shadow hacia el sampleado y los ritmos que él creó a partir de los samples. Obtuvo altas posiciones en varias listas de fin de año de los mejores discos del 1996. El álbum es considerado una obra decisiva en el movimiento del hip hop instrumental, con las innovadoras técnicas de muestreo y arreglos de DJ Shadow influenciando a otros productores a crear similares obras basadas en muestras. Endtroducing..... ha aparecido desde entonces en las listas de mejores discos de la década —e incluso de todos los tiempos— de varias publicaciones. "
-Endtroducing.genres= "Sampling/IDM"*/
-
-let artistTemp = DJS.DJ_SHADOW
-let discTemp= artistTemp.discos.Entroducing
-
-let Endtroducing_S = new disc(artistTemp.avatar, discTemp.Nombre, discTemp.cover, 
-    discTemp.description,discTemp.generos, discTemp.url)
+function createDISC (artistTemp, discTemp){
+    let object= new disc(artistTemp.avatar, discTemp.Nombre, discTemp.cover, 
+        discTemp.description,discTemp.generos, discTemp.url)
+    return object;
+}
 
 artistTemp = DJS.WOLBEAT
 discTemp = artistTemp.discos.WMVOLI
+//DISCOS
+let WMVOLI = createDISC(artistTemp, discTemp)
+let CAROL = createDISC(DJS.LIVJ, DJS.LIVJ.discos.CAROL)
+let BLEU = createDISC(DJS.LIVJ, DJS.LIVJ.discos.BLEU)
+let BLACK = createDISC(DJS.ROSSWELL, DJS.ROSSWELL.discos.BLACK)
+let TWO_ELEVEN = createDISC(DJS.ROSSWELL, DJS.ROSSWELL.discos.TWO_ELEVEN)
 
-let WMVOLI = new disc (artistTemp.avatar, discTemp.Nombre, discTemp.cover, 
-    discTemp.description,discTemp.generos, discTemp.url)
+//SINGLES
+let BREZZE = createDISC (DJS.FELIX_GARREL, DJS.FELIX_GARREL.discos.BREZZE)
+let NO_NAME= createDISC(DJS.OCECA, DJS.OCECA.discos.NO_NAME)
+let BACK_TO_BASS = createDISC(DJS.HAUZZA, DJS.HAUZZA.discos.BACK_TO_BASS)
+let REMIX = createDISC(DJS.LUILLY, DJS.LUILLY.discos.REMIX)
+let BOUNCE = createDISC(DJS.MCKLED, DJS.MCKLED.discos.BOUNCE)
 
-let container = document.querySelector('.discos')
+let discos= [
+    WMVOLI,CAROL,BLEU,BLACK,TWO_ELEVEN
+]
+let singles = [
+    BREZZE,NO_NAME, BACK_TO_BASS, REMIX, BOUNCE
+]
+
+
+let container = document.querySelector('#discos')
 if(container){
-        WMVOLI.createIn(container, setUrl)
-        Endtroducing_S.createIn(container, setUrl)
+    discos.forEach(element => {
+        element.createIn(container, setUrl)
+    });
+}
+container = document.querySelector('#singles')
+if(container){
+    singles.forEach(element => {
+        element.createIn(container, setUrl)
+    });
 }
