@@ -10,7 +10,7 @@
     display: block;
     position: relative;
     width: 100%;
-    height: 22.06%;
+    height: 30.06%;
     margin: .5rem 0 .5rem 0;
     overflow: hidden;
 }
@@ -18,9 +18,9 @@
     div{
         width: 100%;
         height: 100%;
-        background-color: $color_gris_claro;
-        background-size: cover;
-        background-position: 100% 30%;
+        background-color: #929298;
+        background-size: contain;
+        background-position: top;
         background-repeat: no-repeat;
     }
     img{

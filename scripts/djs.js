@@ -24,6 +24,7 @@ class DJ {
         imgLink.className = 'section-dj-img'
         let imgContainer = document.createElement('div')
         imgContainer.style.backgroundImage = 'url('+this.image+')'
+        imgContainer.style.backgroundColor = '#1C1C1B'
         let img = document.createElement('img')
         //img.setAttribute('src', this.image)
         imgContainer.append(img) 
@@ -114,16 +115,21 @@ fka.url = 'https://www.vulture.com/2019/04/fka-twigs-cellophane-song-review.html
 
 
 
-let DJ_SHADOW = new DJ( DJS.DJ_SHADOW.avatar, DJS.DJ_SHADOW.nombre, 
-    DJS.DJ_SHADOW.generos, DJS.DJ_SHADOW.biografia, DJS.DJ_SHADOW.url)
+//Nuevos Talentos
+let WOLBEAT = new DJ(DJS.WOLBEAT.avatar, DJS.WOLBEAT.nombre, DJS.WOLBEAT.generos, DJS.WOLBEAT.biografia, DJS.WOLBEAT.url);    
+let FELIX_GARREL = new DJ(DJS.FELIX_GARREL.avatar, DJS.FELIX_GARREL.nombre, DJS.FELIX_GARREL.generos, DJS.FELIX_GARREL.biografia, DJS.FELIX_GARREL.url)
+let OCECA= new DJ(DJS.OCECA.avatar,DJS.OCECA.nombre, DJS.OCECA.generos, DJS.OCECA.biografia, DJS.OCECA.url)
+//Clasicos de WOLBEAT
+let HAUZZA = new DJ(DJS.HAUZZA.avatar, DJS.HAUZZA.nombre, DJS.HAUZZA.generos, DJS.HAUZZA.biografia, DJS.HAUZZA.url)
 
 let mainSectionDJ= document.getElementById('mainDjs')
 
     if(mainSectionDJ){
 
-        DJ_SHADOW.createIn(mainSectionDJ, setUrl)
-        DJ_SHADOW.createIn(mainSectionDJ, setUrl)
-        fka.createIn(mainSectionDJ, setUrl) 
+        //DJ_SHADOW.createIn(mainSectionDJ, setUrl)
+        FELIX_GARREL.createIn(mainSectionDJ, setUrl)
+        WOLBEAT.createIn(mainSectionDJ, setUrl)
+        OCECA.createIn(mainSectionDJ, setUrl)
     }
 
 /***********************SECCION DE DJS********************************** */
@@ -161,7 +167,7 @@ class djPages {
         this.djsObject.uno.createIn(this.container,setUrl)
         this.djsObject.dos.createIn(this.container)
         this.djsObject.tres.createIn(this.container)
-        this.djsObject.cuatro.createIn(this.container)
+        //this.djsObject.cuatro.createIn(this.container)
         //Seteamos el boton de navegación correspondiente el numero de pagina
         let puntoUno=this.navsObject.one
         let puntoDos=this.navsObject.two
@@ -194,11 +200,11 @@ class djPages {
     }
     
     const djsPageOne  = {
-        uno : new DJ(DJS.DJ_SHADOW.avatar, DJS.DJ_SHADOW.nombre, DJS.DJ_SHADOW.generos, DJS.DJ_SHADOW.biografia, "http://127.0.0.1:5500/sections/DJ's/one.html"),
-        dos : new nuevosTalentos('http://127.0.0.1:5500/img/dj_dos.jpeg', 'Dj Emmet', 'Dance / HOUSE', genericDescription),
-        tres : new nuevosTalentos('http://127.0.0.1:5500/img/dj_tres.jpeg', 'Dj Reset', 'Future Bass / IDM', genericDescription),
-        cuatro : new nuevosTalentos('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/DJ_Shadow.jpg/250px-DJ_Shadow.jpg', 'Dj Amazon', 'Ambient / dark', genericDescription)
-    }
+        uno : WOLBEAT,
+        dos : FELIX_GARREL,
+        tres : OCECA,
+        }
+        /*
     const djsPageTwo = {
         uno:  new nuevosTalentos('https://mxcity.mx/wp-content/uploads/2014/08/Kris.jpg', 'Vanessa', 'IDM / HOUSE', genericDescription),
         dos:  new nuevosTalentos('https://mxcity.mx/wp-content/uploads/2014/08/Tatiana.jpg', 'Karla ', 'IDM / HOUSE', genericDescription),
@@ -210,31 +216,21 @@ class djPages {
         dos:  new nuevosTalentos('https://i1.wp.com/knobstudio.com.mx/wp-content/uploads/2016/09/Diplomado-Electronic-Music-DJ-Set-2017.png', 'DJ Sasha ', 'IDM / HOUSE', genericDescription),
         tres:  new nuevosTalentos('http://ottofm.com/wp-content/uploads/2018/09/will-marshmello-save-edm-body-image-1479921716.jpg', 'Dj Marshmello', 'IDM / HOUSE', genericDescription),
         cuatro:  new nuevosTalentos('https://los40es00.epimg.net/los40/imagenes/2019/03/12/musica/1552414961_036011_1552419779_noticia_normal.jpg', 'Dj Green', 'IDM / HOUSE', genericDescription)
-    }
+    } */
 
-let paginaTresNuevosTalentos = djsPageOne;
 
 let paginaUno = new djPages(1, sectionNuevosTalentos, navsTalento, djsPageOne)
-let paginaDos= new djPages(2, sectionNuevosTalentos, navsTalento,djsPageTwo)
-let paginaTres= new djPages(3, sectionNuevosTalentos, navsTalento, djsPageThree)
+//let paginaDos= new djPages(2, sectionNuevosTalentos, navsTalento,djsPageTwo)
+//let paginaTres= new djPages(3, sectionNuevosTalentos, navsTalento, djsPageThree)
     
 if(sectionNuevosTalentos){        
-paginaUno.setPage()
-    navsTalento.one.addEventListener('click', ()=>{
-       paginaUno.setPage() 
-    })
-    navsTalento.two.addEventListener('click', ()=>{
-        paginaDos.setPage() 
-     })
-    navsTalento.three.addEventListener('click', ()=>{
-        paginaTres.setPage() 
-     })
+    paginaUno.setPage()
+    navsTalento.one.style.display =  "none";
+    navsTalento.two.style.display =  "none";
+    navsTalento.three.style.display =  "none";
 }
 
 let sectionClasicos = document.getElementById('section-clasicos')
 if(sectionClasicos){
-    let numero_djs = 4 //Siempre mantener en numero par
-    for(let i= 0; i<numero_djs; i++){
-        fka.createIn(sectionClasicos, setUrl)
-    }
+        
 }

@@ -1,0 +1,35 @@
+NAME: {
+        nombre: "",
+        generos: "",
+        biografia: "", 
+        socialMedia: {
+            spotify: "",
+            youtube: ""
+        },
+        avatar: "",
+        discos: {
+            NOMBRE_DISCO: {
+                url: "INDICAR HTML",
+                Nombre: "",
+                generos: "",
+                description: "",
+                cover:"",
+                socialMedia:{
+                    spotify: "",
+                    youtube: ""
+                },
+                canciones: {
+                    cancion_1: {
+                        nombre: '',
+                        duration: '',
+                        link: 'wwww.spotify.com/'
+                    },
+                    cancion_2: {
+                        nombre: '',
+                        duration: '',
+                        link: 'wwww.spotify.com/'
+                    }
+                } 
+            }
+        }
+    }

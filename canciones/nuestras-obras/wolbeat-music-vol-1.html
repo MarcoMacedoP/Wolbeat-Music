@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nombre del disco</title>
+    <link rel="stylesheet" href="http://127.0.0.1:5500/css/sections.css">
+</head>
+<body>
+ <!--Mobile bar start-->   
+ <nav class="mobile-nav" id = "mobile-nav">
+        <ol class = "mobile-nav-list">
+            <li class= "mobile-nav-list-item-1">
+                <a href="#" class= "mobile-nav-list-item-menu" id="menu_mobile_btn"></a>
+            </li>
+            <li class="mobile-nav-list-item-2">
+                <a href="#" class ="mobile-nav-list-item-logo"></a>
+            </li>
+        </ol>
+    </nav>
+    <!--Mobile bar end-->
+
+<!--Adaptable navigation bar start-->
+<nav class="nav" id ="navigation_bar">
+    <picture class="nav-mobile-picture">
+        <img src="http://127.0.0.1:5500/img/Lobo.png" class= "nav-mobile-picture-img" alt="Lobo de Wolbeat Music">
+    </picture>
+    <img class="nav-welcome-logo" src="../../img/logo_black.png" alt = "Logo de Wolbeat Music">  
+    <ol class="nav-list"> 
+        <li class="nav-list-item">
+            <a href= "http://127.0.0.1:5500">Inicio</a></li>
+        <li class="nav-list-item">
+            <a href= "http://127.0.0.1:5500/sections/djs.html">DJ's</a></li>
+        <li class="nav-list-item">
+            <a href= "http://127.0.0.1:5500/sections/canciones.html">Canciones</a></li>
+        <li class="nav-list-item">
+            <a href= "http://127.0.0.1:5500/sections/nosotros.html">Nosotros</a></li>
+        <li class="nav-list-item">
+            <a href= "http://127.0.0.1:5500/sections/contacto.html">Contacto</a></li>
+        <li class="nav-list-item">
+            <a href= "http://127.0.0.1:5500/sections/tienda.html">Tienda</a></li> 
+    </ol>
+
+</nav>
+<!--Adaptable navigation bar end-->
+<!--Header with sections starts-->
+<header class="header">
+        <picture class="header-picture">
+            <img src="http://127.0.0.1:5500/img/artboard.jpg"alt="Imagen de la seccion">
+        </picture>
+        <h1 class="header-name">Endtroducing</h1>
+        <nav class="header-sections">
+            <span class="header-sections-focus" id ="btn_section_one">Información</span>
+            <span class="header-sections-blur" id = "btn_section_two">Canciones</span>
+            <div class="header-sections-selection"></div>
+        </nav>
+    </header>
+<!--Header with sections ends-->
+
+<article id="section_one">
+    <!--Disc information start -->
+<section class="disc-information" >
+        <h2 class="disc-information-tittle" >Sobre el disco</h2>
+        <h3 class="disc-information-genres">Generos del disco</h3>
+        <p class="disc-information-p">Informacion sobre el disco generada dinamicamente. </p>
+        <div class="disc-information-links">
+            <div class="disc-information-links-social">
+                <a class="disc-information-links-spotify" href="#"></a>
+                <a class="disc-information-links-youtube" href="#"></a>
+            </div>
+        <a href="#" class="cta_black">Comprar disco</a>        
+        </div>
+    </section>
+    <!--DJ information end -->
+</article>
+<article id="section_two">
+    <section class="disc-songs">
+            <h2 class="disc-songs-tittle" >Titulo del disco...</h2>
+            <h3 class="disc-songs-genres">Generos que abarca el disco</h3>
+            <p class="disc-songs-desc">Aquí va la informacion del disco, es generada dinamicamente. </p>
+            <section class="disc-songs-container">
+                <!--Canciones del disco generadas dinamicamente :) -->
+            </section>
+    </section>
+</article>
+<footer class="footer">
+        <!--Footer nav starts-->
+        <nav class="footer-nav">
+        <picture>
+            <img class ="footer-nav-icon" src="http://127.0.0.1:5500/img/logo_black.png" alt="Wolbeat-Logo">
+        </picture>
+        <ol class="footer-nav-sections">
+            <li><a href="#">DJ's</a></li>
+            <li><a href="#">Canciones</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ol>
+        <ul class="footer-nav-social">
+            <li>
+                <a class="footer-nav-social-fb" 
+                href="#"></a>
+                
+            </li>
+            <li><a class="footer-nav-social-spotify"
+                 href="#"></a>
+            </li>
+            <li><a class="footer-nav-social-youtube"
+                 href="#"></a>
+            </li>
+        </ul>
+        </nav>
+    <!--Footer nav ends-->
+    </footer>
+    <!--Scripts start-->
+    <script type="text/javascript" src = "http://127.0.0.1:5500/scripts/JSON-DATA.js"></script>
+    <script type ="text/javascript" src= "../../scripts/djs.js"></script>
+    <script type = "text/javascript" src = "../../scripts/discs.js"></script>
+    <script type="text/javascript" src = "http://127.0.0.1:5500/scripts/nav_bar.js"></script>
+    <script type="text/javascript" src = "http://127.0.0.1:5500/scripts/header-sections.js"></script>
+    <script type='text/javascript' src = '../../scripts/songs.js'></script>
+    <script type='text/javascript'>
+        let headline= document.querySelector('.header-name')
+        let headerPicture = document.querySelector('.header-picture')
+        let infoContainer = document.querySelector('.disc-information')
+        
+        //Aquí seteamos el disco que queramos poner
+        JSON_DISC = DJS.WOLBEAT.discos.WMVOLI
+        disc = new DISC(JSON_DISC)
+        disc.setInfoPage(headline, headerPicture, infoContainer, setUrl);
+    </script>
+    <!--Scripts end-->
+</body>
+</html>

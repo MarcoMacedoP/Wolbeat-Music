@@ -1,3 +1,4 @@
+var disc = ''
 console.log ( 'AAAAAAAAAAAAAAAAAAAAAa')
 let containerDiscografia = document.querySelector('.dj-discography')
 var JSON_DISC = DJS.DJ_SHADOW.discos.Entroducing
