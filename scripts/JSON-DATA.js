@@ -91,7 +91,7 @@ let DJS= {
                 } 
             }, 
             WMVOLI: {
-                url: "#",
+                url: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/wolbeat-music-vol-1.html",
                 Nombre: "Wölbeat Music Vol. I",
                 generos: "Bounce, Electro House, Bass House",
                 description: "El primer volumen de Wölbeat Music",
@@ -221,6 +221,7 @@ let DJS= {
 
     //Clasicos de Wolbeat
     HAUZZA: {
+        url: "http://mx54.prueba.site/~wolbeatm/djs/nuestros-djs/Hauzza.html",
         nombre: "Hauzza",
         generos: "Future Bass, Big Room, Bounce",
         biografia: "Homero Livas A.K.A HAUZZA, nacido el 24 de Septiembre de 1996 en Saltillo Coahuila, se adentró en la música a muy temprana edad, empezando como DJ a los 16 años y convirtiéndose en productor a los 17 años, comenzó tocando en todo tipo de eventos locales para así después ser residente de Antros y bares locales como Sr. Mostacho, Área 52 y Life Club, sus sets consisten en una selección musical de casi todos los subgéneros electrónicos, combinando lo comercial con los mejores drops de la escena, jugando con tus emociones y adentrándote a una atmósfera única, su forma de romper la monotonía de la escena ha dado paso a que su nombre crezca en toda la región.", 
@@ -231,7 +232,7 @@ let DJS= {
         avatar: "http://mx54.prueba.site/~wolbeatm/img/avatars/hauzza.png",
         discos: {
             BACK_TO_BASS: {
-                url: "INDICAR HTML",
+                url: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/BACK-TO-BASS.html",
                 Nombre: "Back to the bass",
                 generos: "Future Bass, Big Room, Bounce",
                 description: "En este sencillo Hauzza rompe los estandartes de la música nuevamente, al puro estilo Wolbeat Music.",
@@ -251,6 +252,7 @@ let DJS= {
         }
     },
     LIVJ: { 
+        url: 'http://mx54.prueba.site/~wolbeatm/djs/nuestros-djs/LIVJ.html',
         nombre: "LIVJ",
         generos: "Future Bass, Big Room, Bounce, Progressive House",
         biografia: "Homero Livas A.K.A LIVJ, nacido el 24 de Septiembre de 1996 en Saltillo, Coahuila. Se adentró en la música a muy temprana edad, empezando como DJ a los 16 años y convirtiéndose en productor a los 17 años, comenzó tocando en todo tipo de eventos locales para así después ser residente de Antros y bares locales como Sr.Mostacho, Área 52 y Life Club, sus sets consisten en una selección musical de casi todos los subgéneros electrónicos, combinando lo comercial con los mejores drops de la escena, jugando con tus emociones y adentrándote en una atmósfera única, su forma de romper la monotonía de la escena ha dado paso a que su nombre crezca en toda la región.", 
@@ -261,7 +263,7 @@ let DJS= {
         avatar: "http://mx54.prueba.site/~wolbeatm/img/avatars/LIVJ.jpg",
         discos: {
             CAROL: {
-                url: "INDICAR HTML",
+                url: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/CAROL.html",
                 Nombre: "Cårøl",
                 generos: "Future Bass, Big Room, Bounce, Progressive House",
                 description: "Conoce el disco Cårøl de LIVJ",
@@ -295,7 +297,7 @@ let DJS= {
             },
             BLEU: {
                 url: "INDICAR HTML",
-                Nombre: "Bleu",
+                Nombre: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/BLEU.html",
                 generos: "Future Bass, Big Room, Bounce, Progressive House",
                 description: "Conoce el disco Bleu de LIVJ",
                 cover:"http://mx54.prueba.site/~wolbeatm/img/cover_arts/BLEU.jpg",
@@ -329,6 +331,7 @@ let DJS= {
         }
     },
     ROSSWELL: {
+        url : "http://mx54.prueba.site/~wolbeatm/djs/nuestros-djs/ROSSWELL.html", 
         nombre: "Rosswell",
         generos: "Progressive House",
         biografia: "Desde pequeño tocaba la guitarra y a la edad de 14 empezó a tocar el piano, al mismo tiempo que instalo mi primer software de producción con el cual sigo trabajando hasta la fecha. \r Es un amante de la música house y le encantan los sonidos orgánicos de la música tropical, le fascinan las canciones que transmiten buenas vibras, y lo que busca el en su música es que las demás personas puedan captar los sentimientos que yo plantó en cada una de mis canciones.", 
@@ -339,7 +342,7 @@ let DJS= {
         avatar: "http://mx54.prueba.site/~wolbeatm/img/avatars/ROSSWELL.jpg",
         discos: {
             BLACK: {
-                url: "INDICAR HTML",
+                url: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/BLACK.html",
                 Nombre: "Black",
                 generos: "Tropical House y Deep House.",
                 description: "Conoce Black de Rosswell. ",
@@ -383,7 +386,7 @@ let DJS= {
                 } 
             },
             TWO_ELEVEN: {
-                url: "INDICAR HTML",
+                url: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/TWO_ELEVEN.html",
                 Nombre: "Two Eleven",
                 generos: "Tropical House y Deep House.",
                 description: "Conoce Two Eleven de Rosswell. ",
@@ -408,6 +411,7 @@ let DJS= {
         }
     },
     LUILLY: { 
+        url: 'http://mx54.prueba.site/~wolbeatm/djs/nuestros-djs/LUILLY.html', 
         nombre: "Luïlly Karson",
         generos: "Progressive House & Electro House.",
         biografia: "Es DJ en el sello discografico Wölbeat Music desde e 2016, en el cual a tenido la oportunidad de viajar por grandes partes de México para sesiones fotograficas, eventos y entre más cosas. \n Tambien dentro de Wölbeat Music el ha podido vender su musica en diferentes plataformas digitales", 
@@ -418,7 +422,7 @@ let DJS= {
         avatar: "http://mx54.prueba.site/~wolbeatm/img/avatars/Lu%c3%aflly_Karson.jpg",
         discos: {
             REMIX: {
-                url: "#",
+                url: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/REMIX.HTML",
                 Nombre: "How Deep Is Your Love",
                 generos: "Progressive House & Electro House.",
                 description: "Conoce el remix de Luïlly Karson de este clásico de Calvin Harris & Disciples - How Deep Is Your Love.",
@@ -438,6 +442,7 @@ let DJS= {
         }
     },
     MCKLED: { 
+        url: 'http://mx54.prueba.site/~wolbeatm/djs/nuestros-djs/MCKLED.html', 
         nombre: "McKlëd",
         generos: "Melbourne & Big Room",
         biografia: "Carlos Gerónimo nacido en Toluca, Estado de México el 31 de julio de 1993 nombre artístico McKlëd. A los 18 años empezó a interesarse en distintos géneros de música electrónica y a los 19 años de edad comenzó su carrera como DJ realizado presentaciones en pequeños eventos como cumpleaños de amigos, familiares y sociales, a los 22 años comenzó a desarrollar su propio estilo de producción teniendo como estilos Melbourne y big room.", 
@@ -448,7 +453,7 @@ let DJS= {
         avatar: "http://mx54.prueba.site/~wolbeatm/img/avatars/McKled.png",
         discos: {
             BOUNCE: {
-                url: "INDICAR HTML",
+                url: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/BOUNCE.html",
                 Nombre: "Bounce",
                 generos: "Melbourne & Big Room",
                 description: "",

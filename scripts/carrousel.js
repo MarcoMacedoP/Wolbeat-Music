@@ -62,9 +62,12 @@ class carrousel{
 }    
 //Objetos carrusel creados
 //constructor (avatar, nombre, descripcion, cover, position)
-let firstCarrousel = new carrousel(DJS.FELIX_GARREL.avatar, DJS.FELIX_GARREL.nombre, DJS.FELIX_GARREL.biografia, DJS.FELIX_GARREL.discos.BREZZE.cover, 1)
-let secondCarrousel= new carrousel(DJS.OCECA.avatar, DJS.OCECA.nombre, DJS.OCECA.biografia, DJS.OCECA.discos.NO_NAME.cover, 2)
-let thirdCarrosuel = new carrousel(DJS.WOLBEAT.nombre,DJS.WOLBEAT.discos.WMVOLI.Nombre,DJS.WOLBEAT.discos.WMVOLI.description, DJS.WOLBEAT.discos.WMVOLI.cover, 3)
+let firstCarrousel = new carrousel(DJS.FELIX_GARREL.avatar, DJS.FELIX_GARREL.nombre, DJS.FELIX_GARREL.discos.BREZZE.description
+    , DJS.FELIX_GARREL.discos.BREZZE.cover, 1)
+let secondCarrousel= new carrousel(DJS.OCECA.avatar, DJS.OCECA.nombre, DJS.OCECA.discos.NO_NAME.description, 
+    DJS.OCECA.discos.NO_NAME.cover, 2)
+let thirdCarrosuel = new carrousel(DJS.WOLBEAT.nombre,DJS.WOLBEAT.discos.WMVOLI.Nombre,
+    DJS.WOLBEAT.discos.WMVOLI.description, DJS.WOLBEAT.discos.WMVOLI.cover, 3)
 
     function avanzarCarrosel(object){
         let actualPosition= object.position

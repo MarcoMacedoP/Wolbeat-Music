@@ -532,9 +532,7 @@ html {
     width: 150%;
     margin-left: 0; } }
 .section-dj {
-  min-height: 50rem;
   width: 100%;
-  height: 121.71vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -543,19 +541,37 @@ html {
   display: block;
   position: relative;
   width: 100%;
-  height: 30.06%;
+  height: 30vh;
+  min-height: 272px;
   margin: .5rem 0 .5rem 0;
   overflow: hidden; }
 
-.section-dj-img div {
+.section-dj-img::before {
+  content: "";
+  position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #929298;
-  background-size: contain;
-  background-position: top;
+  background: inherit;
+  background-size: cover;
+  z-index: -1; }
+
+.section-dj-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: 0; }
+
+.section-dj-img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1C1C1B;
+  background-size: 100% auto;
+  background-position: center;
   background-repeat: no-repeat; }
-.section-dj-img img {
-  width: 100%; }
 
 .section-dj-info {
   width: 100%;
@@ -833,8 +849,7 @@ html {
     padding-left: 1rem;
     margin-bottom: 0;
     overflow: hidden;
-    box-sizing: border-box;
-    height: min-content; }
+    box-sizing: border-box; }
     .section-dj h2 {
       margin-bottom: 1rem;
       align-self: flex-start; }
@@ -892,21 +907,29 @@ html {
     font-size: 0.75rem; }
 
   .section-dj-img {
-    width: min-content; }
-    .section-dj-img div {
-      border-radius: 50%;
-      overflow: hidden;
-      display: block;
-      box-sizing: border-box;
-      width: 18vw;
-      height: 18vw; }
-    .section-dj-img img {
-      display: block;
-      position: static;
-      margin-left: -100px;
-      left: 0;
-      width: auto;
-      height: 100%; }
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+    min-height: 18vw;
+    min-height: 18vw;
+    max-height: 18vw;
+    max-width: 18vw; }
+
+  .section-dj-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: cover;
+    z-index: -1; }
+
+  .section-dj-img::before {
+    display: none; }
 
   .dj-discography {
     margin-bottom: 10%; }
