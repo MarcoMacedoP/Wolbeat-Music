@@ -654,10 +654,10 @@ html {
     background-position: center; }
 
 .dj-information-links-spotify, .disc-information-links-spotify {
-  background-image: url(/img/spotify_black.png); }
+  background-image: url(../img/spotify_black.png); }
 
 .dj-information-links-youtube, .disc-information-links-youtube {
-  background-image: url(/img/youtube_black.png); }
+  background-image: url(../img/youtube_black.png); }
 
 .dj-cta {
   margin-bottom: 1rem; }
@@ -685,8 +685,8 @@ html {
     background-size: 100% auto;
     background-position: center; }
   .dj-disc .dj-disc-img-container-img {
-    width: 100%;
-    height: auto; }
+    width: auto;
+    height: 100%; }
   .dj-disc .dj-disc-p {
     padding-right: 0.5rem;
     grid-column: 1/3;
@@ -775,7 +775,8 @@ html {
     bottom: 11vw; } }
 .disc-songs {
   padding: 0 12.5%;
-  font-size: 0.75rem; }
+  font-size: 0.75rem;
+  margin-bottom: 25%; }
 
 .disc-songs-desc {
   font-size: 0.75rem; }

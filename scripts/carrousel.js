@@ -1,12 +1,12 @@
 let colorAmarillo= "#FFCD00"
 let colorGrisClaro= "#929298"
 
-
 let domCarrousel = {
     description: document.querySelector("#carrousel_article_description"), 
     avatarImg : document.querySelector("#carrousel_article_img"),
     carrousel : document.querySelector("#carrousel-dj"),
     tittle : document.querySelector("#carrousel_article_tittle"),
+
     navPoints : {
         puntoUno: document.querySelector(".carousel-point-one"), 
         puntoDos: document.querySelector(".carousel-point-two"), 
@@ -17,12 +17,13 @@ let domCarrousel = {
 
 class carrousel{
     
-    constructor (avatar, nombre, descripcion, cover, position){
+    constructor (avatar, nombre, descripcion, cover, position, url){
         this.avatar = avatar
         this.nombre = nombre
         this.descripcion = descripcion
         this.cover = cover
         this.position = position
+        this.url = url
     }
 
     set (object)
@@ -30,6 +31,7 @@ class carrousel{
             let maxDescLength = 320
             object.carrousel.style.backgroundImage = "url("+this.cover+")"
             object.tittle.innerHTML = this.nombre
+            object.tittle.setAttribute('href', this.url)
             let shortDescription= cutTxt(this.descripcion, maxDescLength)
            //La funcion está en DJ'S 
             object.description.innerHTML = shortDescription
@@ -61,13 +63,13 @@ class carrousel{
 
 }    
 //Objetos carrusel creados
-//constructor (avatar, nombre, descripcion, cover, position)
+//constructor (avatar, nombre, descripcion, cover, position, url)
 let firstCarrousel = new carrousel(DJS.FELIX_GARREL.avatar, DJS.FELIX_GARREL.nombre, DJS.FELIX_GARREL.discos.BREZZE.description
-    , DJS.FELIX_GARREL.discos.BREZZE.cover, 1)
+    , DJS.FELIX_GARREL.discos.BREZZE.cover, 1, DJS.FELIX_GARREL.discos.BREZZE.url)
 let secondCarrousel= new carrousel(DJS.OCECA.avatar, DJS.OCECA.nombre, DJS.OCECA.discos.NO_NAME.description, 
-    DJS.OCECA.discos.NO_NAME.cover, 2)
+    DJS.OCECA.discos.NO_NAME.cover, 2, DJS.OCECA.discos.NO_NAME.url)
 let thirdCarrosuel = new carrousel(DJS.WOLBEAT.nombre,DJS.WOLBEAT.discos.WMVOLI.Nombre,
-    DJS.WOLBEAT.discos.WMVOLI.description, DJS.WOLBEAT.discos.WMVOLI.cover, 3)
+    DJS.WOLBEAT.discos.WMVOLI.description, DJS.WOLBEAT.discos.WMVOLI.cover, 3, DJS.WOLBEAT.discos.WMVOLI.url)
 
     function avanzarCarrosel(object){
         let actualPosition= object.position

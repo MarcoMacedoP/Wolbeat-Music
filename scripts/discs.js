@@ -86,6 +86,17 @@ class DISC { //Esta clase muestra los discos generados en la
         description.innerHTML = smallDesc
         let img = headerPicture.querySelector('img')
         img.setAttribute('src', this.JSON_OBJECT.cover)
+
+
+        //Seteo de los iconos
+        //seteo de los valores de los iconos
+        let spotify= document.querySelector('.disc-information-links-spotify')
+        let youtube= document.querySelector('.disc-information-links-youtube')
+        spotify.setAttribute('href', this.JSON_OBJECT.socialMedia.spotify)
+        youtube.setAttribute('href', this.JSON_OBJECT.socialMedia.youtube)
+        youtube.setAttribute('target', "_blank")
+        spotify.setAttribute('target', "_blank")
+
         //Seteo de canciones
         var canciones = Object.values(this.JSON_OBJECT.canciones)
         let songsContainer = document.querySelector('.disc-songs-container')

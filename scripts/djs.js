@@ -1,12 +1,13 @@
 //import 'JSON-DATA' //FIX THIS
 class DJ { 
     
-    constructor(image, name, genres,description, url){
+    constructor(image, name, genres,description, url, socialMedia){
         //image debe de ser un enlace.
         this.image= image
         this.name= name
         this.genres= genres
         this.description = description
+        this.socialMedia= socialMedia
         if(url){
             this.url = url
         }
@@ -64,7 +65,7 @@ class DJ {
             fn(this.url, linkName)
         }
     }
-    setInfoPage(headline, headerPicture, infoContainer ){
+    setInfoPage(headline, headerPicture, infoContainer){
         headline.innerHTML= this.name
         let subtittle= infoContainer.querySelector('.dj-information-tittle')
         subtittle.innerHTML= "Sobre " + this.name
@@ -75,14 +76,19 @@ class DJ {
         let img = headerPicture.querySelector('img')
         img.setAttribute('src', this.image)
 
-        //Seteo de las canciones del DJ
-
-      
+        //seteo de los valores de los iconos
+        let spotify= document.querySelector('.dj-information-links-spotify')
+        let youtube= document.querySelector('.dj-information-links-youtube')
+        spotify.setAttribute('href', this.socialMedia.spotify)
+        youtube.setAttribute('href', this.socialMedia.youtube)
+        youtube.setAttribute('target', "_blank")
+        spotify.setAttribute('target', "_blank")
     }
 
 }
 function setUrl(url, aTag){
     aTag.setAttribute('href', url)
+    aTag.setAttribute('target', '_blank')
 }
 function cutTxt(txt, ancho){
     let newTxt =txt
@@ -101,15 +107,15 @@ function cutTxt(txt, ancho){
 
 
 //Nuevos Talentos
-let WOLBEAT = new DJ(DJS.WOLBEAT.avatar, DJS.WOLBEAT.nombre, DJS.WOLBEAT.generos, DJS.WOLBEAT.biografia, DJS.WOLBEAT.url);    
-let FELIX_GARREL = new DJ(DJS.FELIX_GARREL.avatar, DJS.FELIX_GARREL.nombre, DJS.FELIX_GARREL.generos, DJS.FELIX_GARREL.biografia, DJS.FELIX_GARREL.url)
-let OCECA= new DJ(DJS.OCECA.avatar,DJS.OCECA.nombre, DJS.OCECA.generos, DJS.OCECA.biografia, DJS.OCECA.url)
+let WOLBEAT = new DJ(DJS.WOLBEAT.avatar, DJS.WOLBEAT.nombre, DJS.WOLBEAT.generos, DJS.WOLBEAT.biografia, DJS.WOLBEAT.url, DJS.WOLBEAT.socialMedia);    
+let FELIX_GARREL = new DJ(DJS.FELIX_GARREL.avatar, DJS.FELIX_GARREL.nombre, DJS.FELIX_GARREL.generos, DJS.FELIX_GARREL.biografia, DJS.FELIX_GARREL.url, DJS.FELIX_GARREL.socialMedia)
+let OCECA= new DJ(DJS.OCECA.avatar,DJS.OCECA.nombre, DJS.OCECA.generos, DJS.OCECA.biografia, DJS.OCECA.url, DJS.OCECA.socialMedia)
 //Clasicos de WOLBEAT
-let HAUZZA = new DJ(DJS.HAUZZA.avatar, DJS.HAUZZA.nombre, DJS.HAUZZA.generos, DJS.HAUZZA.biografia, DJS.HAUZZA.url)
-let LIVJ = new DJ(DJS.LIVJ.avatar, DJS.LIVJ.nombre, DJS.LIVJ.generos, DJS.LIVJ.biografia,DJS.LIVJ.url)
-let ROSSWELL  = new DJ(DJS.ROSSWELL.avatar,DJS.ROSSWELL.nombre, DJS.ROSSWELL.generos, DJS.ROSSWELL.biografia, DJS.ROSSWELL.url )
-let LUILLY= new DJ(DJS.LUILLY.avatar, DJS.LUILLY.nombre, DJS.LUILLY.generos, DJS.LUILLY.biografia, DJS.LUILLY.url)
-let MCKLED=new DJ(DJS.MCKLED.avatar, DJS.MCKLED.nombre, DJS.MCKLED.generos, DJS.MCKLED.biografia, DJS.MCKLED.url)
+let HAUZZA = new DJ(DJS.HAUZZA.avatar, DJS.HAUZZA.nombre, DJS.HAUZZA.generos, DJS.HAUZZA.biografia, DJS.HAUZZA.url, DJS.HAUZZA.socialMedia)
+let LIVJ = new DJ(DJS.LIVJ.avatar, DJS.LIVJ.nombre, DJS.LIVJ.generos, DJS.LIVJ.biografia,DJS.LIVJ.url, DJS.LIVJ.socialMedia)
+let ROSSWELL  = new DJ(DJS.ROSSWELL.avatar,DJS.ROSSWELL.nombre, DJS.ROSSWELL.generos, DJS.ROSSWELL.biografia, DJS.ROSSWELL.url, DJS.ROSSWELL.socialMedia)
+let LUILLY= new DJ(DJS.LUILLY.avatar, DJS.LUILLY.nombre, DJS.LUILLY.generos, DJS.LUILLY.biografia, DJS.LUILLY.url, DJS.LUILLY.socialMedia)
+let MCKLED=new DJ(DJS.MCKLED.avatar, DJS.MCKLED.nombre, DJS.MCKLED.generos, DJS.MCKLED.biografia, DJS.MCKLED.url, DJS.MCKLED.socialMedia)
 
 let nuevosTalentos = [
     WOLBEAT,FELIX_GARREL,OCECA
