@@ -296,8 +296,8 @@ let DJS= {
                 } 
             },
             BLEU: {
-                url: "INDICAR HTML",
-                Nombre: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/BLEU.html",
+                url: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/BLEU.html",
+                Nombre: "Bleu",
                 generos: "Future Bass, Big Room, Bounce, Progressive House",
                 description: "Conoce el disco Bleu de LIVJ",
                 cover:"http://mx54.prueba.site/~wolbeatm/img/cover_arts/BLEU.jpg",
