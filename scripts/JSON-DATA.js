@@ -43,7 +43,7 @@ let DJS= {
             spotify: "#",
             youtube: "#"
         },
-        avatar: "http://mx54.prueba.site/~wolbeatm/img/avatars/default.png",
+        avatar: "http://mx54.prueba.site/~wolbeatm/img/avatars/oceca.jpg",
         discos: {
             NO_NAME: {
                 url: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/no-name.html",
@@ -450,7 +450,7 @@ let DJS= {
             spotify: "https://open.spotify.com/artist/0jB3DsKLC8jKb1AMAc4v79?si=PrLfwSGnTW-ZMF1CGNlzQA&fbclid=IwAR1aCB2vAjD8JPUHAFu2ASCRI052W2Wm3uUvMWP4ta82gCGP2eg9enKLkPw",
             youtube: defaultYoutube
         },
-        avatar: "http://mx54.prueba.site/~wolbeatm/img/avatars/McKled.png",
+        avatar: "http://mx54.prueba.site/~wolbeatm/img/avatars/McKled.jpg",
         discos: {
             BOUNCE: {
                 url: "http://mx54.prueba.site/~wolbeatm/canciones/nuestras-obras/BOUNCE.html",
