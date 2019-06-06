@@ -1,3 +1,44 @@
+<?php 
+
+
+
+if(isset($_POST['name'])) {
+       $name = $_POST['name'];
+       $lastName = $_POST['lastName']; 
+       $email = $_POST['email'];
+       $phone= $_POST['phone']; 
+       $msg = $_POST['asunto'];
+
+       $receiver = "marcosiegman01@gmail.com";
+       
+       $messageBody = "Hola, mi nombre es ".$name. $lastName ."☺️ \r"
+                       ."Me comunico desde tu página web porque me interesa unirme al equipo de Wölbeat Music. \r"
+                       ."Escribí el siguiente mensaje desde el formulario: \r"
+                       .$msg."\r"
+                       ."Mis datos de contacto son: \r Email: ".$email
+                       ."Número de celular: ".$phone 
+                       ."\r Muchas gracias por la atención. :)" ;
+                       
+       $subject  = "Mensaje de contacto de www.wolbeatmusic.com";
+       $headers = "From: thedarkmayck115@gmail.com" . "\r\n" .
+       "CC: marcomacedo048@gmail.com";
+
+       $emailStatus = mail($receiver, $subject, $messageBody, $headers);
+       if($emailStatus){
+           require_once 'contacto_hecho.php';
+       } else {
+           echo 'No se mandó el correo correctamente.';
+          
+           foreach ($_GET as $value){
+               unset($value);
+           }
+       }
+}
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,22 +65,22 @@
 <!--Adaptable navigation bar start-->
 <nav class="nav" id ="navigation_bar">
     <picture class="nav-mobile-picture">
-        <img src="http://127.0.0.1:5500/img/Lobo.png" class= "nav-mobile-picture-img" alt="Lobo de Wolbeat Music">
+        <img src="../img/Lobo.png" class= "nav-mobile-picture-img" alt="Lobo de Wolbeat Music">
     </picture>
-    <img class="nav-welcome-logo" src="http://127.0.0.1:5500/img/logo_white.png" alt = "Logo de Wolbeat Music">  
+    <img class="nav-welcome-logo" src="../img/logo_white.png" alt = "Logo de Wolbeat Music">  
     <ol class="nav-list"> 
         <li class="nav-list-item">
-            <a href= "http://127.0.0.1:5500">Inicio</a></li>
+            <a href= "../">Inicio</a></li>
         <li class="nav-list-item">
-            <a href= "http://127.0.0.1:5500/sections/djs.html">DJ's</a></li>
+            <a href= "../djs/">DJ's</a></li>
         <li class="nav-list-item">
-            <a href= "http://127.0.0.1:5500/sections/canciones.html">Canciones</a></li>
+            <a href= "../canciones/">Canciones</a></li>
         <li class="nav-list-item">
-            <a href= "http://127.0.0.1:5500/sections/nosotros.html">Nosotros</a></li>
+            <a href= "../nosotros/">Nosotros</a></li>
         <li class="nav-list-item">
-            <a href= "http://127.0.0.1:5500/sections/contacto.html">Contacto</a></li>
+            <a href= "../contacto/">Contacto</a></li>
         <li class="nav-list-item">
-            <a href= "http://127.0.0.1:5500/sections/tienda.html">Tienda</a></li> 
+            <a href= "../tienda/">Tienda</a></li> 
     </ol>
 
 </nav>
@@ -62,8 +103,8 @@
 </section>
 <!--Tittle v2-->
 
-  <!-- Footer starts-->     
-  <footer class="footer">
+ <!-- Footer starts-->     
+ <footer class="footer">
    <!--Footer nav starts-->
     <nav class="footer-nav">
             <picture>

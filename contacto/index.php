@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -61,14 +62,14 @@
 </section>
 <!--Tittle v2-->
  <!--Form section start-->
-<form class="contact-form"action="">
-    <input class = "contact-form-input" type="text"  placeholder="Nombre">
-    <input class = "contact-form-input" type="text" placeholder="Apellidos">
-    <input class = "contact-form-input" type="text" placeholder="Correo electronico">
-    <input class = "contact-form-input" type="text" placeholder="Numero de celular">
-    <input class = "contact-form-input" type="text" placeholder="Asunto">
+<form class="contact-form"action="contacto_hecho.php" method = "post">
+    <input class = "contact-form-input" type="text"  name="name"placeholder="Nombre">
+    <input class = "contact-form-input" type="text" name="lastName"placeholder="Apellidos">
+    <input class = "contact-form-input" type="email" name="email"placeholder="Correo electronico">
+    <input class = "contact-form-input" type="number" name="phone"placeholder="Numero de celular">
+    <input class = "contact-form-input" type="text" name="asunto"placeholder="Asunto">
     <input class="cta_black" type="submit" value="Enviar datos">
-</form>
+</form> 
 
  <!--Form section ends-->
   <!--Tittle v2-->   
