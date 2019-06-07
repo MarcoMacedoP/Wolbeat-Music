@@ -904,8 +904,18 @@ body .mobile-nav {
   position: relative;
   background: #555559;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top; }
+  background-size: contain;
+  background-position: top;
+  z-index: 0; }
+
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: red; }
 
 .carousel-article {
   width: 100%;

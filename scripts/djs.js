@@ -118,7 +118,9 @@ let LUILLY= new DJ(DJS.LUILLY.avatar, DJS.LUILLY.nombre, DJS.LUILLY.generos, DJS
 let MCKLED=new DJ(DJS.MCKLED.avatar, DJS.MCKLED.nombre, DJS.MCKLED.generos, DJS.MCKLED.biografia, DJS.MCKLED.url, DJS.MCKLED.socialMedia)
 
 let nuevosTalentos = [
-    WOLBEAT,FELIX_GARREL,OCECA
+    //WOLBEAT,FELIX_GARREL,OCECA
+    FELIX_GARREL,OCECA
+
 ]
 let clasicosWolbeat = [
     HAUZZA,LIVJ,ROSSWELL, LUILLY, MCKLED
@@ -128,7 +130,7 @@ let mainSectionDJ= document.getElementById('mainDjs')
 
     if(mainSectionDJ){
         FELIX_GARREL.createIn(mainSectionDJ, setUrl)
-        WOLBEAT.createIn(mainSectionDJ, setUrl)
+        //WOLBEAT.createIn(mainSectionDJ, setUrl)
         OCECA.createIn(mainSectionDJ, setUrl)
     }
 
@@ -189,7 +191,7 @@ class djPages {
     }
     
     const djsPageOne  = {
-        uno : WOLBEAT,
+        //uno : WOLBEAT,
         dos : FELIX_GARREL,
         tres : OCECA,
     }
