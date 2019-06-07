@@ -1,9 +1,13 @@
-/*@font-face{
-    font-family: Tw-Cen-Mt;
-    src: url(../fonts/Tw-Cen-MT.ttf);
-}*/
-@import url(../fonts/Tw-Cen-MT.ttf);
-@import url(../fonts/Tw-Cen-MT.ttf);
+@font-face {
+  font-family: 'TwCenMT-Regular';
+  src: url("../fonts/TwCenMT-Regular.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'TwCenMT-Regular';
+  src: url("../fonts/TwCenMT-Regular.woff") format("woff"), url("../fonts/TwCenMT-Regular.ttf") format("truetype"), url("../fonts/TwCenMT-Regular.svg#TwCenMT-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .cta_black, .cta_white {
   box-sizing: border-box;
   margin: .5rem 0 .5rem 0;
@@ -54,7 +58,7 @@
   align-self: flex-start;
   font-weight: normal;
   font-size: 0.93rem;
-  font-family: Tw-Cen-Mt, sans-serif;
+  font-family: TwCenMT-Regular, sans-serif;
   color: #1C1C1B;
   width: 80.88%;
   margin-left: 1rem;
@@ -74,7 +78,7 @@
   text-align: center;
   font-weight: bold;
   font-size: 0.93rem;
-  font-family: Tw-Cen-Mt, sans-serif;
+  font-family: TwCenMT-Regular, sans-serif;
   color: #1C1C1B;
   border-bottom: 1px rgba(146, 146, 152, 0.8) solid; }
 
@@ -151,14 +155,20 @@ html {
     font-size: 20px; } }
 @media only screen and (min-width: 900px) {
   html {
-    font-size: 24px; } }
+    font-size: 22px; } }
 body .mobile-nav {
   background-color: rgba(85, 85, 89, 0.54); }
 
-/*@font-face{
-    font-family: Tw-Cen-Mt;
-    src: url(../fonts/Tw-Cen-MT.ttf);
-}*/
+@font-face {
+  font-family: 'TwCenMT-Regular';
+  src: url("../fonts/TwCenMT-Regular.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'TwCenMT-Regular';
+  src: url("../fonts/TwCenMT-Regular.woff") format("woff"), url("../fonts/TwCenMT-Regular.ttf") format("truetype"), url("../fonts/TwCenMT-Regular.svg#TwCenMT-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .mobile-nav {
   max-height: 3rem;
   height: 6.71vh;
@@ -382,7 +392,7 @@ body .mobile-nav {
   position: relative;
   font-weight: bold;
   font-size: 2.68rem;
-  font-family: Tw-Cen-Mt, sans-serif;
+  font-family: TwCenMT-Regular, sans-serif;
   color: #FFCD00; }
 
 .header::after {
@@ -511,7 +521,7 @@ body .mobile-nav {
   .section-dj-info h3 {
     font-weight: bold;
     font-size: 0.93rem;
-    font-family: Tw-Cen-Mt, sans-serif;
+    font-family: TwCenMT-Regular, sans-serif;
     color: #FFCD00; }
   .section-dj-info h3:hover {
     color: #FFDB47; }
@@ -893,7 +903,7 @@ body .mobile-nav {
 
 .main-page-last-updates-h2 {
   font-size: 1.06rem;
-  font-family: Tw-Cen-Mt, sans-serif;
+  font-family: TwCenMT-Regular, sans-serif;
   color: #555559;
   margin-bottom: 1rem; }
 
@@ -901,21 +911,27 @@ body .mobile-nav {
 .carousel {
   width: 100%;
   height: 52vh;
+  min-height: 52vh;
   position: relative;
   background: #555559;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
+  background-size: cover;
+  background-position: center;
   z-index: 0; }
 
-.carousel::after {
-  content: "";
+.carrousel-img-container {
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-image: inherit;
+  background-position: center;
+  background-size: contain;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: red; }
+  z-index: -1; }
 
 .carousel-article {
   width: 100%;
@@ -982,8 +998,7 @@ body .mobile-nav {
   .carousel {
     margin: 1rem 0;
     height: 90vh;
-    min-height: min-content;
-    background-position: top; }
+    min-height: 70vh; }
 
   .carousel-nav {
     position: absolute;

@@ -68,7 +68,7 @@ let firstCarrousel = new carrousel(DJS.FELIX_GARREL.avatar, DJS.FELIX_GARREL.nom
     , DJS.FELIX_GARREL.discos.BREZZE.cover, 1, DJS.FELIX_GARREL.discos.BREZZE.url)
 let secondCarrousel= new carrousel(DJS.OCECA.avatar, DJS.OCECA.nombre, DJS.OCECA.discos.NO_NAME.description, 
     DJS.OCECA.discos.NO_NAME.cover, 2, DJS.OCECA.discos.NO_NAME.url)
-let thirdCarrosuel = new carrousel(DJS.WOLBEAT.nombre,DJS.WOLBEAT.discos.WMVOLI.Nombre,
+let thirdCarrosuel = new carrousel(DJS.WOLBEAT.avatar,DJS.WOLBEAT.discos.WMVOLI.Nombre,
     DJS.WOLBEAT.discos.WMVOLI.description, DJS.WOLBEAT.discos.WMVOLI.cover, 3, DJS.WOLBEAT.discos.WMVOLI.url)
 
     function avanzarCarrosel(object){
