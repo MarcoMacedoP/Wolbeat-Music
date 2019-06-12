@@ -103,6 +103,9 @@ class DISC { //Esta clase muestra los discos generados en la
         canciones.forEach(element => {
             let songItem = document.createElement('div')
             songItem.className= 'disc-songs-container-item'
+            let songArboard = document.createElement('div')
+            songArboard.className = 'disc-songs-container-item-artboard'
+            songArboard.style.backgroundImage = 'url('+this.JSON_OBJECT.cover+')'
             let songIcon = document.createElement('i')
             songIcon.className = 'disc-songs-container-item-icon'
             let songName = document.createElement('a')
@@ -114,6 +117,7 @@ class DISC { //Esta clase muestra los discos generados en la
             let songDuration =  document.createElement('span')
             songDuration.innerHTML = element.duration
             songDuration.className= 'disc-songs-container-item-duration'
+            songItem.appendChild(songArboard)
             songItem.appendChild(songIcon)
             songItem.appendChild(songName)
             songItem.appendChild(artistName)

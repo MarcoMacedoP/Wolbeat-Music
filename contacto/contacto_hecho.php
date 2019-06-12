@@ -45,8 +45,37 @@ if(isset($_POST['name'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contacta a Wölbeat Music</title>
+    <title>Contacta a Wölbeat Music 🎧</title>
     <link rel="stylesheet" href="../css/sections.css">
+    <!--SEO METADATA-->
+    <meta name="description" content="Los mejores DJS de México. 🎧 
+    Ponte en contacto con nosotros, vederemos tu musica y te haremos crecer. 💛 💪"/>
+    <meta name="keywords" content="djs,dj's,mexico,guadalajara,spotify,itunes,musica"/>
+    <meta name="robots" content="follow"/> 
+    <meta name="robots" content="index"/>
+
+    <!-- TODOS LOS FAVICONS UTILIZADOS -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../img/favicon/mstile-310x310.png" />
+
 </head>
 <body>
     <!--Mobile bar start-->   
@@ -67,7 +96,7 @@ if(isset($_POST['name'])) {
     <picture class="nav-mobile-picture">
         <img src="../img/Lobo.png" class= "nav-mobile-picture-img" alt="Lobo de Wolbeat Music">
     </picture>
-    <img class="nav-welcome-logo" src="../img/logo_white.png" alt = "Logo de Wolbeat Music">  
+    <img class="nav-welcome-logo" src="../img/logo_black.png" alt = "Logo de Wolbeat Music">  
     <ol class="nav-list"> 
         <li class="nav-list-item">
             <a href= "../">Inicio</a></li>
@@ -99,7 +128,7 @@ if(isset($_POST['name'])) {
  <section class="tittle-v2 made-contact">
         <h2 class="tittle-v2-h2">¡Gracias por dejar tus datos!</h2> 
         <h3 class="tittle-v2-h3">Enseguida nos pondremos en contacto contigo.</h3>
-        <a class="cta_black">Regresar a Inicio</a>
+        <a class="cta_black" href="../../">Regresar a Inicio</a>
 </section>
 <!--Tittle v2-->
 
@@ -111,11 +140,11 @@ if(isset($_POST['name'])) {
                 <img class ="footer-nav-icon" src="../img/logo_black.png" alt="Wolbeat-Logo">
             </picture>
             <ol class="footer-nav-sections">
-                <li><a href="#">DJ's</a></li>
-                <li><a href="#">Canciones</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="../djs/">DJ's</a></li>
+                <li><a href="../canciones/">Canciones</a></li>
+                <li><a href="../nosotros/">Nosotros</a></li>
+                <li><a href="../tienda/">Tienda</a></li>
+                <li><a href="../contacto">Contacto</a></li>
             </ol>
             <ul class="footer-nav-social">
                 <li>
@@ -136,7 +165,7 @@ if(isset($_POST['name'])) {
     <!-- Footer ends-->
 
      <!--Scripts start-->
-     <script type="text/javascript" src = "http://127.0.0.1:5500/scripts/nav_bar.js"></script>
+     <script type="text/javascript" src = "../scripts/nav_bar.js"></script>
      <!--Scripts end-->
 </body>
 </html>

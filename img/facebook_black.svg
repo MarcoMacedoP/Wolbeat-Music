@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="facebook" transform="translate(-2.32 -1.318)">
+    <g id="Group_103" data-name="Group 103" transform="translate(2.32 1.318)">
+      <path id="Path_19" data-name="Path 19" d="M18.32,33.318a16,16,0,1,1,16-16A16.018,16.018,0,0,1,18.32,33.318Z" transform="translate(-2.32 -1.318)" fill="#1c1c1b"/>
+    </g>
+    <g id="Group_104" data-name="Group 104" transform="translate(13.847 7.727)">
+      <path id="Path_20" data-name="Path 20" d="M23.946,21.917V31.19a.242.242,0,0,0,.242.242h3.444a.242.242,0,0,0,.242-.242V21.765h2.5a.241.241,0,0,0,.24-.221l.24-2.84a.241.241,0,0,0-.24-.262H27.873V16.428a.855.855,0,0,1,.855-.855h1.924a.242.242,0,0,0,.242-.242v-2.84a.242.242,0,0,0-.242-.242H27.4a3.455,3.455,0,0,0-3.455,3.455v2.737H22.224a.242.242,0,0,0-.242.242v2.84a.242.242,0,0,0,.242.242h1.722v.151Z" transform="translate(-21.982 -12.25)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
