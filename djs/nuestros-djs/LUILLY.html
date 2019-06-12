@@ -104,7 +104,9 @@
 </section>
 <!--DJ information end -->
 <!--DJ discography starts-->
-<article class="dj-discography" id="section_two">
+<article class="dj-discography dj-information" id="section_two">
+        <h2 class="dj-information-tittle" >¡Ups!</h2>
+        <h3 class="dj-information-genres">Este DJ no cuenta con obras publicadas.</h3>
 </article>
 
 <!--DJ discography ends-->
@@ -152,11 +154,12 @@
         let headline = document.querySelector('h1')
         let infoContainer = document.querySelector('.dj-information')
         LUILLY.setInfoPage(headline,headerPicture,infoContainer)
-        //Discos del DJ
+        /*Este DJ no cuenta con discos publicados.
+        Discos del DJ
         let container = document.querySelector('.dj-discography')
         JSON_DISC = DJS.LUILLY.discos.REMIX
         var REMIX = new DISC(JSON_DISC)
-        REMIX.createIn(container, setUrl)
+        REMIX.createIn(container, setUrl)*/
 </script>
 <!--Scripts end-->
 </body>

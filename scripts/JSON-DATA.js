@@ -18,7 +18,7 @@ let DJS= {
                 url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/brezze.html",
                 Nombre: "Brezze",
                 generos: "Bounce, Electro House, Bass House",
-                description: "Conoce el primer sencillo de Felix Garrel en Wolbeat Music",
+                description: "El primer sencillo de Félix Garrel, este sencillo fue inspirado en los sonidos de la electrónica – trance, ya que cuenta con sonidos nunca anteriormente producidos.",
                 cover:"https://wolbeatmusic.com.mx/img/cover_arts/Breeze.jpg",
                 socialMedia:{
                     spotify: "",
@@ -37,8 +37,8 @@ let DJS= {
     OCECA: {
         url: "https://wolbeatmusic.com.mx/djs/nuestros-djs/oceca.html",
         nombre: "Oceca Cotpepac",
-        generos: "Bounce, Tech House, Progresive House",
-        biografia: "Oceca Cotpepac el DJ fantasma de Wolbeat Music.", 
+        generos: "Tropical, House, Tropical House.",
+        biografia: "Oceca Cotpepac, es nacido en la ciudad de Guadalajara, el empezó desde los 16 años a producir música desde su computadora con el programa FL Studio.\n\nFue tan grande su motivación que entro a cursos de instrumentos orgánicos (piano, guitarra, batería, etc); esto para producir música tropical con la ayuda de instrumentos orgánicos y con FL Studio.\n\nSu genero principal es el tropical, pero también le gusta producir House y Tropical House.", 
         socialMedia: {
             spotify: "#",
             youtube: "#"
@@ -49,7 +49,7 @@ let DJS= {
                 url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/no-name.html",
                 Nombre: "FUN",
                 generos: "Bounce, Tech House, Progresive House",
-                description: "El primer sencillo del DJ fantasma aquí en Wolbear Music",
+                description: "El primer sencillo del DJ fantasma de Wölbeat Music, tras únicamente durar menos de 1 minutos, este DJ logra crear una canción la cual te genera emociones de tranquilidad.",
                 cover:"https://wolbeatmusic.com.mx/img/cover_arts/FUN.jpg",
                 socialMedia:{
                     spotify: "https://open.spotify.com/album/4XzBwycdpkI63PUK3qpSAh",
@@ -94,7 +94,7 @@ let DJS= {
                 url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/wolbeat-music-vol-1.html",
                 Nombre: "Wölbeat Music Vol. I",
                 generos: "Bounce, Electro House, Bass House",
-                description: "El primer volumen de Wölbeat Music",
+                description: "Este álbum es una recopilación de todos los lanzamientos del 2015 al 2017, en este álbum podrás encontrar canciones de Rosswell, LIVJ, McKlëd y HAUZZA.",
                 cover:"https://wolbeatmusic.com.mx/img/cover_arts/W%c3%b6lbeat-Music-VOL.I.jpg",
                 socialMedia:{
                     spotify: "https://open.spotify.com/album/31UFLduCg4e26dOzDO23pE",
@@ -235,7 +235,7 @@ let DJS= {
                 url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/BACK-TO-BASS.html",
                 Nombre: "Back to the bass",
                 generos: "Future Bass, Big Room, Bounce",
-                description: "En este sencillo Hauzza rompe los estandartes de la música nuevamente, al puro estilo Wolbeat Music.",
+                description: "Este primer sencillo de HAUZZA (anteriormente LIVJ) fue inspirado en el cambio de genero, ya que el DJ quería experimentar nuevos géneros y así poder satisfacer todas las necesidades de sus fans.",
                 cover:"https://wolbeatmusic.com.mx/img/cover_arts/back_to_bass.jpg",
                 socialMedia:{
                     spotify: "https://open.spotify.com/album/4DXHEGBBXL5IlSFi2s8rAi",
@@ -266,7 +266,7 @@ let DJS= {
                 url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/CAROL.html",
                 Nombre: "Cårøl",
                 generos: "Future Bass, Big Room, Bounce, Progressive House",
-                description: "Conoce el disco Cårøl de LIVJ",
+                description: "Tras el éxito del primer álbum de LIVJ, decidió lanzar otro grandioso álbum llamado Cårøl, el cual su inspiración fue hecha por una mujer que el amaba mucho, tanto es que su canción principal del álbum es “Holding U”. A pesar de no contar con una amplia vocal en su canción, el logra expresar sus sentimientos a través de esa canción y de todo el álbum.",
                 cover:"https://wolbeatmusic.com.mx/img/cover_arts/CAROL.jpg",
                 socialMedia:{
                     spotify: "https://open.spotify.com/album/5ICPx3ROeA2Sbq2hdp6445",
@@ -299,7 +299,7 @@ let DJS= {
                 url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/BLEU.html",
                 Nombre: "Bleu",
                 generos: "Future Bass, Big Room, Bounce, Progressive House",
-                description: "Conoce el disco Bleu de LIVJ",
+                description: "El primer álbum de LIVJ, tras inspirarse en los sonidos orgánicos y de una brisa tropical logro crear un debut con su canción principal en este álbum el cual es llamado “You”, una mezcla de grandes sonidos, así creando una canción única.",
                 cover:"https://wolbeatmusic.com.mx/img/cover_arts/BLEU.jpg",
                 socialMedia:{
                     spotify: "https://open.spotify.com/album/27xYe740wELNRN5TpdnOPO",
@@ -345,7 +345,7 @@ let DJS= {
                 url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/BLACK.html",
                 Nombre: "Black",
                 generos: "Tropical House y Deep House.",
-                description: "Conoce Black de Rosswell. ",
+                description: "Uno de los álbumes con mayor número de vocales dentro de todas las canciones del álbum. En este álbum encontraras a Aranza Cabanillas, una joven con la voz de una cantante internacional.",
                 cover:"https://wolbeatmusic.com.mx/img/cover_arts/Black.jpg",
                 socialMedia:{
                     spotify: "https://open.spotify.com/album/16c1wTmAgwH0JlEo0MCx2q",
@@ -389,7 +389,7 @@ let DJS= {
                 url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/TWO_ELEVEN.html",
                 Nombre: "Two Eleven",
                 generos: "Tropical House y Deep House.",
-                description: "Conoce Two Eleven de Rosswell. ",
+                description: "El álbum que le dio la fama a Rosswell, este álbum que ha llegado a ser escuchado en todo el mundo, su exitosa canción “Booka Shake” la podrás encontrar en este álbum.",
                 cover:"https://wolbeatmusic.com.mx/img/cover_arts/Two%20Eleven.jpg",
                 socialMedia:{
                     spotify: "https://open.spotify.com/album/4efiZn79mIssHbvesGi8FR",
@@ -421,24 +421,6 @@ let DJS= {
         },
         avatar: "https://wolbeatmusic.com.mx/img/avatars/Lu%c3%aflly_Karson.jpg",
         discos: {
-            REMIX: {
-                url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/REMIX.HTML",
-                Nombre: "How Deep Is Your Love",
-                generos: "Progressive House & Electro House.",
-                description: "Conoce el remix de Luïlly Karson de este clásico de Calvin Harris & Disciples - How Deep Is Your Love.",
-                cover:"https://wolbeatmusic.com.mx/img/cover_arts/How%20Deep%20%20Is%20Your%20Love(Lu%c3%afllyKarson%20Remix).jpg",
-                socialMedia:{
-                    spotify: "https://www.youtube.com/watch?v=IjOUIHgpKGk",
-                    youtube: "https://www.youtube.com/watch?v=IjOUIHgpKGk"
-                },
-                canciones: {
-                    cancion_1: {
-                        nombre: 'Calvin Harris & Disciples - How Deep Is Your Love',
-                        duration: '3:39',
-                        link: 'https://www.youtube.com/watch?v=IjOUIHgpKGk'
-                    }
-                } 
-            }
         }
     },
     MCKLED: { 
@@ -456,7 +438,7 @@ let DJS= {
                 url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/BOUNCE.html",
                 Nombre: "Bounce",
                 generos: "Melbourne & Big Room",
-                description: "",
+                description: "El sencillo de McKlëd, tras ser un DJ 100% mexicano su música es totalmente internacional, ya que ha llegado a varios países del mundo, asi pudiendo lograr que su nacionalidad lo distinga en todo el mundo.",
                 cover:"https://wolbeatmusic.com.mx/img/cover_arts/MaKled-Bounce.jpg",
                 socialMedia:{
                     spotify: "https://open.spotify.com/artist/0jB3DsKLC8jKb1AMAc4v79/about",
