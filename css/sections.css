@@ -724,9 +724,9 @@ body .mobile-nav {
   margin: 0 0 1rem 0; }
 
 .disc-songs-container-item {
+  min-height: min-content;
   max-height: 56px;
   background-color: rgba(146, 146, 152, 0.31);
-  min-height: 2.68rem;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr 1fr;
   grid-column-gap: 0.5rem;

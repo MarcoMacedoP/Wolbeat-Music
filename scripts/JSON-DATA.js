@@ -4,7 +4,7 @@ let defaultGenres= "Progressive House & Electro House.";
 let DJS= {
     //Nuevos Talentos
     FELIX_GARREL: {
-        url: 'https://wolbeatmusic.com.mx/djs/nuestros-djs/felix.html',
+        url: '\\djs/nuestros-djs/felix.html',
         nombre: "Felix Garrel",
         generos: "Bounce, Electro House, Bass House",
         biografia: 'Luis Manuel Felix Nungaray A.K.A “Félix Garrel“, es nacido en ciudad Obregón, Sonora, México. \n\n El empezó su carrera como DJ a los 13 años de edad, su amor por la música electrónica lo ha colocado como algunos de los mejores DJS de su ciudad. Los géneros fuertes de Manny dentro de la música electrónica Son: Bounce, Electro House Y Bass House. \n\n Empezó su carrera como DJ/PRODUCTOR a los 16 años de edad, una de las producciones de manny asido firmado por  Reckless Agency (GUADALAJARA, MEXICO) el nombre de estre track fue titulado como “ WOOH”, Y su track llamado “ 344 “ llegó a ser escuchada por Will Sparks (Melbourne, Australia).\n\n También ha tenido presentaciones fuera de su estado como en: Mazatlán, Sinaloa, México y Los Mochis, Sinaloa, México. \n\n Se ha presentado dentro de su estado en la ciudad de: Guaymas, Sonora. Álamos, Sonora, Álamos, Sonora. San Carlos, Sonora. Huatabampo, Sonora. \n\n A su corta edad a tocado en algunos antros de la ciudad como: Dubai Night Club, La Playa Antro&Bar. BECK, Barezzito. \n\n Actualmente es miembro de la familia de Wolbeat Music.', 
@@ -15,7 +15,7 @@ let DJS= {
         avatar: "https://wolbeatmusic.com.mx/img/avatars/felix_garrel.jpeg",
         discos: {
             BREZZE: {
-                url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/brezze.html",
+                url: "\\canciones/nuestras-obras/brezze.html",
                 Nombre: "Brezze",
                 generos: "Bounce, Electro House, Bass House",
                 description: "El primer sencillo de Félix Garrel, este sencillo fue inspirado en los sonidos de la electrónica – trance, ya que cuenta con sonidos nunca anteriormente producidos.",
@@ -35,7 +35,7 @@ let DJS= {
         }
     },
     OCECA: {
-        url: "https://wolbeatmusic.com.mx/djs/nuestros-djs/oceca.html",
+        url: "\\djs/nuestros-djs/oceca.html",
         nombre: "Oceca Cotpepac",
         generos: "Tropical, House, Tropical House.",
         biografia: "Oceca Cotpepac, es nacido en la ciudad de Guadalajara, el empezó desde los 16 años a producir música desde su computadora con el programa FL Studio.\n\nFue tan grande su motivación que entro a cursos de instrumentos orgánicos (piano, guitarra, batería, etc); esto para producir música tropical con la ayuda de instrumentos orgánicos y con FL Studio.\n\nSu genero principal es el tropical, pero también le gusta producir House y Tropical House.", 
@@ -46,7 +46,7 @@ let DJS= {
         avatar: "https://wolbeatmusic.com.mx/img/avatars/oceca.jpg",
         discos: {
             NO_NAME: {
-                url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/no-name.html",
+                url: "\\canciones/nuestras-obras/no-name.html",
                 Nombre: "FUN",
                 generos: "Bounce, Tech House, Progresive House",
                 description: "El primer sencillo del DJ fantasma de Wölbeat Music, tras únicamente durar menos de 1 minutos, este DJ logra crear una canción la cual te genera emociones de tranquilidad.",
@@ -66,7 +66,7 @@ let DJS= {
         }
     },
     WOLBEAT: {
-        url: "https://wolbeatmusic.com.mx/djs/nuestros-djs/wolbeat.html",
+        url: "\\djs/nuestros-djs/wolbeat.html",
         nombre: "Wölbeat Music",
         generos: "Bounce, Electro House, Bass House",
         biografia: "Nace el 6 de Junio del 2015, Manuel Fonseca Contreras, dueño de Wölbeat Music®, primero había comenzado a manejar como manager personal a Rosswell, le dio muchos sueños e ilusiones como… Llegar a tocar en el mainstage de Tomorrowland, el sueño de la mayor parte de los DJs del mundo, al igual que tocar en varias partes del mundo, viajar y cumplir el sueño de todo DJ.\n\nDespues el sueño se llevo a la realidad, Manuel Fonseca busco la forma de poder hacer todo lo que habia dicho y encontro como primero empezar a vender la musica de Rosswell y poder hacer que la gente empezara a hablar sobre Rosswell./nMACA nace de las iniciales de Manuel y Luis Carlos (El primer DJ de la empresa “Rosswell”) y de ahi es como sale MACA, Manager solo se agrega por ser el manager de 2 DJ.\n\nEl nombre se cambio a Wölbeat Music®, por motivos de estrategia de marketing.", 
@@ -77,7 +77,7 @@ let DJS= {
         avatar: "https://wolbeatmusic.com.mx/img/avatars/default.png",
         discos: {
             WMVOLII: {
-                url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/wolbeat-music-vol-2.html",
+                url: "\\canciones/nuestras-obras/wolbeat-music-vol-2.html",
                 Nombre: "Wölbeat Music Vol. II",
                 generos: "Bounce, Electro House, Bass House",
                 description: "Proximamente...",
@@ -91,7 +91,7 @@ let DJS= {
                 } 
             }, 
             WMVOLI: {
-                url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/wolbeat-music-vol-1.html",
+                url: "\\canciones/nuestras-obras/wolbeat-music-vol-1.html",
                 Nombre: "Wölbeat Music Vol. I",
                 generos: "Bounce, Electro House, Bass House",
                 description: "Este álbum es una recopilación de todos los lanzamientos del 2015 al 2017, en este álbum podrás encontrar canciones de Rosswell, LIVJ, McKlëd y HAUZZA.",
@@ -221,7 +221,7 @@ let DJS= {
 
     //Clasicos de Wolbeat
     HAUZZA: {
-        url: "https://wolbeatmusic.com.mx/djs/nuestros-djs/Hauzza.html",
+        url: "\\djs/nuestros-djs/Hauzza.html",
         nombre: "Hauzza",
         generos: "Future Bass, Big Room, Bounce",
         biografia: "Homero Livas A.K.A HAUZZA, nacido el 24 de Septiembre de 1996 en Saltillo Coahuila. \n\nSe adentró en la música a muy temprana edad, empezando como DJ a los 16 años y convirtiéndose en productor a los 17 años, comenzó tocando en todo tipo de eventos locales para así después ser residente de Antros y bares locales como Sr. Mostacho, Área 52 y Life Club, sus sets consisten en una selección musical de casi todos los subgéneros electrónicos, combinando lo comercial con los mejores drops de la escena, jugando con tus emociones y adentrándote a una atmósfera única, su forma de romper la monotonía de la escena ha dado paso a que su nombre crezca en toda la región.", 
@@ -232,7 +232,7 @@ let DJS= {
         avatar: "https://wolbeatmusic.com.mx/img/avatars/hauzza.png",
         discos: {
             BACK_TO_BASS: {
-                url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/BACK-TO-BASS.html",
+                url: "\\canciones/nuestras-obras/BACK-TO-BASS.html",
                 Nombre: "Back to the bass",
                 generos: "Future Bass, Big Room, Bounce",
                 description: "Este primer sencillo de HAUZZA (anteriormente LIVJ) fue inspirado en el cambio de genero, ya que el DJ quería experimentar nuevos géneros y así poder satisfacer todas las necesidades de sus fans.",
@@ -263,7 +263,7 @@ let DJS= {
         avatar: "https://wolbeatmusic.com.mx/img/avatars/LIVJ.jpg",
         discos: {
             CAROL: {
-                url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/CAROL.html",
+                url: "\\canciones/nuestras-obras/CAROL.html",
                 Nombre: "Cårøl",
                 generos: "Future Bass, Big Room, Bounce, Progressive House",
                 description: "Tras el éxito del primer álbum de LIVJ, decidió lanzar otro grandioso álbum llamado Cårøl, el cual su inspiración fue hecha por una mujer que el amaba mucho, tanto es que su canción principal del álbum es “Holding U”. A pesar de no contar con una amplia vocal en su canción, el logra expresar sus sentimientos a través de esa canción y de todo el álbum.",
@@ -296,7 +296,7 @@ let DJS= {
                 } 
             },
             BLEU: {
-                url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/BLEU.html",
+                url: "\\canciones/nuestras-obras/BLEU.html",
                 Nombre: "Bleu",
                 generos: "Future Bass, Big Room, Bounce, Progressive House",
                 description: "El primer álbum de LIVJ, tras inspirarse en los sonidos orgánicos y de una brisa tropical logro crear un debut con su canción principal en este álbum el cual es llamado “You”, una mezcla de grandes sonidos, así creando una canción única.",
@@ -342,7 +342,7 @@ let DJS= {
         avatar: "https://wolbeatmusic.com.mx/img/avatars/ROSSWELL.jpg",
         discos: {
             BLACK: {
-                url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/BLACK.html",
+                url: "\\canciones/nuestras-obras/BLACK.html",
                 Nombre: "Black",
                 generos: "Tropical House y Deep House.",
                 description: "Uno de los álbumes con mayor número de vocales dentro de todas las canciones del álbum. En este álbum encontraras a Aranza Cabanillas, una joven con la voz de una cantante internacional.",
@@ -386,7 +386,7 @@ let DJS= {
                 } 
             },
             TWO_ELEVEN: {
-                url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/TWO_ELEVEN.html",
+                url: "\\canciones/nuestras-obras/TWO_ELEVEN.html",
                 Nombre: "Two Eleven",
                 generos: "Tropical House y Deep House.",
                 description: "El álbum que le dio la fama a Rosswell, este álbum que ha llegado a ser escuchado en todo el mundo, su exitosa canción “Booka Shake” la podrás encontrar en este álbum.",
@@ -435,7 +435,7 @@ let DJS= {
         avatar: "https://wolbeatmusic.com.mx/img/avatars/McKled.jpg",
         discos: {
             BOUNCE: {
-                url: "https://wolbeatmusic.com.mx/canciones/nuestras-obras/BOUNCE.html",
+                url: "\\canciones/nuestras-obras/BOUNCE.html",
                 Nombre: "Bounce",
                 generos: "Melbourne & Big Room",
                 description: "El sencillo de McKlëd, tras ser un DJ 100% mexicano su música es totalmente internacional, ya que ha llegado a varios países del mundo, asi pudiendo lograr que su nacionalidad lo distinga en todo el mundo.",
