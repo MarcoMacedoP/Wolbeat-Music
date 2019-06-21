@@ -39,6 +39,12 @@ class DISC { //Esta clase muestra los discos generados en la
 
             sectionInfo.appendChild(tittle)
             sectionInfo.appendChild(genres)
+        //PArrafo del disco
+        let description = document.createElement('p')
+            let smallDesc = cutTxt(this.JSON_OBJECT.description, 200)
+            description.innerHTML = smallDesc
+            description.className = 'dj-disc-p'
+        sectionInfo.appendChild(description)
         //Redes sociales del disco
         let sectionSocial = document.createElement('div')
         sectionSocial.className= 'dj-disc-info-social'
@@ -52,16 +58,10 @@ class DISC { //Esta clase muestra los discos generados en la
             sectionSocial.appendChild(iconYoutube)
         
         sectionInfo.appendChild(sectionSocial)
-        //PArrafo del disco
-        let description = document.createElement('p')
-            let smallDesc = cutTxt(this.JSON_OBJECT.description, 200)
-            description.innerHTML = smallDesc
-            description.className = 'dj-disc-p'
-
+        
         //Le pasamos los hijos al container
         article.appendChild(imgContainer)
         article.appendChild(sectionInfo)
-        article.appendChild(description)
 
         container.appendChild(article)
         if(fn){
@@ -84,8 +84,8 @@ class DISC { //Esta clase muestra los discos generados en la
         description.innerHTML = this.JSON_OBJECT.description
         description= document.querySelector('.disc-songs-desc')
         description.innerHTML = smallDesc
-        let img = headerPicture.querySelector('img')
-        img.setAttribute('src', this.JSON_OBJECT.cover)
+        // let img = headerPicture.querySelector('img')
+        // img.setAttribute('src', this.JSON_OBJECT.cover)
 
 
         //Seteo de los iconos

@@ -64,6 +64,10 @@
         display: none;
     }
     p{
+        max-height: 2.3rem;
+        overflow: hidden;
+        text-align: justify;
+        white-space: pre-line;
         @include font($color_blanco, $font_body, 0.62rem);
     }
 }
@@ -72,6 +76,7 @@
 }
 
 .dj-information,.disc-information, .disc-songs{
+    padding: 0 4.2% 14.2% 4.2%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,6 +88,7 @@
     margin-top: 1rem;
 }
 .dj-information-p, .disc-information-p, .disc-songs-desc{
+    text-align: justify;
     white-space: pre-line;
     margin-top: 1rem;
     @include font ($color_gris_fuerte, $font_body, 0.93rem, normal);
@@ -116,10 +122,10 @@
     }
 }
 .dj-information-links-spotify, .disc-information-links-spotify{
-    background-image: url(../img/spotify_black.png);
+    background-image: url("../img/spotify_black.png");
 }
 .dj-information-links-youtube, .disc-information-links-youtube{
-    background-image: url(../img/youtube_black.png);
+    background-image: url("../img/youtube_black.png");
 }
 .dj-cta{
     margin-bottom: 1rem;
@@ -144,6 +150,8 @@
         overflow: hidden;
         grid-column: 1/2;
         width: 34.44vw;
+        max-width: 250px;
+        max-height: 250px;
         height: 34.44vw;
         border-radius: 50%;
         background: $color_gris_claro;
@@ -157,9 +165,7 @@
         height: 100%;
     }
     .dj-disc-p{
-        padding-right: 0.5rem;
-        grid-column: 1/3;
-        grid-row: 2/3;
+        padding-right: 10%;
         @include font($color_gris, $font_body, 0.75rem, normal);
         }
     
@@ -186,11 +192,11 @@
             background-size: contain;
         }
         .dj-disc-info-social-spotify{
-            background-image: url(/img/spotify.png);
+            background-image: url("../img/spotify_yellow.svg");
         }
         .dj-disc-info-social-youtube{
             margin-left: 0.5rem;
-            background-image: url(/img/youtube.png);
+            background-image: url("../img/youtube_yellow.svg");
         }
     }
 }
@@ -259,14 +265,7 @@
             justify-content: flex-start;
         }
         .dj-disc-p{
-            grid-column: 2/3;
-            position: absolute;
-            bottom: 20vw;
             padding-right: 0.5rem;
-        }
-        .dj-disc-info-social{
-        position: absolute;
-        bottom: 11vw;
         }
     }   
 }
@@ -306,8 +305,11 @@
     }
 }
 .disc-songs-container-item-artboard {
+    align-self: center;
     width: 50%;
     height: 100%;
+    max-width: 43.2188px;
+    max-height: 36px;
     background: $color_gris;
     grid-row: 1/3;
     display: flex;
@@ -393,11 +395,11 @@
         background-size: contain;
     }
     .section-dj-info-social-media-spotify{
-        background-image: url(/img/spotify.png);
+        background-image: url("../img/spotify.png");
     }
     .section-dj-info-social-media-youtube{
         margin-left: 0.5rem;
-        background-image: url(/img/youtube.png);
+        background-image: url("../img/youtube.png");
     }
 }
 .section-dj-info{
@@ -466,16 +468,9 @@ font-size: 0.75rem;
     }
 
 
-    .dj-disc-info-social{
-    position: absolute;
-    bottom: 0;
-    }
 }
 .dj-disc .dj-disc-p {
-    grid-column: 2/3;
-    position: absolute;
-    bottom: 6vw;
-    padding-right: 0.5rem;
+    padding-right: 10%;
     font-size: 0.75rem;
  }
 

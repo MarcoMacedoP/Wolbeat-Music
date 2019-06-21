@@ -9,8 +9,8 @@ let DJS= {
         generos: "Bounce, Electro House, Bass House",
         biografia: 'Luis Manuel Felix Nungaray A.K.A “Félix Garrel“, es nacido en ciudad Obregón, Sonora, México. \n\n El empezó su carrera como DJ a los 13 años de edad, su amor por la música electrónica lo ha colocado como algunos de los mejores DJS de su ciudad. Los géneros fuertes de Manny dentro de la música electrónica Son: Bounce, Electro House Y Bass House. \n\n Empezó su carrera como DJ/PRODUCTOR a los 16 años de edad, una de las producciones de manny asido firmado por  Reckless Agency (GUADALAJARA, MEXICO) el nombre de estre track fue titulado como “ WOOH”, Y su track llamado “ 344 “ llegó a ser escuchada por Will Sparks (Melbourne, Australia).\n\n También ha tenido presentaciones fuera de su estado como en: Mazatlán, Sinaloa, México y Los Mochis, Sinaloa, México. \n\n Se ha presentado dentro de su estado en la ciudad de: Guaymas, Sonora. Álamos, Sonora, Álamos, Sonora. San Carlos, Sonora. Huatabampo, Sonora. \n\n A su corta edad a tocado en algunos antros de la ciudad como: Dubai Night Club, La Playa Antro&Bar. BECK, Barezzito. \n\n Actualmente es miembro de la familia de Wolbeat Music.', 
         socialMedia: {
-            spotify: "https://open.spotify.com/artist/19eLuQmk9aCobbVDHc6eek",
-            youtube: "https://open.spotify.com/track/1UH4viviUjZnS9aWgPGrk0"
+            spotify: defaultSpotify,
+            youtube: defaultYoutube
         },
         avatar: "https://wolbeatmusic.com.mx/img/avatars/felix_garrel.jpeg",
         discos: {
@@ -297,7 +297,7 @@ let DJS= {
             },
             BLEU: {
                 url: "\\canciones/nuestras-obras/BLEU.html",
-                Nombre: "Bleu",
+                Nombre: "Bleü",
                 generos: "Future Bass, Big Room, Bounce, Progressive House",
                 description: "El primer álbum de LIVJ, tras inspirarse en los sonidos orgánicos y de una brisa tropical logro crear un debut con su canción principal en este álbum el cual es llamado “You”, una mezcla de grandes sonidos, así creando una canción única.",
                 cover:"https://wolbeatmusic.com.mx/img/cover_arts/BLEU.jpg",
@@ -414,7 +414,7 @@ let DJS= {
         url: 'https://wolbeatmusic.com.mx/djs/nuestros-djs/LUILLY.html', 
         nombre: "Luïlly Karson",
         generos: "Progressive House & Electro House.",
-        biografia: "Es DJ en el sello discografico Wölbeat Music desde 2016, en el cual a tenido la oportunidad de viajar por grandes partes de México para sesiones fotograficas, eventos y entre más cosas. \n\n Tambien dentro de Wölbeat Music el ha podido vender su musica en diferentes plataformas digitales", 
+        biografia: "Es DJ en el sello discografico Wölbeat Music desde 2016, en el cual a tenido la oportunidad de viajar por grandes partes de México para sesiones fotograficas, eventos y entre más cosas. \n\n Tambien dentro de Wölbeat Music ha podido vender su musica en diferentes plataformas digitales", 
         socialMedia: {
             spotify: defaultSpotify,
             youtube: "https://www.youtube.com/channel/UC0aoRZhHuP0Thy3COkkg9PA"

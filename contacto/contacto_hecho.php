@@ -96,10 +96,8 @@ if(isset($_POST['name'])) {
     <picture class="nav-mobile-picture">
         <img src="../img/Lobo.png" class= "nav-mobile-picture-img" alt="Lobo de Wolbeat Music">
     </picture>
-    <img class="nav-welcome-logo" src="../img/logo_black.png" alt = "Logo de Wolbeat Music">  
+    <a href="../"><img class="nav-welcome-logo" src="../img/logo_black.png" alt = "Logo de Wolbeat Music"></a>
     <ol class="nav-list"> 
-        <li class="nav-list-item">
-            <a href= "../">Inicio</a></li>
         <li class="nav-list-item">
             <a href= "../djs/">DJ's</a></li>
         <li class="nav-list-item">

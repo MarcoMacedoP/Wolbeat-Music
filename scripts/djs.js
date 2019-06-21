@@ -37,8 +37,8 @@ class DJ {
         genres.innerHTML = this.genres
         
         let description = document.createElement('p')
-        description.innerHTML = 
-        cutTxt(this.description, maxDescriptionChars)
+        description.innerHTML = this.description
+        //cutTxt(this.description, maxDescriptionChars)
      
         //Caja de social Media
         let socialMediaContainer = document.createElement('div')
@@ -63,6 +63,8 @@ class DJ {
         if(fn){
             fn(this.url, djInfo)
             fn(this.url, linkName)
+            fn(this.socialMedia.spotify, iconSpotify)
+            fn(this.socialMedia.youtube, iconYoutube)
         }
     }
     setInfoPage(headline, headerPicture, infoContainer){
@@ -73,8 +75,7 @@ class DJ {
         genres.innerHTML = this.genres
         let description = infoContainer.querySelector('.dj-information-p')
         description.innerHTML = this.description
-        let img = headerPicture.querySelector('img')
-        img.setAttribute('src', this.image)
+        //headerPicture.style.backgroundImage = "url("+this.image+")"
 
         //seteo de los valores de los iconos
         let spotify= document.querySelector('.dj-information-links-spotify')

@@ -305,7 +305,7 @@ html {
     padding: 0 1rem 0 0;
     font-size: .75rem;
     margin-top: 0;
-    width: 40%;
+    width: 50%;
     color: #FBFBFB;
     display: flex;
     flex-direction: row;
@@ -422,23 +422,17 @@ html {
   justify-content: center;
   margin-bottom: 1rem; }
 
-@media only screen and (orientation: landscape) and (max-width: 800px) {
-  .header {
-    height: 100vh; } }
-@media screen and (orientation: portrait) {
-  .header-picture {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; }
-    .header-picture img {
-      min-width: 100%;
-      min-height: 100%;
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      height: auto; } }
+.header-picture {
+  background-color: #1C1C1B;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 @media screen and (orientation: landscape) {
   .header-picture {
     position: absolute;
@@ -458,7 +452,7 @@ html {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(28, 28, 27, 0.48);
+  background-color: rgba(28, 28, 27, 0.55);
   top: 0;
   left: 0;
   right: 0;
@@ -480,7 +474,7 @@ html {
   position: absolute;
   z-index: -1;
   opacity: 0.33;
-  background-image: url(/img/Lobo.png);
+  background-image: url("../img/Lobo.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
@@ -604,6 +598,10 @@ html {
   .section-dj-info span {
     display: none; }
   .section-dj-info p {
+    max-height: 2.3rem;
+    overflow: hidden;
+    text-align: justify;
+    white-space: pre-line;
     font-weight: normal;
     font-size: 0.62rem;
     font-family: Verdana, Helvetica;
@@ -613,6 +611,7 @@ html {
   display: none; }
 
 .dj-information, .disc-information, .disc-songs {
+  padding: 0 4.2% 14.2% 4.2%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -627,6 +626,7 @@ html {
   margin-top: 1rem; }
 
 .dj-information-p, .disc-information-p, .disc-songs-desc {
+  text-align: justify;
   white-space: pre-line;
   margin-top: 1rem;
   font-weight: normal;
@@ -664,10 +664,10 @@ html {
     background-position: center; }
 
 .dj-information-links-spotify, .disc-information-links-spotify {
-  background-image: url(../img/spotify_black.png); }
+  background-image: url("../img/spotify_black.png"); }
 
 .dj-information-links-youtube, .disc-information-links-youtube {
-  background-image: url(../img/youtube_black.png); }
+  background-image: url("../img/youtube_black.png"); }
 
 .dj-cta {
   margin-bottom: 1rem; }
@@ -688,6 +688,8 @@ html {
     overflow: hidden;
     grid-column: 1/2;
     width: 34.44vw;
+    max-width: 250px;
+    max-height: 250px;
     height: 34.44vw;
     border-radius: 50%;
     background: #929298;
@@ -698,9 +700,7 @@ html {
     width: auto;
     height: 100%; }
   .dj-disc .dj-disc-p {
-    padding-right: 0.5rem;
-    grid-column: 1/3;
-    grid-row: 2/3;
+    padding-right: 10%;
     font-weight: normal;
     font-size: 0.75rem;
     font-family: Verdana, Helvetica;
@@ -724,10 +724,10 @@ html {
       background-repeat: no-repeat;
       background-size: contain; }
     .dj-disc-info .dj-disc-info-social .dj-disc-info-social-spotify {
-      background-image: url(/img/spotify.png); }
+      background-image: url("../img/spotify_yellow.svg"); }
     .dj-disc-info .dj-disc-info-social .dj-disc-info-social-youtube {
       margin-left: 0.5rem;
-      background-image: url(/img/youtube.png); }
+      background-image: url("../img/youtube_yellow.svg"); }
 
 .dj-nav {
   margin-top: 0;
@@ -776,13 +776,7 @@ html {
   .dj-disc .dj-disc-info {
     justify-content: flex-start; }
   .dj-disc .dj-disc-p {
-    grid-column: 2/3;
-    position: absolute;
-    bottom: 20vw;
-    padding-right: 0.5rem; }
-  .dj-disc .dj-disc-info-social {
-    position: absolute;
-    bottom: 11vw; } }
+    padding-right: 0.5rem; } }
 .disc-songs {
   padding: 0 12.5%;
   font-size: 0.75rem;
@@ -817,8 +811,11 @@ html {
     height: 100%; }
 
 .disc-songs-container-item-artboard {
+  align-self: center;
   width: 50%;
   height: 100%;
+  max-width: 43.2188px;
+  max-height: 36px;
   background: #555559;
   grid-row: 1/3;
   display: flex;
@@ -902,10 +899,10 @@ html {
       background-repeat: no-repeat;
       background-size: contain; }
     .section-dj-info-social-media .section-dj-info-social-media-spotify {
-      background-image: url(/img/spotify.png); }
+      background-image: url("../img/spotify.png"); }
     .section-dj-info-social-media .section-dj-info-social-media-youtube {
       margin-left: 0.5rem;
-      background-image: url(/img/youtube.png); }
+      background-image: url("../img/youtube.png"); }
 
   .section-dj-info {
     background: none;
@@ -969,15 +966,9 @@ html {
       height: 13.82vw; }
     .dj-disc .dj-disc-info {
       justify-content: flex-start; }
-    .dj-disc .dj-disc-info-social {
-      position: absolute;
-      bottom: 0; }
 
   .dj-disc .dj-disc-p {
-    grid-column: 2/3;
-    position: absolute;
-    bottom: 6vw;
-    padding-right: 0.5rem;
+    padding-right: 10%;
     font-size: 0.75rem; } }
 @media only screen and (min-width: 1000px) and (min-height: 600px) {
   .disc-songs-container-item {
@@ -1100,6 +1091,7 @@ html {
     display: flex;
     justify-content: space-around; } }
 .footer {
+  margin-top: 3rem;
   height: min-content;
   overflow: hidden;
   width: 100%;

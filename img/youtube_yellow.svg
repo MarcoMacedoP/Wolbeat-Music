@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="youtube_yellow" transform="translate(-2.54 -1.92)">
+    <g id="Grupo_109" data-name="Grupo 109" transform="translate(2.54 1.92)">
+      <path id="Trazado_24" data-name="Trazado 24" d="M18.54,33.919a16,16,0,1,1,16-16A16.018,16.018,0,0,1,18.54,33.919Z" transform="translate(-2.54 -1.92)" fill="#ffcd00"/>
+    </g>
+    <g id="Grupo_111" data-name="Grupo 111" transform="translate(9.245 11.384)">
+      <g id="Grupo_110" data-name="Grupo 110">
+        <path id="Trazado_25" data-name="Trazado 25" d="M32.852,22.173a4.109,4.109,0,0,0-4.109-4.109H18.086a4.109,4.109,0,0,0-4.109,4.109v5a4.11,4.11,0,0,0,4.109,4.109H28.743a4.11,4.11,0,0,0,4.109-4.109v-5Zm-6.724,2.749-4.25,2.331c-.185.1-.351-.034-.351-.244V22.225c0-.213.171-.346.356-.241l4.279,2.454A.278.278,0,0,1,26.128,24.922Z" transform="translate(-13.977 -18.064)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
